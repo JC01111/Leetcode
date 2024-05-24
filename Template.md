@@ -10,18 +10,18 @@ Link:
 <br>
 
 **Example 1:**
-> Input: 
+> **Input:**
 > 
-> Output: 
+> **Output:**
 >
-> Explanation: 
+> **Explanation:**
 
 **Example 2:**
-> Input: 
+> **Input:**
 > 
-> Output: 
+> **Output:**
 >
-> Explanation: 
+> **Explanation:**
 
 <br>
 
