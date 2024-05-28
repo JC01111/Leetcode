@@ -1,4 +1,4 @@
-## 70. Climbing Stairs (Easy)
+## 0. Name (Easy)
 
 Link: 
 
@@ -23,10 +23,12 @@ Link:
 >
 > **Explanation:**
 
-<br>
-
-**Constraints:**
-` `
+**Example 3:**
+> **Input:**
+> 
+> **Output:**
+>
+> **Explanation:**
 
 <br>
 
@@ -48,6 +50,12 @@ Link:
 <br>
 
 ### My Solution:
+```
+
+```
+<br>
+
+### Alternative Solution:
 ```
 
 ```
