@@ -8,8 +8,8 @@
 
 |Hashmap||
 |---|---|
-|[Two Sum]([1.Two_Sum_(Easy).md](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md))|Easy|
-|[Contains Duplicate II](219.Contains_Duplicate_II_(Easy).md)| Easy |
+|[Two Sum](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md)|Easy|
+|[Contains Duplicate II](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/219.Contains_Duplicate_II%20(Easy).md)| Easy |
 
 |Stack||
 |---|---|
@@ -18,15 +18,15 @@
 
 |Linked List||
 |---|---|
-|[Linked List Cycle](141.Linked_List_Cycle_(Easy).md)|Easy|
-|[Add Two Numbers](2.Add_Two_Numbers_(Medium).md)|Medium|
-|[Merge Two Sorted Lists](21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|
+|[Linked List Cycle](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/141.Linked_List_Cycle%20(Easy).md)|Easy|
+|[Add Two Numbers](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/2.Add_Two_Numbers%20(Medium).md)|Medium|
+|[Merge Two Sorted Lists](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/21.Merge_Two_Sorted_Lists%20(Easy).md)|Easy|
 
 |Binary Tree General||
 |---|---|
-|[Maximum Depth of Binary Tree](104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|
-|[Same Tree](100.Same_Tree_(Easy).md)|Easy|
+|[Maximum Depth of Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/104.Maximum_Depth_of_Binary_Tree%20(Easy).md)|Easy|
+|[Same Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/100.Same_Tree%20(Easy).md)|Easy|
 
 |1D DP||
 |---|---|
-|[Climbing Stairs](70.Climbing_Stairs_(Easy).md)|Easy|
+|[Climbing Stairs](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/70.Climbing_Stairs%20(Easy).md)|Easy|
