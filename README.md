@@ -22,6 +22,10 @@
 |[Add Two Numbers](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/2.Add_Two_Numbers%20(Medium).md)|Medium|
 |[Merge Two Sorted Lists](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/21.Merge_Two_Sorted_Lists%20(Easy).md)|Easy|
 
+<br>
+
+Binary Tree Problems usually can use Recursion to solve, start from the root, then recurse on its left subtree and right subtree.
+
 |Binary Tree General||
 |---|---|
 |[Maximum Depth of Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/104.Maximum_Depth_of_Binary_Tree%20(Easy).md)|Easy|
