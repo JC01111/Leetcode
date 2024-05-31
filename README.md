@@ -13,7 +13,7 @@
 
 |Stack||
 |---|---|
-|[Valid Parentheses](https://github.com/JC01111/Leetcode_I_Solved/blob/c363d9a4395a2796b1613d8ac9504fc11fc62f90/20.Valid_Parentheses%20(Easy).md)|Easy|
+| <a href="https://github.com/JC01111/Leetcode_I_Solved/blob/c363d9a4395a2796b1613d8ac9504fc11fc62f90/20.Valid_Parentheses%20(Easy).md" target="_blank">Valid Parentheses</a> | Easy |
 |[Min Stack](155.Min_Stack_(Medium).md)|Medium|
 
 |Linked List||
