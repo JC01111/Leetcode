@@ -30,6 +30,7 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 |---|---|
 |[Maximum Depth of Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/104.Maximum_Depth_of_Binary_Tree%20(Easy).md)|Easy|
 |[Same Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/100.Same_Tree%20(Easy).md)|Easy|
+|[Invert Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/81870a2d4bb636f3104074f4535289859cc46d89/226.Invert_Binary_Tree_Easy.md)|Easy|
 
 |1D DP||
 |---|---|
