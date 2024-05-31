@@ -8,12 +8,12 @@
 
 |Hashmap||
 |---|---|
-|[Two Sum](1.Two_Sum_(Easy).md)|Easy|
+|[Two Sum]([1.Two_Sum_(Easy).md](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md))|Easy|
 |[Contains Duplicate II](219.Contains_Duplicate_II_(Easy).md)| Easy |
 
 |Stack||
 |---|---|
-|[Valid Parentheses](20.Valid_Parentheses_(Easy).md)|Easy|
+|[Valid Parentheses](https://github.com/JC01111/Leetcode_I_Solved/blob/c363d9a4395a2796b1613d8ac9504fc11fc62f90/20.Valid_Parentheses%20(Easy).md)|Easy|
 |[Min Stack](155.Min_Stack_(Medium).md)|Medium|
 
 |Linked List||
