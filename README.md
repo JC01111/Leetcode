@@ -8,9 +8,10 @@
 
 <br>
 
-|Two Pointers||
-|---|---|
-|[Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|Easy|
+|Two Pointers|||
+|---|---|---|
+|[Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|
+|[Two Sum II - Input Array Is Sorted](https://github.com/JC01111/Leetcode_I_Solved/blob/90374bc8e99477ed815ca4f25bc6e28a7dd350db/167.Two_Sum_II_Medium.md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
 
 <br>
 
