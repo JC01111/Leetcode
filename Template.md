@@ -1,4 +1,5 @@
 ## 0. Name (Easy)
+**Date and Time:** Jun 2, 2024, 4:34 AM (EST)
 
 Link: 
 
@@ -43,19 +44,19 @@ Link:
 <br>
 
 ### Wrong answer:
-```
+```python
 
 ```
 
 <br>
 
 ### My Solution:
-```
+```python
 
 ```
 <br>
 
 ### Alternative Solution:
-```
+```python
 
 ```
