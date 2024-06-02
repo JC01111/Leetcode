@@ -8,6 +8,8 @@
 
 <br>
 
+Two pointers can save space complexit, because it only uses constant space complexity $O(1)$.
+
 |Two Pointers|||
 |---|---|---|
 |[Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|
