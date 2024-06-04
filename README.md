@@ -9,7 +9,7 @@ Template
 
 <br>
 
-|Array / String||
+|Array / String|||
 |---|---|---|
 |[Merge Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/d592565df0515f611eb58358fda5215e85cabdf2/88.Merge_Sorted_Array%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|
 |[Remove Element](https://github.com/JC01111/Leetcode_I_Solved/blob/57b83277e524b5c2a0ad3b70532a910f4a6a0582/27.Remove_Element%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)|
