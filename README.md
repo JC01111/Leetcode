@@ -1,5 +1,12 @@
 ### Leetcode questions I solved by topics with explanations.
 
+<!--
+Template
+|Topic|||
+|---|---|---|
+|[]()|Easy|[]()|
+-->
+
 <br>
 
 |Array / String||
@@ -14,6 +21,12 @@ Two pointers can save space complexit, because it only uses constant space compl
 |---|---|---|
 |[Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|
 |[Two Sum II - Input Array Is Sorted](https://github.com/JC01111/Leetcode_I_Solved/blob/90374bc8e99477ed815ca4f25bc6e28a7dd350db/167.Two_Sum_II_Medium.md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
+
+<br>
+
+|Sliding Window|||
+|---|---|---|
+|[Longest Substring Without Repeating Characters](https://github.com/JC01111/Leetcode_I_Solved/blob/84a5b6484a2992556d19acda4aae08b6db5ac70f/3.Longest_Substring_Without_Repeating_Characters%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
 
 <br>
 
