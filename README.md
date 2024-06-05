@@ -35,6 +35,12 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 <br>
 
+|Matrix|||
+|---|---|---|
+|[36. Valid Sudoku](https://github.com/JC01111/Leetcode_I_Solved/blob/ec58433eb422a6791a4b41b026913225942f79c5/36.Valid_Sudoku%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|
+
+<br>
+
 |Hashmap||
 |---|---|
 |[1. Two Sum](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md)|Easy|
