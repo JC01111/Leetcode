@@ -13,7 +13,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 
 |Array / String|||
 |---|---|---|
-|[88. Merge Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/d592565df0515f611eb58358fda5215e85cabdf2/88.Merge_Sorted_Array%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|
+|[88. Merge Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/d592565df0515f611eb58358fda5215e85cabdf2/88.Merge_Sorted_Array%20(Easy).md)|${\text{\color{green}Easy}}$|[Link](https://leetcode.com/problems/merge-sorted-array/)|
 |[27. Remove Element](https://github.com/JC01111/Leetcode_I_Solved/blob/57b83277e524b5c2a0ad3b70532a910f4a6a0582/27.Remove_Element%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)|
 |[26. Remove Duplicates from Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/7dde1aa602a5ce396130e359d6ef118c1c75c929/26.Remove_Duplicates_from_Sorted_Array%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|
 
@@ -27,8 +27,8 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 |Two Pointers|||
 |---|---|---|
-|[125. Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|
-|[167. Two Sum II - Input Array Is Sorted](https://github.com/JC01111/Leetcode_I_Solved/blob/90374bc8e99477ed815ca4f25bc6e28a7dd350db/167.Two_Sum_II_Medium.md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
+|[125. Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|${\text{\color{green}Easy}}$|[Link](https://leetcode.com/problems/valid-palindrome/)|
+|[167. Two Sum II - Input Array Is Sorted](https://github.com/JC01111/Leetcode_I_Solved/blob/90374bc8e99477ed815ca4f25bc6e28a7dd350db/167.Two_Sum_II_Medium.md)|${\text{\color{orange}Medium}}$|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
 
 <br>
 
