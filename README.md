@@ -41,10 +41,11 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 <br>
 
-|Hashmap||
-|---|---|
-|[1. Two Sum](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md)|Easy|
-|[219. Contains Duplicate II](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/219.Contains_Duplicate_II%20(Easy).md)| Easy |
+|Hashmap|||
+|---|---|---|
+|[1. Two Sum](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
+|[219. Contains Duplicate II](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/219.Contains_Duplicate_II%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
+|[383. Ransom Note](https://github.com/JC01111/Leetcode_I_Solved/blob/f25d091d997890166c3d11c809198ac6624ff2de/383.Ransom_Note%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
 
 <br>
 
