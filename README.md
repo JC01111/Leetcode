@@ -9,6 +9,8 @@ Template
 
 <br>
 
+### Array / String
+
 General cases we want to replace element with non-repeating element in `nums`, so we set an index to keep track of repeating position.
 
 |Array / String|||
@@ -32,7 +34,7 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 <br>
 
----
+### Sliding Window
 
 |Sliding Window|||
 |---|---|---|
@@ -42,6 +44,8 @@ Two pointers can save space complexit, because it only uses constant space compl
 <br>
 
 ---
+
+### Matrix
 
 |Matrix|||
 |---|---|---|
@@ -65,6 +69,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ---
 
+### Intervals
+
 |Intervals|||
 |---|---|---|
 |[Insert Interval](https://github.com/JC01111/Leetcode_I_Solved/blob/b9c48608c0d838b93411f7d2dcd8b68f3099e0c4/57.Insert_Interval%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
@@ -72,6 +78,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 <br>
 
 ---
+
+### Stack
 
 |Stack||
 |---|---|
@@ -82,6 +90,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ---
 
+### Linked List
+
 |Linked List||
 |---|---|
 |[141. Linked List Cycle](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/141.Linked_List_Cycle%20(Easy).md)|Easy|
@@ -91,6 +101,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 <br>
 
 ---
+
+### Binary Tree General
 
 Binary Tree Problems usually can use Recursion to solve, start from the root, then recurse on its left subtree and right subtree.
 
@@ -104,6 +116,8 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 
 ---
 
+### 1D DP
+
 |1D DP||
 |---|---|
 |[70. Climbing Stairs](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/70.Climbing_Stairs%20(Easy).md)|Easy|
@@ -111,6 +125,8 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 <br>
 
 ---
+
+### Others
 
 |Others|||
 |---|---|---|
