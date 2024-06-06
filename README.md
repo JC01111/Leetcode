@@ -19,6 +19,10 @@ General cases we want to replace element with non-repeating element in `nums`, s
 
 <br>
 
+---
+
+### Two Pointers
+
 Two pointers can save space complexit, because it only uses constant space complexity $O(1)$.
 
 |Two Pointers|||
@@ -28,6 +32,8 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 <br>
 
+---
+
 |Sliding Window|||
 |---|---|---|
 |[3. Longest Substring Without Repeating Characters](https://github.com/JC01111/Leetcode_I_Solved/blob/84a5b6484a2992556d19acda4aae08b6db5ac70f/3.Longest_Substring_Without_Repeating_Characters%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
@@ -35,11 +41,19 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 <br>
 
+---
+
 |Matrix|||
 |---|---|---|
 |[36. Valid Sudoku](https://github.com/JC01111/Leetcode_I_Solved/blob/ec58433eb422a6791a4b41b026913225942f79c5/36.Valid_Sudoku%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|
 
 <br>
+
+---
+  
+### Hashmap
+
+In general, create a hashmap {} and store elements and their indices into the hashmap as the for-loop goes, then in the for loop we check if an element has already in the hashmap or not, or in the case we want to decrement the number of times we have seen an element in the hashmap.
 
 |Hashmap|||
 |---|---|---|
@@ -49,12 +63,24 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 <br>
 
+---
+
+|Intervals|||
+|---|---|---|
+|[Insert Interval](https://github.com/JC01111/Leetcode_I_Solved/blob/b9c48608c0d838b93411f7d2dcd8b68f3099e0c4/57.Insert_Interval%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
+
+<br>
+
+---
+
 |Stack||
 |---|---|
 |[20. Valid Parentheses](https://github.com/JC01111/Leetcode_I_Solved/blob/c363d9a4395a2796b1613d8ac9504fc11fc62f90/20.Valid_Parentheses%20(Easy).md)|Easy|
 |[155. Min Stack](https://github.com/JC01111/Leetcode_I_Solved/blob/d592565df0515f611eb58358fda5215e85cabdf2/155.Min_Stack%20(Medium).md)|Medium|
 
 <br>
+
+---
 
 |Linked List||
 |---|---|
@@ -63,6 +89,8 @@ Two pointers can save space complexit, because it only uses constant space compl
 |[21. Merge Two Sorted Lists](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/21.Merge_Two_Sorted_Lists%20(Easy).md)|Easy|
 
 <br>
+
+---
 
 Binary Tree Problems usually can use Recursion to solve, start from the root, then recurse on its left subtree and right subtree.
 
@@ -74,11 +102,15 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 
 <br>
 
+---
+
 |1D DP||
 |---|---|
 |[70. Climbing Stairs](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/70.Climbing_Stairs%20(Easy).md)|Easy|
 
 <br>
+
+---
 
 |Others|||
 |---|---|---|
