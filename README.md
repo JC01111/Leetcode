@@ -15,9 +15,9 @@ General cases we want to replace element with non-repeating element in `nums`, s
 
 |Array / String|||
 |---|---|---|
-|[88. Merge Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/d592565df0515f611eb58358fda5215e85cabdf2/88.Merge_Sorted_Array%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/merge-sorted-array/)|
-|[27. Remove Element](https://github.com/JC01111/Leetcode_I_Solved/blob/57b83277e524b5c2a0ad3b70532a910f4a6a0582/27.Remove_Element%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/remove-element/)|
-|[26. Remove Duplicates from Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/7dde1aa602a5ce396130e359d6ef118c1c75c929/26.Remove_Duplicates_from_Sorted_Array%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|
+|[88. Merge Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/d592565df0515f611eb58358fda5215e85cabdf2/88.Merge_Sorted_Array%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|
+|[27. Remove Element](https://github.com/JC01111/Leetcode_I_Solved/blob/57b83277e524b5c2a0ad3b70532a910f4a6a0582/27.Remove_Element%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)|
+|[26. Remove Duplicates from Sorted Array](https://github.com/JC01111/Leetcode_I_Solved/blob/7dde1aa602a5ce396130e359d6ef118c1c75c929/26.Remove_Duplicates_from_Sorted_Array%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|
 
 <br>
 
@@ -29,8 +29,8 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 |Two Pointers|||
 |---|---|---|
-|[125. Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/valid-palindrome/)|
-|[167. Two Sum II - Input Array Is Sorted](https://github.com/JC01111/Leetcode_I_Solved/blob/90374bc8e99477ed815ca4f25bc6e28a7dd350db/167.Two_Sum_II_Medium.md)|${\text{\color{Dandelion}Medium}}$|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
+|[125. Valid Palindrome](https://github.com/JC01111/Leetcode_I_Solved/blob/675c5c4a58335442c2cd1ce938d2b60e323ffd28/125.Valid_Palindrome_Easy.md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|
+|[167. Two Sum II - Input Array Is Sorted](https://github.com/JC01111/Leetcode_I_Solved/blob/90374bc8e99477ed815ca4f25bc6e28a7dd350db/167.Two_Sum_II_Medium.md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
 
 <br>
 
@@ -40,8 +40,8 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 |Sliding Window|||
 |---|---|---|
-|[3. Longest Substring Without Repeating Characters](https://github.com/JC01111/Leetcode_I_Solved/blob/84a5b6484a2992556d19acda4aae08b6db5ac70f/3.Longest_Substring_Without_Repeating_Characters%20(Medium).md)|${\text{\color{Dandelion}Medium}}$|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
-|[121. Best Time to Buy and Sell Stock](https://github.com/JC01111/Leetcode_I_Solved/blob/7dde1aa602a5ce396130e359d6ef118c1c75c929/121.Best_Time_to_Buy_and_Sell_Stock%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
+|[3. Longest Substring Without Repeating Characters](https://github.com/JC01111/Leetcode_I_Solved/blob/84a5b6484a2992556d19acda4aae08b6db5ac70f/3.Longest_Substring_Without_Repeating_Characters%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
+|[121. Best Time to Buy and Sell Stock](https://github.com/JC01111/Leetcode_I_Solved/blob/7dde1aa602a5ce396130e359d6ef118c1c75c929/121.Best_Time_to_Buy_and_Sell_Stock%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
 
 <br>
 
@@ -51,7 +51,7 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 |Matrix|||
 |---|---|---|
-|[36. Valid Sudoku](https://github.com/JC01111/Leetcode_I_Solved/blob/ec58433eb422a6791a4b41b026913225942f79c5/36.Valid_Sudoku%20(Medium).md)|${\text{\color{Dandelion}Medium}}$|[Link](https://leetcode.com/problems/valid-sudoku/)|
+|[36. Valid Sudoku](https://github.com/JC01111/Leetcode_I_Solved/blob/ec58433eb422a6791a4b41b026913225942f79c5/36.Valid_Sudoku%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|
 
 <br>
 
@@ -63,9 +63,9 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 |Hashmap|||
 |---|---|---|
-|[1. Two Sum](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/two-sum/)|
-|[219. Contains Duplicate II](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/219.Contains_Duplicate_II%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
-|[383. Ransom Note](https://github.com/JC01111/Leetcode_I_Solved/blob/f25d091d997890166c3d11c809198ac6624ff2de/383.Ransom_Note%20(Easy).md)|${\text{\color{ForestGreen}Easy}}$|[Link](https://leetcode.com/problems/ransom-note/)|
+|[1. Two Sum](https://github.com/JC01111/Leetcode_I_Solved/blob/94b6d95ecacab8f50bd55471398de87632ca42eb/1.Two_Sum%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
+|[219. Contains Duplicate II](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/219.Contains_Duplicate_II%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
+|[383. Ransom Note](https://github.com/JC01111/Leetcode_I_Solved/blob/f25d091d997890166c3d11c809198ac6624ff2de/383.Ransom_Note%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
 
 <br>
 
