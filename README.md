@@ -125,6 +125,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |Binary Tree BFS|||
 |---|---|---|
 |[199. Binary Tree Right Side View](https://github.com/JC01111/Leetcode_I_Solved/blob/8a25d69afff199d639a4234a512548f97de79dac/199.Binary_Tree_Right_Side_View%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
+|[637. Average of Levels in Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/429af2d53afb0eaf45efc3c7ef7fbf29bd0af3d5/637.Average_of_Levels_in_Binary_Tree%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
 
 <br>
 
