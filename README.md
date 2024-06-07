@@ -114,6 +114,18 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 |[100. Same Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/100.Same_Tree%20(Easy).md)|Easy|
 |[226. Invert Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/81870a2d4bb636f3104074f4535289859cc46d89/226.Invert_Binary_Tree_Easy.md)|Easy|
 
+
+<br>
+
+---
+
+### Binary Tree BFS
+
+BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and follows **LIFO**, both BFS and DFS can be implemented by `list()`
+|Binary Tree BFS|||
+|---|---|---|
+|[199. Binary Tree Right Side View](https://github.com/JC01111/Leetcode_I_Solved/blob/8a25d69afff199d639a4234a512548f97de79dac/199.Binary_Tree_Right_Side_View%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
+
 <br>
 
 ---
