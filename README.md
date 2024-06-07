@@ -1,4 +1,4 @@
-## Leetcode problem I solved by topics with explanations.
+## Leetcode problems I solved by topics with explanations.
 
 <!--
 Template
