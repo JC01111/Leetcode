@@ -131,6 +131,16 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 
 ---
 
+### Binary Search Tree
+
+|Binary Search Tree|||
+|---|---|---|
+|[530. Minimum Absolute Difference in BST](https://github.com/JC01111/Leetcode_I_Solved/blob/d87a9ad9491bc18a6108690446b0c1994fc4509e/530.%20Minimum%20Absolute%20Difference%20in%20BST%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
+
+<br>
+
+---
+
 ### 1D DP
 
 |1D DP||
