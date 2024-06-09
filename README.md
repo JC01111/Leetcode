@@ -51,7 +51,7 @@ Two pointers can save space complexit, because it only uses constant space compl
 
 |Matrix|||
 |---|---|---|
-|[36. Valid Sudoku](36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|
+|[36. Valid Sudoku](36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|[Link](https://leetcode.com/problems/valid-sudoku/)|
 
 <br>
 
@@ -83,10 +83,10 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ### Stack
 
-|Stack||
-|---|---|
-|[20. Valid Parentheses](20.Valid_Parentheses_(Easy).md)|Easy|
-|[155. Min Stack](155.Min_Stack_(Medium).md)|Medium|
+|Stack|||
+|---|---|---|
+|[20. Valid Parentheses](20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|
+|[155. Min Stack](155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 
 <br>
 
@@ -96,9 +96,9 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 |Linked List|||
 |---|---|---|
-|[141. Linked List Cycle](141.Linked_List_Cycle_(Easy).md)|Easy|
-|[2. Add Two Numbers](2.Add_Two_Numbers_(Medium).md)|Medium|
-|[21. Merge Two Sorted Lists](21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|
+|[141. Linked List Cycle](141.Linked_List_Cycle_(Easy).md)|Easy|[Link](https://leetcode.com/problems/linked-list-cycle/)|
+|[2. Add Two Numbers](2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
+|[21. Merge Two Sorted Lists](21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
 
 <br>
 
