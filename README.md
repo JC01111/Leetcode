@@ -94,8 +94,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ### Linked List
 
-|Linked List||
-|---|---|
+|Linked List|||
+|---|---|---|
 |[141. Linked List Cycle](141.Linked_List_Cycle_(Easy).md)|Easy|
 |[2. Add Two Numbers](2.Add_Two_Numbers_(Medium).md)|Medium|
 |[21. Merge Two Sorted Lists](21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|
@@ -108,12 +108,11 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 Binary Tree Problems usually can use Recursion to solve, start from the root, then recurse on its left subtree and right subtree.
 
-|Binary Tree General||
-|---|---|
-|[104. Maximum Depth of Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/104.Maximum_Depth_of_Binary_Tree%20(Easy).md)|Easy|
-|[100. Same Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/100.Same_Tree%20(Easy).md)|Easy|
-|[226. Invert Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/81870a2d4bb636f3104074f4535289859cc46d89/226.Invert_Binary_Tree_Easy.md)|Easy|
-
+|Binary Tree General|||
+|---|---|---|
+|[104. Maximum Depth of Binary Tree](104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
+|[100. Same Tree](100.Same_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/same-tree/)|
+|[226. Invert Binary Tree](226.Invert_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/invert-binary-tree/)|
 
 <br>
 
@@ -121,11 +120,12 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 
 ### Binary Tree BFS
 
-BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and follows **LIFO**, both BFS and DFS can be implemented by `list()`
+BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and follows **LIFO**, both BFS and DFS can be implemented by `list()`.
+
 |Binary Tree BFS|||
 |---|---|---|
-|[199. Binary Tree Right Side View](https://github.com/JC01111/Leetcode_I_Solved/blob/8a25d69afff199d639a4234a512548f97de79dac/199.Binary_Tree_Right_Side_View%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
-|[637. Average of Levels in Binary Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/429af2d53afb0eaf45efc3c7ef7fbf29bd0af3d5/637.Average_of_Levels_in_Binary_Tree%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
+|[199. Binary Tree Right Side View](199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
+|[637. Average of Levels in Binary Tree](637.Average_of_Levels_in_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
 
 <br>
 
@@ -137,9 +137,9 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Binary Search Tree|||
 |---|---|---|
-|[530. Minimum Absolute Difference in BST](https://github.com/JC01111/Leetcode_I_Solved/blob/d87a9ad9491bc18a6108690446b0c1994fc4509e/530.%20Minimum%20Absolute%20Difference%20in%20BST%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
-|[230. Kth Smallest Element in a BST](https://github.com/JC01111/Leetcode_I_Solved/blob/06f2ba0e80475588bc75b219cbe1e91c7ba6857c/230.Kth_Smallest_Element_in_a_BST%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
-|[98. Validate Binary Search Tree](./98.Validate_Binary_Search_Tree_(Medium).md)|Medium|[Link](https://leetcode.com/problems/validate-binary-search-tree/)|
+|[530. Minimum Absolute Difference in BST](530.Minimum_Absolute_Difference_in_BST_(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
+|[230. Kth Smallest Element in a BST](230.Kth_Smallest_Element_in_a_BST_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
+|[98. Validate Binary Search Tree](98.Validate_Binary_Search_Tree_(Medium).md)|Medium|[Link](https://leetcode.com/problems/validate-binary-search-tree/)|
 
 <br>
 
@@ -147,9 +147,9 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 ### 1D DP
 
-|1D DP||
-|---|---|
-|[70. Climbing Stairs](https://github.com/JC01111/Leetcode_I_Solved/blob/29826247fb086ad0c1e016a9d407f6c0e4f44104/70.Climbing_Stairs%20(Easy).md)|Easy|
+|1D DP|||
+|---|---|---|
+|[70. Climbing Stairs](70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
 
 <br>
 
@@ -159,4 +159,4 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Others|||
 |---|---|---|
-|[217. Contains Duplicate](https://github.com/JC01111/Leetcode_I_Solved/blob/7dde1aa602a5ce396130e359d6ef118c1c75c929/217.Contains_Duplicate%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
+|[217. Contains Duplicate](217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
