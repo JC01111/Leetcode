@@ -133,9 +133,12 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 
 ### Binary Search Tree
 
+Binary Search Tree (BST) has property that the nodes on the left of the root are smaller than the root, the nodes on the right of the root are greater than the root. So, in many cases we can implement the **DFS** to perform **in-order** traversal.
+
 |Binary Search Tree|||
 |---|---|---|
 |[530. Minimum Absolute Difference in BST](https://github.com/JC01111/Leetcode_I_Solved/blob/d87a9ad9491bc18a6108690446b0c1994fc4509e/530.%20Minimum%20Absolute%20Difference%20in%20BST%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
+|[230. Kth Smallest Element in a BST](https://github.com/JC01111/Leetcode_I_Solved/blob/715f297a3a1d2618e72a7d8cf2e428262acc72f3/230.Kth_Smallest_Element_in_a_BST%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
 
 <br>
 
