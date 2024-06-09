@@ -139,6 +139,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |---|---|---|
 |[530. Minimum Absolute Difference in BST](https://github.com/JC01111/Leetcode_I_Solved/blob/d87a9ad9491bc18a6108690446b0c1994fc4509e/530.%20Minimum%20Absolute%20Difference%20in%20BST%20(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
 |[230. Kth Smallest Element in a BST](https://github.com/JC01111/Leetcode_I_Solved/blob/715f297a3a1d2618e72a7d8cf2e428262acc72f3/230.Kth_Smallest_Element_in_a_BST%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
+|[98. Validate Binary Search Tree](https://github.com/JC01111/Leetcode_I_Solved/blob/c48bcfc786b1152de163028207977d09e63396e0/98.Validate_Binary_Search_Tree%20(Medium).md)|Medium|[Link](https://leetcode.com/problems/validate-binary-search-tree/)|
 
 <br>
 
