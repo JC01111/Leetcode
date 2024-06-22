@@ -146,10 +146,33 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 ---
 
 ### Graph General
-
 |Graph General|||
 |---|---|---|
 |[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|
+|[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule)|
+
+<br>
+
+___
+
+### Trie
+|Trie|||
+|---|---|---|
+|[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree)|
+
+<br>
+
+___
+
+### Backtracking
+
+|Subsets|||
+|---|---|---|
+|[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|
+
+<br>
+
+---
 
 ### 1D DP
 
