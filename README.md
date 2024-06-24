@@ -7,7 +7,34 @@ Template
 |[]()|Easy|[Link]()|
 -->
 
+### Contents
+- [Array / String](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#array--string)
+- [Two Pointers](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#two-pointers)
+- [Sliding Window](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#sliding-window)
+- [Matrix](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#matrix)
+- [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
+- [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
+- [Stack](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#stack)
+- [Linked List](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#linked-list)
+- [Binary Tree General](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-general)
+- [Binary Tree BFS](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-bfs)
+- [Binary Search Tree](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-search-tree)
+- [Graph General](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#graph-general)
+- [Trie](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#trie)
+- [Backtracking](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#backtracking)
+- [Divide & Conquer]()
+- [Kadane's Algorithm]()
+- [Binary Search]()
+- [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
+- [Bit Manupulation]()
+- [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
+- [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
+- [Multidimensional DP]()
+- [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
+
 <br>
+
+___
 
 ### Array / String
 
@@ -166,14 +193,68 @@ ___
 
 ### Backtracking
 
-Backtracing is basically recursion with base case(s), after we find the base case that we can `return` or `append` the desired answer, we can continue the recursion by `i+1`.
+Backtracing is recursion with base case(s), we have to first find the base case(s), if the case satisfies the base case condition that we can `append` the desired answer then return, and continue the recursion by `i+1`.
 
-|Subsets|||
+|Backtracking|||
 |---|---|---|
 |[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|
 |[39. Combination Sum](./questions/39.Combination_Sum_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum/)|
-|[]()|Medium|[Link]()|
-|[]()|Medium|[Link]()|
+|[17. Letter Combinations of a Phone Number](./questions/17.Letter_Combinations_of_a_Phone_Number_(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|
+|[77. Combinations](./questions/77.Combinations_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combinations/)|
+
+<br>
+
+---
+
+### Divide & Conquer
+
+|Divide & Conquer|||
+|---|---|---|
+
+<br>
+
+---
+
+### Kadane's Algorithm
+
+|Kadane's Algorithm|||
+|---|---|---|
+
+<br>
+
+---
+
+### Binary Search
+
+|Binary Search|||
+|---|---|---|
+
+<br>
+
+---
+
+### Heap
+
+|Heap|||
+|---|---|---|
+
+<br>
+
+---
+
+### Bit Manipulation
+
+|Bit Manipulation|||
+|---|---|---|
+
+<br>
+
+---
+
+### Math
+
+|Math|||
+|---|---|---|
 
 <br>
 
@@ -184,6 +265,15 @@ Backtracing is basically recursion with base case(s), after we find the base cas
 |1D DP|||
 |---|---|---|
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
+
+<br>
+
+---
+
+### Multidimensional DP
+
+|Multidimensional DP|||
+|---|---|---|
 
 <br>
 
