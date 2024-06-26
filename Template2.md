@@ -38,20 +38,7 @@ Link:
 
 <br>
 
-### Wrong answer:
-```python
-
-```
-
-<br>
-
 ### My Solution:
-```python
-
-```
-<br>
-
-### Alternative Solution:
 ```python
 
 ```

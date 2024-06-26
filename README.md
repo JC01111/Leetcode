@@ -242,9 +242,12 @@ This is the approach when we are required to write an algorithm with $O(log\ n)$
 
 ### Heap
 
+Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k` elements in the minHeap. If we have `heapq.heappush()`, remember to keep the `k` elements by `pop()` out the same number of elements we `push()`. Finally, return the first element of the minHeap, which is the `k` largest element.
+
 |Heap|||
 |---|---|---|
-||||
+|[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
+|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|
 
 <br>
 
