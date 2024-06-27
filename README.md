@@ -294,7 +294,7 @@ ___
 
 ### 2D DP
 
-In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method.
+In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal.
 
 |2D DP|||
 |---|---|---|
