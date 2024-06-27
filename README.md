@@ -28,7 +28,9 @@ Template
 - [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
 - [Bit Manupulation]()
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
+- [Greedy](https://github.com/JC01111/Leetcode_I_Solved#greedy)
 - [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
+- [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
 - [Multidimensional DP]()
 - [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
 
@@ -291,6 +293,8 @@ ___
 ---
 
 ### 2D DP
+
+In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method.
 
 |2D DP|||
 |---|---|---|
