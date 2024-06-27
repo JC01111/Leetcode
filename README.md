@@ -284,9 +284,12 @@ ___
 
 ### 1D DP
 
+Similar to 2D DP, in 1D DP we only create a dictionary {} for cache, save time complexity to check repeated cases.
+
 |1D DP|||
 |---|---|---|
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
+|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
 
 <br>
 
@@ -294,7 +297,7 @@ ___
 
 ### 2D DP
 
-In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal.
+In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table.
 
 |2D DP|||
 |---|---|---|
