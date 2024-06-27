@@ -295,6 +295,7 @@ ___
 |2D DP|||
 |---|---|---|
 |[62. Unique Paths](./questions/62.Unique_Paths_(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths/)|
+|[72. Edit Distance](./questions/72.Edit_Distance_(Medium).md)|Medium|[Link](https://leetcode.com/problems/edit-distance/)|
 
 ### Multidimensional DP
 
