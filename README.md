@@ -52,7 +52,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 
 ### Two Pointers
 
-Two pointers can save space complexit, because it only uses constant space complexity $O(1)$.
+Two pointers can save space complexity, because it only uses constant space complexity $O(1)$.
 
 |Two Pointers|||
 |---|---|---|
@@ -271,6 +271,15 @@ Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k`
 
 ---
 
+### Greedy
+|Greedy|||
+|---|---|---|
+|[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
+
+<br>
+
+___
+
 ### 1D DP
 
 |1D DP|||
@@ -280,6 +289,12 @@ Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k`
 <br>
 
 ---
+
+### 2D DP
+
+|2D DP|||
+|---|---|---|
+|[62. Unique Paths](./questions/62.Unique_Paths_(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths/)|
 
 ### Multidimensional DP
 
