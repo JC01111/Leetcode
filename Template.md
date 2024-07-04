@@ -1,5 +1,5 @@
 ## 0. Name (Easy)
-**Date and Time:** Jun 26, 2024,  (EST)
+**Date and Time:** Jul 3, 2024,  (EST)
 
 Link: 
 
@@ -55,8 +55,8 @@ Link:
 ```python
 
 ```
-**Time Complexity:**  <br>
-**Space Complexity:** 
+**Time Complexity:** $O()$ <br>
+**Space Complexity:** $O()$
 
 <br>
 

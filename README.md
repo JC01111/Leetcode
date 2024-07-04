@@ -259,6 +259,10 @@ Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k`
 
 |Bit Manipulation|||
 |---|---|---|
+|[136. Single Number](./questions/136.Single_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/single-number/)|
+|[191. Number of 1 Bits](./questions/191.Number_of_1_bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-1-bits/)|
+|[190. Reverse Bits](./questions/190.Reverse_Bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-bits/)|
+|[67. Add Binary](./questions/67.Add_Binary_(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-binary/)|
 
 <br>
 
@@ -268,6 +272,8 @@ Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k`
 
 |Math|||
 |---|---|---|
+|[9. Palindrome Number](./questions/9.Palindrome_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-number/)|
+|[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
 
 <br>
 
@@ -290,6 +296,8 @@ Similar to 2D DP, in 1D DP we only create a dictionary {} for cache, save time c
 |---|---|---|
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
 |[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
+|[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
+|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
 
 <br>
 
