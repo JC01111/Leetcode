@@ -1,5 +1,5 @@
 ## 0. Name (Easy)
-**Date and Time:** Jul 3, 2024,  (EST)
+**Date and Time:** Jul 5, 2024,  (EST)
 
 Link: 
 
