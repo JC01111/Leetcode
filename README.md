@@ -82,7 +82,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 
 ### Sliding Window
 
-Sliding Window technique is similar to Two Pointers, usually use a left pointer as a "Pivot" to know where we start recently and then update `left += 1`.
+Sliding Window technique is similar to Two Pointers, usually use a left pointer as a "Pivot" to know where we start recently and then update `left += 1`. Sometimes we may need to use **hashmaps** to find substring.
 
 |Sliding Window|||
 |---|---|---|
@@ -91,6 +91,9 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |[209. Minimum Size Subarray Sum](./questions/209.Minimum_Size_Subarray_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-size-subarray-sum/)|
 |[424. Longest Repeating Character Replacement](./questions/424.Longest_Repeating_Character_Replacement(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-repeating-character-replacement/)|
+|[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|
+|[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
+|[567. Permutation in String](./questions/567.Permutation_in_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutation-in-string/)|
 
 <br>
 
@@ -98,9 +101,14 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 
 ### Matrix
 
+The trick is to use pointers to keep in track of the boundaries. Then we shrink the boundaries after we finish a traverse or something.
+
 |Matrix|||
 |---|---|---|
 |[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|[Link](https://leetcode.com/problems/valid-sudoku/)|
+|[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)|
+|[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
+|[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
 
 <br>
 
@@ -115,6 +123,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
 |[219. Contains Duplicate II](./questions/219.Contains_Duplicate_II_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
 |[383. Ransom Note](./questions/383.Ransom_Note_(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
+|[242. Valid Anagram](./questions/242.Valid_Anagram(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-anagram/)|
 
 <br>
 
@@ -351,6 +360,7 @@ ___
 |Others|||
 |---|---|---|
 |[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
+|[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 
 <br> <br>
 
