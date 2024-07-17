@@ -145,6 +145,9 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |---|---|---|
 |[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
+|[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
+|[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
+|[739. Daily Temperatures](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|
 
 <br>
 
@@ -164,13 +167,21 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ### Binary Tree General
 
-Binary Tree Problems usually can use Recursion to solve, start from the root, then recurse on its left subtree and right subtree.
+Binary Tree Problems usually can use Recursion to solve, start from the root, then recurse on its left subtree and right subtree to check three conditons: 1. if `not left and not right` (when both are None). 2. if `not left or not right` (when one of the node is None, not match). 3. if `left.val != right.val` (values are not the same, not match).
+
+It is also convention to use **BFS** (queue), **DFS** (stack) to check each node with the above three conditions.
 
 |Binary Tree General|||
 |---|---|---|
 |[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
 |[100. Same Tree](./questions/100.Same_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/same-tree/)|
 |[226. Invert Binary Tree](./questions/226.Invert_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/invert-binary-tree/)|
+|[101. Symmetric Tree](./questions/101.Symmetric_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/symmetric-tree/)|
+|[105. Construct Binary Tree from Preorder and Inorder Traversal](./questions/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|
+|[106. Construct Binary Tree from Inorder and Postorder Traversal](./questions/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|
+|[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
+|[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)|
+|[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|
 
 <br>
 
