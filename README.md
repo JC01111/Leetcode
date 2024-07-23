@@ -13,6 +13,7 @@ Template
 - [Sliding Window](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#sliding-window)
 - [Matrix](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#matrix)
 - [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
+- [Binary Search](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#binary-search)
 - [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
 - [Stack](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#stack)
 - [Linked List](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#linked-list)
@@ -24,7 +25,6 @@ Template
 - [Backtracking](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#backtracking)
 - [Divide & Conquer]()
 - [Kadane's Algorithm]()
-- [Binary Search]()
 - [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
 - [Bit Manupulation]()
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
@@ -129,12 +129,38 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ---
 
+### Binary Search
+This is the approach when we are required to write an algorithm with $O(log\ n)$ runtime. Usually, we just need to define the left & right pointer, then we iteratively find the mid point by `(left + right) // 2`, and compare the mid point with `target`, if `target < m`, we update the `right` by `m - 1`, if `target > m`, we update `left` by `m + 1`. 
+
+|Binary Search|||
+|---|---|---|
+|[704. Binary Search](./questions/704.Binary_Search_(Easy).md)|Easy|[Link](https://leetcode.com/problems/binary-search/)|
+|[35. Search Insert Position](./questions/35.Search_Insert_Position_(Easy).md)|Easy|[Link](https://leetcode.com/problems/search-insert-position/)|
+|[74. Search a 2D Matrix](./questions/74.Search_a_2D_Matrix_(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-a-2d-matrix/)|
+|[875. Koko Eating Bananas](./questions/875.Koko_Eating_Bananas(Medium).md)|Medium|[Link](https://leetcode.com/problems/koko-eating-bananas/)|
+|[153. Find Minimum in Rotated Sorted Array](./questions/153.Find_Minimum_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|
+|[33. Search in Rotated Sorted Array](./questions/33.Search_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)|
+|[162. Find Peak Element](./questions/162.Find_Peak_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-peak-element/)|
+|[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|
+|[4. Median of Two Sorted Arrays](./questions/4.Median_of_Two_Sorted_Arrays(Hard).md)|Hard|[Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)|
+
+<!--
+|[]()|Easy|[Link]()|
+-->
+<br>
+
+---
+
 ### Intervals
 
 |Intervals|||
 |---|---|---|
 |[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -149,6 +175,10 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[739. Daily Temperatures](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -161,6 +191,10 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
 |[21. Merge Two Sorted Lists](./questions/21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -182,7 +216,12 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|
+|[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -195,7 +234,11 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |---|---|---|
 |[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
 |[637. Average of Levels in Binary Tree](./questions/637.Average_of_Levels_in_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
+|[102. Binary Tree Level Order Traversal](./questions/102.Binary_Tree_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-level-order-traversal/)|
 
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -210,6 +253,10 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[230. Kth Smallest Element in a BST](./questions/230.Kth_Smallest_Element_in_a_BST_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
 |[98. Validate Binary Search Tree](./questions/98.Validate_Binary_Search_Tree_(Medium).md)|Medium|[Link](https://leetcode.com/problems/validate-binary-search-tree/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -220,6 +267,10 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ___
@@ -229,6 +280,10 @@ ___
 |---|---|---|
 |[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ___
@@ -244,6 +299,10 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[17. Letter Combinations of a Phone Number](./questions/17.Letter_Combinations_of_a_Phone_Number_(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|
 |[77. Combinations](./questions/77.Combinations_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combinations/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -268,19 +327,6 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 
 ---
 
-### Binary Search
-This is the approach when we are required to write an algorithm with $O(log\ n)$ runtime. Usually, we just need to define the left & right pointer, then we iteratively find the mid point by `(left + right) // 2`, and compare the mid point with `target`, if `target < m`, we update the `right` by `m - 1`, if `target > m`, we update `left` by `m + 1`. 
-
-|Binary Search|||
-|---|---|---|
-|[704. Binary Search](./questions/704.Binary_Search_(Easy).md)|Easy|[Link](https://leetcode.com/problems/binary-search/)|
-|[35. Search Insert Position](./questions/35.Search_Insert_Position_(Easy).md)|Easy|[Link](https://leetcode.com/problems/search-insert-position/)|
-|[74. Search a 2D Matrix](./questions/74.Search_a_2D_Matrix_(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-a-2d-matrix/)|
-
-<br>
-
----
-
 ### Heap
 
 Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k` elements in the minHeap. If we have `heapq.heappush()`, remember to keep the `k` elements by `pop()` out the same number of elements we `push()`. Finally, return the first element of the minHeap, which is the `k` largest element.
@@ -290,6 +336,10 @@ Create a minHeap, heapify the given array, `heapq.heappop()` until there are `k`
 |[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
 |[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -305,6 +355,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[190. Reverse Bits](./questions/190.Reverse_Bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-bits/)|
 |[67. Add Binary](./questions/67.Add_Binary_(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-binary/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -316,6 +370,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[9. Palindrome Number](./questions/9.Palindrome_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-number/)|
 |[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ---
@@ -325,6 +383,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |---|---|---|
 |[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
 
+
+<!--
+|[]()|Easy|[Link]()|
+-->
 <br>
 
 ___
