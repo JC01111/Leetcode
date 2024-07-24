@@ -235,6 +235,8 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
 |[637. Average of Levels in Binary Tree](./questions/637.Average_of_Levels_in_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
 |[102. Binary Tree Level Order Traversal](./questions/102.Binary_Tree_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-level-order-traversal/)|
+|[103. Binary Tree Zigzag Level Order Traversal](./questions/103.Binary_Tree_Zigzag_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|
+
 
 <!--
 |[]()|Easy|[Link]()|
@@ -245,17 +247,19 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 
 ### Binary Search Tree
 
-Binary Search Tree (BST) has property that the nodes on the left of the root are smaller than the root, the nodes on the right of the root are greater than the root. So, in many cases we can implement the **DFS** to perform **in-order** traversal.
+Binary Search Tree (BST) has property that the nodes on the left of the root are smaller than the root, the nodes on the right of the root are greater than the root. So, in many cases we can implement the **DFS** to perform **In-order traversal**: left -> root -> right.
 
 |Binary Search Tree|||
 |---|---|---|
 |[530. Minimum Absolute Difference in BST](./questions/530.Minimum_Absolute_Difference_in_BST_(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
 |[230. Kth Smallest Element in a BST](./questions/230.Kth_Smallest_Element_in_a_BST_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
 |[98. Validate Binary Search Tree](./questions/98.Validate_Binary_Search_Tree_(Medium).md)|Medium|[Link](https://leetcode.com/problems/validate-binary-search-tree/)|
-
+|[235. Lowest Common Ancestor of a Binary Search Tree](./questions/235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|
+|[700. Search in a Binary Search Tree](./questions/700.Search_in_a_Binary_Search_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/search-in-a-binary-search-tree/)|
+|[450. Delete Node in a BST](./questions/450.Delete_Node_in_a_BST(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-node-in-a-bst/)|
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
