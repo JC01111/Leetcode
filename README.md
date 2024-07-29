@@ -307,6 +307,8 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[46. Permutations](./questions/46.Permutations(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations/)|
 |[79. Word Search](./questions/79.Word_Search(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-search/)|
 |[40. Combination Sum II](./questions/40.Combination_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum-ii/)|
+|[131. Palindrome Partitioning](./questions/131.Palindrome_Partitioning(Medium).md)|Medium|[Link](https://leetcode.com/problems/palindrome-partitioning/)|
+|[51. N-Queens](./questions/51.N-Queens(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens/)|
 
 <!--
 |[]()|Medium|[Link]()|

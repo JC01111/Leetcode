@@ -1,5 +1,5 @@
 ## 0. Name (Medium)
-**Date and Time:** Jul 27, 2024,  (EST)
+**Date and Time:** Jul 28, 2024,  (EST)
 
 Link: 
 
@@ -42,12 +42,12 @@ Link:
 
 <br>
 
-### KeyPoints: 
+### Walk-through: 
 
 
 <br>
 
-### My Solution:
+### Python Solution:
 ```python
 
 ```
