@@ -1,5 +1,5 @@
 ## 0. Name (Medium)
-**Date and Time:** Jul 28, 2024,  (EST)
+**Date and Time:** Jul 29, 2024,  (EST)
 
 Link: 
 
@@ -53,6 +53,29 @@ Link:
 ```
 **Time Complexity:** $O()$ <br>
 **Space Complexity:** $O()$
+
+<br>
+
+### Java Solution:
+```java
+
+```
+
+<br>
+
+### C++ Solution:
+```cpp
+
+```
+
+<br>
+
+### Runtime and Memory comparison
+|Language|Runtime|Memory|
+|---|---|---|
+|Python3| ms| MB|
+|Java   | ms| MB|
+|C++    | ms| MB|
 
 <br>
 
