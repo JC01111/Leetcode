@@ -184,8 +184,9 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 
 ### Linked List
 
-|Linked List|||
-|---|---|---|
+|Linked List||||
+|---|---|---|---|
+|Problems|Difficulty|Link|Languages|
 |[141. Linked List Cycle](./questions/141.Linked_List_Cycle_(Easy).md)|Easy|[Link](https://leetcode.com/problems/linked-list-cycle/)|
 |[21. Merge Two Sorted Lists](./questions/21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
 |[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
@@ -195,9 +196,9 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)|
 |[19. Remove Nth Node From End of List](./questions/19.Remove_Nth_Node_From_End_of_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|
-|[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Medium|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|
-|[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|
-
+|[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|Python|
+|[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|Python, C++|
+|[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Python, C++|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -273,14 +274,17 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 ---
 
 ### Graph General
-|Graph General|||
-|---|---|---|
-|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|
-|[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule)|
+|Graph General||||
+|---|---|---|---|
+|Problems|Difficulty|Link|Languages|
+|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Python, C++|
+|[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|Python|
+|[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|Python|
+|[130. Surrounded Regions](./questions/130.Surrounded_Regions(Medium).md)|Medium|[Link](https://leetcode.com/problems/surrounded-regions/)|
 
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
