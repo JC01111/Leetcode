@@ -274,6 +274,9 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 ---
 
 ### Graph General
+
+[130, 147] require reverse-thinking to start running DFS on edges and add grids for some specific requirements. For other types of questions, we can run **DFS** or **BFS** iteratively to solve.
+
 |Graph General||||
 |---|---|---|---|
 |Problems|Difficulty|Link|Languages|
@@ -282,8 +285,10 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|Python|
 |[210. Course Schedule II](./questions/210.Course_Schedule_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule-ii/)|Python|
 |[130. Surrounded Regions](./questions/130.Surrounded_Regions(Medium).md)|Medium|[Link](https://leetcode.com/problems/surrounded-regions/)|Python|
+|[417. Pacific Atlantic Water Flow](./questions/417.Pacific_Atlantic_Water_Flow(Medium).md)|Medium|[Link](https://leetcode.com/problems/pacific-atlantic-water-flow/)|Python|
 |[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Python|
 |[399. Evaluate Division](./questions/399.Evaluate_Division(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-division/)|Python|
+|[]()|Hard|[Link]()|
 
 
 <!--
