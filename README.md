@@ -305,6 +305,7 @@ ___
 |Trie|||
 |---|---|---|
 |[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree)|
+|[211. Design Add and Search Words Data Structure](./questions/211.Design_Add_and_Search_Words_Data_Structure(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-add-and-search-words-data-structure/)|
 
 
 <!--
