@@ -23,15 +23,15 @@ Template
 - [Trie](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#trie)
 - [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
 - [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
-- [Divide & Conquer]()
+- [Divide & Conquer](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#divide--conquer)
 - [Greedy](https://github.com/JC01111/Leetcode_I_Solved#greedy)
-- [Kadane's Algorithm]()
+- [Kadane's Algorithm](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#kadanes-algorithm)
 - [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
-- [Bit Manupulation]()
+- [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
 - [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
 - [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
-- [Multidimensional DP]()
+- [Multidimensional DP](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#multidimensional-dp)
 - [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
 
 <br>
@@ -376,6 +376,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
 |[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)|
+|[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
 
 
 <!--
@@ -390,6 +391,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |Kadane's Algorithm|||
 |---|---|---|
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
+|[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
+
 
 <br>
 
