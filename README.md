@@ -24,11 +24,11 @@ Template
 - [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
 - [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
 - [Divide & Conquer]()
+- [Greedy](https://github.com/JC01111/Leetcode_I_Solved#greedy)
 - [Kadane's Algorithm]()
 - [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
 - [Bit Manupulation]()
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
-- [Greedy](https://github.com/JC01111/Leetcode_I_Solved#greedy)
 - [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
 - [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
 - [Multidimensional DP]()
@@ -370,10 +370,26 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ---
 
+### Greedy
+|Greedy|||
+|---|---|---|
+|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
+|[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
+|[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)|
+
+
+<!--
+|[]()|Medium|[Link]()|
+-->
+<br>
+
+---
+
 ### Kadane's Algorithm
 
 |Kadane's Algorithm|||
 |---|---|---|
+|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 
 <br>
 
@@ -421,19 +437,6 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |---|---|---|
 |[9. Palindrome Number](./questions/9.Palindrome_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-number/)|
 |[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
-
-
-<!--
-|[]()|Easy|[Link]()|
--->
-<br>
-
----
-
-### Greedy
-|Greedy|||
-|---|---|---|
-|[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
 
 
 <!--
