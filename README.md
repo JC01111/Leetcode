@@ -356,6 +356,9 @@ In general, create a hashmap {} and store elements and their indices into the ha
 
 ### Divide & Conquer
 
+In most cases, we need to first find the mid point by `len(nums) // 2`, then recursively pass in mid point's left and right.
+<br> **Divide & Conquer** means we first divide the problem into several subproblems, we solve them and them merge teh results together.
+
 |Divide & Conquer|||
 |---|---|---|
 |[108. Convert Sorted Array to Binary Search Tree](./questions/108.Convert_Sorted_Array_to_Binary_Search_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|
@@ -377,7 +380,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
 |[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)|
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
-
+|[846. Hand of Straights](./questions/846.Hand_of_Straights(Medium).md)|Medium|[Link](https://leetcode.com/problems/hand-of-straights/)|
+|[1296. Divide Array in Sets of K Consecutive Numbers](./questions/1296.Divide_Array_in_Sets_of_K_Consecutive_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -387,6 +391,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 ---
 
 ### Kadane's Algorithm
+Kadane's Algorithm maintains a `curSum` which keep tracks of contiguous summation, it is always `0` if the `curSum + nums[i] < 0`, which means we will not take this element at index `i`. If `curSum > 0` we will keep unpdating `curSum += nums[i]` and update `maxSum = max(maxSum, curSum)`. This is the standard approach of Kadane's algorithm.
 
 |Kadane's Algorithm|||
 |---|---|---|
