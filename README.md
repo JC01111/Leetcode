@@ -374,6 +374,9 @@ In most cases, we need to first find the mid point by `len(nums) // 2`, then rec
 ---
 
 ### Greedy
+
+Greedy problems are hard to identify pattern, but one type of them can be solved by **Kadane's Algorithm**.
+
 |Greedy|||
 |---|---|---|
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
@@ -382,6 +385,9 @@ In most cases, we need to first find the mid point by `len(nums) // 2`, then rec
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
 |[846. Hand of Straights](./questions/846.Hand_of_Straights(Medium).md)|Medium|[Link](https://leetcode.com/problems/hand-of-straights/)|
 |[1296. Divide Array in Sets of K Consecutive Numbers](./questions/1296.Divide_Array_in_Sets_of_K_Consecutive_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|
+|[763. Partition Labels](./questions/763.Partition_Labels(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-labels/)|
+|[678. Valid Parenthesis String](./questions/678.Valid_Parenthesis_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-parenthesis-string/)|
+
 
 <!--
 |[]()|Medium|[Link]()|
