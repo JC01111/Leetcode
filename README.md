@@ -59,7 +59,13 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
 |[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)|
 |[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)|
+|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|
+|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|
 
+
+<!--
+|[]()|Medium|[Link]()|
+-->
 <br>
 
 ---
@@ -77,6 +83,10 @@ Two pointers can save space complexity, because it only uses constant space comp
 |[15. 3Sum](./questions/15.3Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/3sum/)|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
 
+
+<!--
+|[]()|Medium|[Link]()|
+-->
 <br>
 
 ---
@@ -96,6 +106,10 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 |[567. Permutation in String](./questions/567.Permutation_in_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutation-in-string/)|
 
+
+<!--
+|[]()|Medium|[Link]()|
+-->
 <br>
 
 ---
@@ -111,6 +125,10 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
 |[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
 
+
+<!--
+|[]()|Medium|[Link]()|
+-->
 <br>
 
 ---
@@ -387,6 +405,7 @@ Greedy problems are hard to identify pattern, but one type of them can be solved
 |[1296. Divide Array in Sets of K Consecutive Numbers](./questions/1296.Divide_Array_in_Sets_of_K_Consecutive_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|
 |[763. Partition Labels](./questions/763.Partition_Labels(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-labels/)|
 |[678. Valid Parenthesis String](./questions/678.Valid_Parenthesis_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-parenthesis-string/)|
+|[1899. Merge Triplets to Form Target Triplet](./questions/1899.Merge_Triplets_to_Form_Target_Triplet(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)|
 
 
 <!--
