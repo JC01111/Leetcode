@@ -483,15 +483,22 @@ ___
 
 ### 1D DP
 
-Similar to 2D DP, in 1D DP we only create a dictionary {} for cache, save time complexity to check repeated cases.
+1D DP creates dictionary{} or list[] for cache, save time complexity to check repeated cases.
 
 |1D DP|||
 |---|---|---|
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
-|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
+|[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
+|[1137. N-th Tribonacci Number](./questions/1137.N-th_Tribonacci_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/n-th-tribonacci-number/)|
 |[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
 |[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
+|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
+|[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
 
+
+<!--
+|[]()|Medium|[Link]()|
+-->
 <br>
 
 ---
