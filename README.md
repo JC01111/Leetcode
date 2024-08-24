@@ -42,9 +42,9 @@ ___
 
 General cases we want to replace element with non-repeating element in `nums`, so we set an index to keep track of repeating position.
 
-|Array / String|||
-|---|---|---|
-|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
+|Array / String|||||
+|---|---|---|---|---|
+|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Python|Amazon|
 |[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|
 |[27. Remove Element](./questions/27.Remove_Element_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)|
 |[26. Remove Duplicates from Sorted Array](./questions/26.Remove_Duplicates_from_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|
@@ -60,8 +60,9 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
 |[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)|
 |[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)|
-|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|
-|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|
+|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Python|Amazon|
+|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Python|Amazon|
+|[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Python|Cisco|
 
 
 <!--
@@ -75,15 +76,15 @@ General cases we want to replace element with non-repeating element in `nums`, s
 
 Two pointers can save space complexity, because it only uses constant space complexity $O(1)$. Usually use `l, r` pointers and either increment `l` or decrement `r` depends on the current `sum` compare with `target` value.
 
-|Two Pointers|||
-|---|---|---|
+|Two Pointers|||||
+|---|---|---|---|---|
 |[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|
 |[167. Two Sum II - Input Array Is Sorted](./questions/167.Two_Sum_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
 |[392. Is Subsequence](./questions/392.Is_Subsequence(Easy).md)|Easy|[Link](https://leetcode.com/problems/is-subsequence/)|
 |[11. Container With Most Water](./questions/11.Container_With_Most_Water(Medium).md)|Medium|[Link](https://leetcode.com/problems/container-with-most-water/)|
 |[15. 3Sum](./questions/15.3Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/3sum/)|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
-|[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|
+|[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Python|Amazon, Cisco|
 
 
 <!--
@@ -301,7 +302,6 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Graph General||||
 |---|---|---|---|
-|Problems|Difficulty|Link|Languages|
 |[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Python, C++|
 |[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|Python, Java|
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|Python|
