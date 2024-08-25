@@ -513,7 +513,12 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 |---|---|---|
 |[62. Unique Paths](./questions/62.Unique_Paths_(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths/)|
 |[72. Edit Distance](./questions/72.Edit_Distance_(Medium).md)|Medium|[Link](https://leetcode.com/problems/edit-distance/)|
+|[1143. Longest Common Subsequence](./questions/1143.Longest_Common_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-common-subsequence/)|
 
+
+<!--
+|[]()|Medium|[Link]()|
+-->
 <br>
 
 ___
