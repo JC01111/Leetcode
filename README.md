@@ -26,12 +26,11 @@ Template
 - [Divide & Conquer](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#divide--conquer)
 - [Greedy](https://github.com/JC01111/Leetcode_I_Solved#greedy)
 - [Kadane's Algorithm](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#kadanes-algorithm)
+- [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
+- [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
 - [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
-- [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
-- [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
-- [Multidimensional DP](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#multidimensional-dp)
 - [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
 
 <br>
@@ -428,6 +427,49 @@ Kadane's Algorithm maintains a `curSum` which keep tracks of contiguous summatio
 
 <br>
 
+___
+
+### 1D DP
+
+1D DP creates dictionary{} or list[] for cache, save time complexity to check repeated cases.
+
+|1D DP|||
+|---|---|---|
+|[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
+|[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
+|[1137. N-th Tribonacci Number](./questions/1137.N-th_Tribonacci_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/n-th-tribonacci-number/)|
+|[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
+|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
+|[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
+|[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)|
+|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
+|[790. Domino and Tromino Tiling](./questions/790.Domino_and_Tromino_Tiling(Medium).md)|Medium|[Link](https://leetcode.com/problems/domino-and-tromino-tiling/)|
+
+
+<!--
+|[]()|Medium|[Link]()|
+-->
+<br>
+
+---
+
+### 2D DP
+
+In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table.
+
+|2D DP|||
+|---|---|---|
+|[62. Unique Paths](./questions/62.Unique_Paths_(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths/)|
+|[72. Edit Distance](./questions/72.Edit_Distance_(Medium).md)|Medium|[Link](https://leetcode.com/problems/edit-distance/)|
+|[1143. Longest Common Subsequence](./questions/1143.Longest_Common_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-common-subsequence/)|
+|[518. Coin Change II](./questions/518.Coin_Change_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change-ii/)|
+
+
+<!--
+|[]()|Medium|[Link]()|
+-->
+<br>
+
 ---
 
 ### Heap
@@ -477,58 +519,6 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 <!--
 |[]()|Easy|[Link]()|
 -->
-<br>
-
-___
-
-### 1D DP
-
-1D DP creates dictionary{} or list[] for cache, save time complexity to check repeated cases.
-
-|1D DP|||
-|---|---|---|
-|[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
-|[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
-|[1137. N-th Tribonacci Number](./questions/1137.N-th_Tribonacci_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/n-th-tribonacci-number/)|
-|[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
-|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
-|[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
-|[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)|
-|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
-|[790. Domino and Tromino Tiling](./questions/790.Domino_and_Tromino_Tiling(Medium).md)|Medium|[Link](https://leetcode.com/problems/domino-and-tromino-tiling/)|
-
-
-<!--
-|[]()|Medium|[Link]()|
--->
-<br>
-
----
-
-### 2D DP
-
-In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table.
-
-|2D DP|||
-|---|---|---|
-|[62. Unique Paths](./questions/62.Unique_Paths_(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths/)|
-|[72. Edit Distance](./questions/72.Edit_Distance_(Medium).md)|Medium|[Link](https://leetcode.com/problems/edit-distance/)|
-|[1143. Longest Common Subsequence](./questions/1143.Longest_Common_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-common-subsequence/)|
-|[518. Coin Change II](./questions/518.Coin_Change_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change-ii/)|
-
-
-<!--
-|[]()|Medium|[Link]()|
--->
-<br>
-
-___
-
-### Multidimensional DP
-
-|Multidimensional DP|||
-|---|---|---|
-
 <br>
 
 ---
