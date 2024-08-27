@@ -455,7 +455,7 @@ ___
 
 ### 2D DP
 
-In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table.
+In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table. **Usually**, we can reduce from storing the whole 2d table into only storing the previous row/col.
 
 |2D DP|||
 |---|---|---|
@@ -463,6 +463,7 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 |[72. Edit Distance](./questions/72.Edit_Distance_(Medium).md)|Medium|[Link](https://leetcode.com/problems/edit-distance/)|
 |[1143. Longest Common Subsequence](./questions/1143.Longest_Common_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-common-subsequence/)|
 |[518. Coin Change II](./questions/518.Coin_Change_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change-ii/)|
+|[309. Best Time to Buy and Sell Stock with Cooldown](./questions/309.Best_Time_ti_Buy_and_Sell_Stock_with_Cooldown(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|
 
 
 <!--
