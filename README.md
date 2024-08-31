@@ -479,13 +479,14 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 
 Usually we need to use create a `heap = []`, then use `heapq.heapify` or just `heapq.heappush` to make that heap becomes a `minHeap` by default. If we want a `maxHeap`, we need to store the negative value `heapq.heappush(maxHeap, -i)`, so the top will be the max value, when we pop the element, remember to **negate** it back.
 
-|Heap||||
-|---|---|---|---|
+|Heap|||||
+|---|---|---|---|---|
 |[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
 |[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|
 |[1046. Last Stone Weight](./questions/1046.Last_Stone_Weight(Easy).md)|Easy|[Link](https://leetcode.com/problems/last-stone-weight/)|Python, Java, C++|
 |[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)|Python|
-|[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)|
+|[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
+|[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)|Python|Use two heaps|
 |[621. Task Scheduler](./questions/621.Task_Scheduler(Medium).md)|Medium|[Link](https://leetcode.com/problems/task-scheduler/)|Python|
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
 
