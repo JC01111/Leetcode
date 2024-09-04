@@ -344,10 +344,11 @@ ___
 |Intervals|||
 |---|---|---|
 |[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
+|[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|
 
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 
 <br>
@@ -508,6 +509,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[191. Number of 1 Bits](./questions/191.Number_of_1_bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-1-bits/)|
 |[190. Reverse Bits](./questions/190.Reverse_Bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-bits/)|
 |[67. Add Binary](./questions/67.Add_Binary_(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-binary/)|
+|[371. Sum of Two Integers](./questions/371.Sum_of_Two_Integers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-of-two-integers/)|
+
 
 
 <!--
@@ -523,7 +526,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |---|---|---|
 |[9. Palindrome Number](./questions/9.Palindrome_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-number/)|
 |[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
-
+|[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 
 <!--
 |[]()|Easy|[Link]()|
