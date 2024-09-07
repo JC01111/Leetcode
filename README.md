@@ -28,7 +28,7 @@ Template
 - [Kadane's Algorithm](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#kadanes-algorithm)
 - [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
 - [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
-- [Heap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#heap)
+- [Heap](https://github.com/JC01111/Leetcode?tab=readme-ov-file#heap--priority-queue)
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
 - [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
@@ -62,6 +62,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Python|Amazon|
 |[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Python|Amazon|
 |[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Python|Cisco|
+|[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
+|[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)|
 
 
 <!--
@@ -341,10 +343,16 @@ ___
 
 ### Intervals
 
+Usually, we need to sort the array first to better find the overlapping intervals. We compare two intervals with the last element of the interval and the first element of another interval to know whether they are overlapped or not.
+
 |Intervals|||
 |---|---|---|
-|[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
 |[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|
+|[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
+|[435. Non-overlapping Intervals](./questions/435.Non-overlapping_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/non-overlapping-intervals/)|
+|[228. Summary Ranges](./questions/228.Summary_Ranges(Easy).md)|Easy|[Link](https://leetcode.com/problems/summary-ranges/)|
+|[452. Minimum Number of Arrows to Burst Balloons](./questions/452.Minimum_Number_of_Arrows_to_Burst_Balloons(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)|
+|[1851. Minimum Interval to Include Each Query](./questions/1851.Minimum_Interval_to_Include_Each_Query(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-interval-to-include-each-query/)|
 
 
 <!--
@@ -488,7 +496,7 @@ Usually we need to use create a `heap = []`, then use `heapq.heapify` or just `h
 |[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)|Python|
 |[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)|Python|Use two heaps|
-|[621. Task Scheduler](./questions/621.Task_Scheduler(Medium).md)|Medium|[Link](https://leetcode.com/problems/task-scheduler/)|Python|
+|[621. Task Scheduler](./questions/621.Task_Scheduler(Medium).md)|Medium|[Link](https://leetcode.com/problems/task-scheduler/)|Python|Use heap and deque|
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
 
 
@@ -539,7 +547,6 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 |Others|||
 |---|---|---|
-|[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
 |[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 |[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)|
 
