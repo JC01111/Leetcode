@@ -72,11 +72,12 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[28. Find the Index of the First Occurrence in a String](./questions/28.Find_the_Index_of_the_First_Occurrence_in_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|
 |[380. Insert Delete GetRandom O(1)](./questions/380.Insert_Delete_GetRandom_O(1)(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-delete-getrandom-o1/)|
 |[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)|
+|[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
 |LeetCode 75|||||
 |[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|
 |[1071. Greatest Common Divisor of Strings](./questions/1071.Greatest_Common_Divisor_of_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|
 |[1431. Kids With the Greatest Number of Candies](./questions/1431.Kids_With_the_Greatest_Number_of_Candies(Easy).md)|Easy|[Link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)||Easy Not worthy to redo|
-
+|[605. Can Place Flowers](./questions/605.Can_Place_Flowers(Easy).md)|Easy|[Link](https://leetcode.com/problems/can-place-flowers/)|
 
 <!--
 |[]()|Medium|[Link]()|
