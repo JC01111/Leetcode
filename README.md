@@ -43,7 +43,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 
 |Array / String|||||
 |---|---|---|---|---|
-|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Python|Amazon|
+|LeetCode 150|||
 |[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|
 |[27. Remove Element](./questions/27.Remove_Element_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)|
 |[26. Remove Duplicates from Sorted Array](./questions/26.Remove_Duplicates_from_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|
@@ -59,25 +59,29 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
 |[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)|
 |[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)|
-|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Python|Amazon|
-|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Python|Amazon|
 |[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Python|Cisco|
-|[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
-|[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)|
 |[274. H-Index](./questions/274.H-Index(Medium).md)|Medium|[Link](https://leetcode.com/problems/h-index/)|
-|[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)|
-|[128. Longest Consecutive Sequence](./questions/128.Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-consecutive-sequence/)|
 |[13. Roman to Integer](./questions/13.Roman_to_Integer(Easy).md)|Easy|[Link](https://leetcode.com/problems/roman-to-integer/)|
 |[12. Integer to Roman](./questions/12.Integer_to_Roman(Medium).md)|Medium|[Link](https://leetcode.com/problems/integer-to-roman/)|
 |[28. Find the Index of the First Occurrence in a String](./questions/28.Find_the_Index_of_the_First_Occurrence_in_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|
 |[380. Insert Delete GetRandom O(1)](./questions/380.Insert_Delete_GetRandom_O(1)(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-delete-getrandom-o1/)|
 |[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)|
+|Blind 75|||
+|[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
+|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Python|Amazon|
+|[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)|
+|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Python|Amazon|
+|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Python|Amazon|
 |[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
+|[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)|
+|[128. Longest Consecutive Sequence](./questions/128.Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-consecutive-sequence/)|
 |LeetCode 75|||||
 |[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|
 |[1071. Greatest Common Divisor of Strings](./questions/1071.Greatest_Common_Divisor_of_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|
 |[1431. Kids With the Greatest Number of Candies](./questions/1431.Kids_With_the_Greatest_Number_of_Candies(Easy).md)|Easy|[Link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)||Easy Not worthy to redo|
 |[605. Can Place Flowers](./questions/605.Can_Place_Flowers(Easy).md)|Easy|[Link](https://leetcode.com/problems/can-place-flowers/)|
+|[345. Reverse Vowels of a String](./questions/345.Reverse_Vowels_of_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-vowels-of-a-string/)|
+
 
 <!--
 |[]()|Medium|[Link]()|
