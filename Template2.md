@@ -1,5 +1,5 @@
 ## 0. Name (Medium)
-**Date and Time:** Sep 17, 2024,  (EST)
+**Date and Time:** Sep 18, 2024,  (EST)
 
 Link: 
 
