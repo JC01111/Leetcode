@@ -336,6 +336,8 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[841. Keys and Rooms](./questions/841.Keys_and_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/keys-and-rooms/)|Graph DFS|
 |[547. Number of Provinces](./questions/547.Number_of_Provinces(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-provinces/)|Graph DFS|
 |[1466. Reorder Routes to Make All Paths Lead to the City Zero](./questions/1466.Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|Graph DFS|
+|[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|
+|[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
 
 
 <!--
