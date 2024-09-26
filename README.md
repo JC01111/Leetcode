@@ -20,6 +20,7 @@ Template
 - [Binary Tree BFS](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-bfs)
 - [Binary Search Tree](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-search-tree)
 - [Graph General](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#graph-general)
+- [Advanced Graph]()
 - [Trie](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#trie)
 - [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
 - [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
@@ -338,6 +339,19 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[1466. Reorder Routes to Make All Paths Lead to the City Zero](./questions/1466.Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|Graph DFS|
 |[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|
 |[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
+
+
+<!--
+|[]()|Medium|[Link]()|
+-->
+<br>
+
+---
+
+### Advanced Graph (Shortest Path)
+|Advanced Graph||||
+|---|---|---|---|
+|[743. Network Delay Time](./questions/743.Network_Delay_Time(Medium).md)|Medium|[Link](https://leetcode.com/problems/network-delay-time/)| Dijkstra's|
 
 
 <!--

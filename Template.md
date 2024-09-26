@@ -1,5 +1,5 @@
-## 0. Name (Easy)
-**Date and Time:** Jul 5, 2024,  (EST)
+## 0. Name (Medium)
+**Date and Time:** Sep 25, 2024,  (EST)
 
 Link: 
 
@@ -11,6 +11,9 @@ Link:
 <br>
 
 **Example 1:**
+
+<img src="../images" width=400>
+
 > **Input:**
 > 
 > **Output:**
@@ -33,25 +36,21 @@ Link:
 
 <br>
 
-### KeyPoints: 
+#### Constraints:
+* 
+
+* 
+
+* 
+
+<br>
+
+### Walk-through: 
 
 
 <br>
 
-### Wrong answer:
-```python
-
-```
-
-<br>
-
-### My Solution:
-```python
-
-```
-<br>
-
-### Alternative Solution:
+### Python Solution:
 ```python
 
 ```
