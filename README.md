@@ -82,6 +82,9 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1431. Kids With the Greatest Number of Candies](./questions/1431.Kids_With_the_Greatest_Number_of_Candies(Easy).md)|Easy|[Link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)||Easy Not worthy to redo|
 |[605. Can Place Flowers](./questions/605.Can_Place_Flowers(Easy).md)|Easy|[Link](https://leetcode.com/problems/can-place-flowers/)|
 |[345. Reverse Vowels of a String](./questions/345.Reverse_Vowels_of_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-vowels-of-a-string/)|
+|Miscellaneous||||
+|[179. Largest Number](./questions/179.Largest_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/largest-number/description/)|Python|Google OA|
+|[1827. Minimum Operations to Make the Array Increasing](./questions/1827.Minimum_Operations_to_Make_the_Array_Increasing(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description/)|Python|Google OA|
 
 
 <!--
@@ -354,6 +357,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |---|---|---|---|
 |[743. Network Delay Time](./questions/743.Network_Delay_Time(Medium).md)|Medium|[Link](https://leetcode.com/problems/network-delay-time/)| Dijkstra's|
 |[787. Cheapest Flights Within K Stops](./questions/787.Cheapest_Flights_Within_K_Stops(Medium).md)|Medium|[Link](https://leetcode.com/problems/cheapest-flights-within-k-stops/)|Bellman Ford|
+|[269. Alien Dictionary](./questions/269.Alien_Dictionary(Hard).md)|Hard|[Link](https://leetcode.com/problems/alien-dictionary/)|Topological Sort/Post-order DFS|
 
 
 <!--
