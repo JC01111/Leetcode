@@ -109,7 +109,8 @@ Two pointers can save space complexity, because it only uses constant space comp
 |[15. 3Sum](./questions/15.3Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/3sum/)|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
 |[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Python|Amazon, Cisco|
-
+|[283. Move Zeroes](./questions/283.Move_Zeroes(Easy).md)|Easy|[Link](https://leetcode.com/problems/move-zeroes/)|
+|[1679. Max Number of K-Sum Pairs](./questions/1679.Max_Number_of_K-Sum_Pairs(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -132,6 +133,9 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|
 |[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 |[567. Permutation in String](./questions/567.Permutation_in_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutation-in-string/)|
+|LeetCode 75|||
+|[643. Maximum Average Subarray I](./questions/643.Maximum_Average_Subarray_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-average-subarray-i/)|
+|[1456. Maximum Number of Vowels in a Substring of Given Length](./questions/1456.Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|
 
 
 <!--
