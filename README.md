@@ -106,6 +106,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 |[167. Two Sum II - Input Array Is Sorted](./questions/167.Two_Sum_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
 |[392. Is Subsequence](./questions/392.Is_Subsequence(Easy).md)|Easy|[Link](https://leetcode.com/problems/is-subsequence/)|
 |[11. Container With Most Water](./questions/11.Container_With_Most_Water(Medium).md)|Medium|[Link](https://leetcode.com/problems/container-with-most-water/)|
+|[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
 |[15. 3Sum](./questions/15.3Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/3sum/)|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
 |[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Python|Amazon, Cisco|
@@ -140,6 +141,8 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
 |[1493. Longest Subarray of 1's After Deleting One Element](./questions/1493.Longest_Subarray_of_1's_After_Deleting_One_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?envType=study-plan-v2&envId=leetcode-75)|Similar to 487|
+|[1004. Max Consecutive Ones III](./questions/1004.Max_Consecutive_Ones_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-iii/)|
+
 
 <!--
 |[]()|Medium|[Link]()|
