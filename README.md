@@ -137,11 +137,11 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |LeetCode 75|||
 |[643. Maximum Average Subarray I](./questions/643.Maximum_Average_Subarray_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-average-subarray-i/)|
 |[1456. Maximum Number of Vowels in a Substring of Given Length](./questions/1456.Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|
+|[1493. Longest Subarray of 1's After Deleting One Element](./questions/1493.Longest_Subarray_of_1's_After_Deleting_One_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?envType=study-plan-v2&envId=leetcode-75)|Similar to 487|
+|[1004. Max Consecutive Ones III](./questions/1004.Max_Consecutive_Ones_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-iii/)|
 |Miscellaneous|||
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
-|[1493. Longest Subarray of 1's After Deleting One Element](./questions/1493.Longest_Subarray_of_1's_After_Deleting_One_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?envType=study-plan-v2&envId=leetcode-75)|Similar to 487|
-|[1004. Max Consecutive Ones III](./questions/1004.Max_Consecutive_Ones_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-iii/)|
 
 
 <!--
