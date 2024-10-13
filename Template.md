@@ -1,5 +1,5 @@
 ## 0. Name (Medium)
-**Date and Time:** Oct 11, 2024,  (EST)
+**Date and Time:** Oct 12, 2024,  (EST)
 
 Link: 
 
@@ -11,9 +11,6 @@ Link:
 <br>
 
 **Example 1:**
-
-<img src="../images" width=400>
-
 > **Input:**
 > 
 > **Output:**

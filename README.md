@@ -223,17 +223,18 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 
 ### Stack
 
-|Stack|||
-|---|---|---|
+|Stack||||
+|---|---|---|---|
 |[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[739. Daily Temperatures](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|
-
+|Miscellaneous|||
+|[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google VO|
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
@@ -270,9 +271,9 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 
 It is also convention to use **BFS** (queue), **DFS** (stack) to check each node with the above three conditions.
 
-|Binary Tree General|||
-|---|---|---|
-|[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
+|Binary Tree General||||
+|---|---|---|---|
+|[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|DFS|
 |[100. Same Tree](./questions/100.Same_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/same-tree/)|
 |[226. Invert Binary Tree](./questions/226.Invert_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/invert-binary-tree/)|
 |[101. Symmetric Tree](./questions/101.Symmetric_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/symmetric-tree/)|
@@ -522,8 +523,8 @@ ___
 
 In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table. **Usually**, we can reduce from storing the whole 2d table into only storing the previous row/col.
 
-|2D DP|||
-|---|---|---|
+|2D DP||||
+|---|---|---|---|
 |[62. Unique Paths](./questions/62.Unique_Paths_(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths/)|
 |[72. Edit Distance](./questions/72.Edit_Distance_(Medium).md)|Medium|[Link](https://leetcode.com/problems/edit-distance/)|
 |[1143. Longest Common Subsequence](./questions/1143.Longest_Common_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-common-subsequence/)|
@@ -531,7 +532,9 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 |[97. Interleaving String](./questions/97.Interleaving_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/interleaving-string/)|
 |[309. Best Time to Buy and Sell Stock with Cooldown](./questions/309.Best_Time_to_Buy_and_Sell_Stock_with_Cooldown(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)|
 |[714. Best Time to Buy and Sell Stock with Transaction Fee](./questions/714.Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|
-
+|LeetCode 150||||
+|[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
+|LeetCode 75||||
 
 <!--
 |[]()|Medium|[Link]()|
