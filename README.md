@@ -31,6 +31,7 @@ Template
 - [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
 - [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
 - [Heap](https://github.com/JC01111/Leetcode?tab=readme-ov-file#heap--priority-queue)
+- [Prefix Sum](https://github.com/JC01111/Leetcode?tab=readme-ov-file#prefix-sum)
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
 - [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
@@ -576,6 +577,24 @@ Usually we need to use create a `heap = []`, then use `heapq.heapify` or just `h
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)|Python|Use two heaps|
 |[621. Task Scheduler](./questions/621.Task_Scheduler(Medium).md)|Medium|[Link](https://leetcode.com/problems/task-scheduler/)|Python|Use heap and deque|
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
+
+
+<!--
+|[]()|Medium|[Link]()|
+-->
+<br>
+
+___
+
+### Prefix Sum
+
+Given an array arr[] of size N, find the prefix sum of the array. A prefix sum array is another array prefixSum[] of the same size, such that the value of prefixSum[i] is arr[0] + arr[1] + arr[2] . . . arr[i].
+
+|Prefix Sum|||||
+|---|---|---|---|---|
+|LeetCode 75|||
+|[1732. Find the Highest Altitude](./questions/1732.Find_the_Highest_Altitude(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-highest-altitude/)|
+|[724. Find Pivot Index](./questions/724.Find_Pivot_Index(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-pivot-index/)|Maintain prefixSum and suffixSum, return i when they are equal|
 
 
 <!--
