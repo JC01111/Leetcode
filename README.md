@@ -441,17 +441,19 @@ Usually, we need to sort the array first to better find the overlapping interval
 
 In general, create a hashmap {} and store elements and their indices into the hashmap as the for-loop goes, then in the for loop we check if an element has already in the hashmap or not, or in the case we want to decrement the number of times we have seen an element in the hashmap.
 
-|Hashmap|||
-|---|---|---|
+|Hashmap||||
+|---|---|---|---|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
 |[219. Contains Duplicate II](./questions/219.Contains_Duplicate_II_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
 |[383. Ransom Note](./questions/383.Ransom_Note_(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
 |[242. Valid Anagram](./questions/242.Valid_Anagram(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-anagram/)|
+|Miscellaneous|||
+|[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
+
 
 <!--
 |[]()|Easy|[Link]()|
 -->
-
 <br>
 
 ---
