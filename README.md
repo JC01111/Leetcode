@@ -89,7 +89,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |Miscellaneous||||
 |[179. Largest Number](./questions/179.Largest_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/largest-number/description/)|Python|Google OA|
 |[1827. Minimum Operations to Make the Array Increasing](./questions/1827.Minimum_Operations_to_Make_the_Array_Increasing(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description/)|Python|Google OA|
-
+|[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Python|Google OA|
 
 <!--
 |[]()|Medium|[Link]()|
