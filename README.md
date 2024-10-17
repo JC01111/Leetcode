@@ -145,7 +145,7 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |Miscellaneous|||
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
-
+|[3318. Find X-Sum of All K-Long Subarrays I](./questions/3318.Find_X-Sum_of_All_K-Long_Subarrays_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)|Google Tag|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -202,8 +202,8 @@ This is the approach when we are required to write an algorithm with $O(log\ n)$
 
 Backtracing is recursion with base case(s), we have to first find the base case(s), if the case satisfies the base case condition that we can `append` the desired answer then return, and continue the recursion by `i+1`.
 
-|Backtracking|||
-|---|---|---|
+|Backtracking|||||
+|---|---|---|---|---|
 |[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|
 |[90. Subsets II](./questions/90.Subsets_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets-ii/)|
 |[39. Combination Sum](./questions/39.Combination_Sum_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum/)|
@@ -217,6 +217,8 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[131. Palindrome Partitioning](./questions/131.Palindrome_Partitioning(Medium).md)|Medium|[Link](https://leetcode.com/problems/palindrome-partitioning/)|
 |[51. N-Queens](./questions/51.N-Queens(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens/)|
 |[52. N-Queens II](./questions/52.N-Queens_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens-ii/)|
+|[386. Lexicographical Numbers](./questions/368.Lexicographical_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/lexicographical-numbers/description/)|Google Tag| Similar to combination|
+
 
 <!--
 |[]()|Medium|[Link]()|
