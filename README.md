@@ -217,7 +217,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[131. Palindrome Partitioning](./questions/131.Palindrome_Partitioning(Medium).md)|Medium|[Link](https://leetcode.com/problems/palindrome-partitioning/)|
 |[51. N-Queens](./questions/51.N-Queens(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens/)|
 |[52. N-Queens II](./questions/52.N-Queens_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens-ii/)|
-|[386. Lexicographical Numbers](./questions/368.Lexicographical_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/lexicographical-numbers/description/)|Google Tag| Similar to combination|
+|[386. Lexicographical Numbers](./questions/386.Lexicographical_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/lexicographical-numbers/description/)|Google Tag| Similar to combination|
 
 
 <!--
