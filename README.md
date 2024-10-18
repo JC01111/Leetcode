@@ -307,29 +307,32 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 
 BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and follows **LIFO**, both BFS and DFS can be implemented by `list()`.
 
-|Binary Tree BFS|||
-|---|---|---|
-|[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|
+|Binary Tree BFS||||
+|---|---|---|---|
+|[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|Standard Tree BFS|
 |[637. Average of Levels in Binary Tree](./questions/637.Average_of_Levels_in_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
 |[102. Binary Tree Level Order Traversal](./questions/102.Binary_Tree_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-level-order-traversal/)|
 |[103. Binary Tree Zigzag Level Order Traversal](./questions/103.Binary_Tree_Zigzag_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|
-
+|LeetCode 75|||
+|[1161. Maximum Level Sum of a Binary Tree](./questions/1161.Maximum_Level_Sum_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)| Similar to 199, standard BFS with slightly modification|
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
 ---
 
 ### Binary Tree DFS
-|Binary Tree DFS|||
-|---|---|---|
+|Binary Tree DFS||||
+|---|---|---|---|
+|LeetCode 75|||
 |[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
 |[872. Leaf-Similar Trees](./questions/872.Leaf_Similar_Trees(Easy).md)|Easy|[Link](https://leetcode.com/problems/leaf-similar-trees/)|
+|[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)|Standard DFS with slightly modification|
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
