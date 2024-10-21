@@ -363,8 +363,8 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 [286, 130, 417] require reverse-thinking to start running DFS on edges and add grids for some specific requirements. For other types of questions, we can run **DFS** or **BFS** iteratively to solve.
 
-|Graph General||||
-|---|---|---|---|
+|Graph General|||||
+|---|---|---|---|---|
 |[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Python, C++|
 |[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|Python, Java|
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|Python|
@@ -380,7 +380,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[433. Minimum Genetic Mutation](./questions/433.Minimum_Genetic_Mutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-genetic-mutation/)|Graph BFS|
 |LeetCode 75|||
 |[841. Keys and Rooms](./questions/841.Keys_and_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/keys-and-rooms/)|Graph DFS|
-|[547. Number of Provinces](./questions/547.Number_of_Provinces(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-provinces/)|Graph DFS|
+|[547. Number of Provinces](./questions/547.Number_of_Provinces(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-provinces/)|Graph DFS|For each unvisited city, run DFS to add all connected cities into visited(), increment res|
 |[1466. Reorder Routes to Make All Paths Lead to the City Zero](./questions/1466.Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|Graph DFS|
 |[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|
 |[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
