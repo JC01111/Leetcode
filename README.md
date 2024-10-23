@@ -25,6 +25,7 @@ Template
 - [Trie](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#trie)
 - [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
 - [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
+- [Queue](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#queue)
 - [Divide & Conquer](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#divide--conquer)
 - [Greedy](https://github.com/JC01111/Leetcode_I_Solved#greedy)
 - [Kadane's Algorithm](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#kadanes-algorithm)
@@ -464,6 +465,21 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[2352. Equal Row and Column Pairs](./questions/2352.Equal_Row_and_Column_Pairs(Medium).md)|Medium|[Link](https://leetcode.com/problems/equal-row-and-column-pairs/)|Convert each row into str(row) and save into rows{}, then form str(col) and update res = rows[str(col)]|
 |Miscellaneous|||
 |[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
+
+
+<!--
+|[]()|Easy|[Link]()|
+-->
+<br>
+
+___
+
+### Queue
+
+|Queue||||
+|------|---|-----|-----|
+|[933. Number of Recent Calls](./questions/933.Number_of_Recent_Calls(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-recent-calls/)|Maintain a deque and pop the top when time expires|
+|[649. Dota2 Senate](./questions/649.Dota2_Senate(Medium).md)|Medium|[Link](https://leetcode.com/problems/dota2-senate/)|Maintain 2 deques to fight with each party, the lower index party will win and requeue, the loser will not be added back. When one deque is empty, another party will announce victory|
 
 
 <!--
