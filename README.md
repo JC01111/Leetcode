@@ -91,6 +91,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[179. Largest Number](./questions/179.Largest_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/largest-number/description/)|Python|Google OA|
 |[1827. Minimum Operations to Make the Array Increasing](./questions/1827.Minimum_Operations_to_Make_the_Array_Increasing(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description/)|Python|Google OA|
 |[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Python|Google OA|
+|[3024. Type of Triangle](./questions/3024.Type_of_Triangle(Easy).md)|Easy|[Link](https://leetcode.com/problems/type-of-triangle/)|Google Tag|
+
 
 <!--
 |[]()|Medium|[Link]()|
@@ -238,6 +240,8 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[739. Daily Temperatures](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|
+|LeetCode 75||||
+|[2390. Removing Stars From a String](./questions/2390.Removing_Stars_From_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/removing-stars-from-a-string/)|Use stack to store each element until a "\*", we then pop the top of stack to remove "\*"s left non-star character|
 |Miscellaneous|||
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google VO|
 |[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
@@ -625,7 +629,7 @@ Given an array arr[] of size N, find the prefix sum of the array. A prefix sum a
 |LeetCode 75|||
 |[1732. Find the Highest Altitude](./questions/1732.Find_the_Highest_Altitude(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-highest-altitude/)|
 |[724. Find Pivot Index](./questions/724.Find_Pivot_Index(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-pivot-index/)|Maintain prefixSum and suffixSum, return i when they are equal|
-
+|[3028. Ant on the Boundary](./questions/3028.Ant_on_the_Boundary(Easy).md)|Easy|[Link](https://leetcode.com/problems/ant-on-the-boundary/)|Google Tag|
 
 <!--
 |[]()|Medium|[Link]()|
