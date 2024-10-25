@@ -242,9 +242,10 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[739. Daily Temperatures](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|
 |LeetCode 75||||
 |[2390. Removing Stars From a String](./questions/2390.Removing_Stars_From_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/removing-stars-from-a-string/)|Use stack to store each element until a "\*", we then pop the top of stack to remove "\*"s left non-star character|
+|[735. Asteroid Collision](./questions/735.Asteroid_Collision(Medium).md)|Medium|[Link](https://leetcode.com/problems/asteroid-collision/)|
+|[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
 |Miscellaneous|||
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google VO|
-|[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
 |[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google Tag|
 
 
@@ -264,7 +265,6 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[141. Linked List Cycle](./questions/141.Linked_List_Cycle_(Easy).md)|Easy|[Link](https://leetcode.com/problems/linked-list-cycle/)|
 |[21. Merge Two Sorted Lists](./questions/21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
 |[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
-|[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)|
 |[92. Reverse Linked List II](./questions/92.Reverse_Linked_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-linked-list-ii/)|
 |[138. Copy List with Random Pointer](./questions/138.Copy_List_With_Random_Pointer(Medium).md)|Medium|[Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|
 |[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)|
@@ -273,6 +273,11 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|Python|
 |[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|Python, C++|
 |[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Python, C++|
+|LeetCode 75|||
+|[2095. Delete the Middle Node of a Linked List](./questions/2095.Delete_the_Middle_Node_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)|Fast, Slow method to remove the middle node|
+|[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)|Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
+|[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)|
+
 
 <!--
 |[]()|Medium|[Link]()|
