@@ -2,8 +2,8 @@
 
 <!--
 Template
-|Topic|||
-|---|---|---|
+|Topic||||
+|---|---|---|---|
 |[]()|Easy|[Link]()|
 -->
 
@@ -15,6 +15,7 @@ Template
 - [Binary Search](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#binary-search)
 - [Backtracking](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#backtracking)
 - [Stack](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#stack)
+- [Monotonic Stack](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#monotonic-stack)
 - [Linked List](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#linked-list)
 - [Binary Tree General](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-general)
 - [Binary Tree BFS](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-bfs)
@@ -249,6 +250,19 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google Tag|
 
 
+<!--
+|[]()|Medium|[Link]()|
+-->
+<br>
+
+---
+
+### Monotonic Stack
+
+|Monotonic Stack||||
+|---|---|---|---|
+|[739. Daily Temperatures](./questions/739.Daily_Temperatures(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|Maintain a decreasing monotonic stack and update prev less temperature's index with day difference|
+|[901. Online Stock Span](./questions/901.Online_Stock_Span(Medium).md)|Medium|[Link](https://leetcode.com/problems/online-stock-span/)|Maintain an decreasing monotonic stack, when current price >= last elem in stack, add its span with current span, eventually append [price, span] into stack|
 
 <!--
 |[]()|Medium|[Link]()|
