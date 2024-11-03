@@ -49,7 +49,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |Array / String|||||
 |---|---|---|---|---|
 |LeetCode 150|||
-|[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|
+|[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)||Compare nums1, nums2 backward and add the larger value into the end of nums1, use three pointers to keep track|
 |[27. Remove Element](./questions/27.Remove_Element_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)|
 |[26. Remove Duplicates from Sorted Array](./questions/26.Remove_Duplicates_from_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|
 |[80. Remove Duplicates from Sorted Array II](./questions/80.Remove_Duplicates_from_Sorted_Array_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|
@@ -64,7 +64,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
 |[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)|
 |[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)|
-|[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Python|Cisco|
+|[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Cisco|
 |[274. H-Index](./questions/274.H-Index(Medium).md)|Medium|[Link](https://leetcode.com/problems/h-index/)|
 |[13. Roman to Integer](./questions/13.Roman_to_Integer(Easy).md)|Easy|[Link](https://leetcode.com/problems/roman-to-integer/)|
 |[12. Integer to Roman](./questions/12.Integer_to_Roman(Medium).md)|Medium|[Link](https://leetcode.com/problems/integer-to-roman/)|
@@ -73,12 +73,12 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)|
 |Blind 75|||
 |[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
-|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Python|Amazon|
+|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Amazon|
 |[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)|
-|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Python|Amazon|
-|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Python|Amazon|
+|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Amazon|
+|[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Amazon|
 |[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
-|[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)|
+|[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)||Maintain a list of left product, then traverse from right to left update with product, and update product * nums[i]|
 |[128. Longest Consecutive Sequence](./questions/128.Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-consecutive-sequence/)|
 |LeetCode 75|||||
 |[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|
@@ -89,9 +89,9 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[334. Increasing Triplet Subsequence](./questions/334.Increasing_Triplet_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/increasing-triplet-subsequence/)|
 |[443. String Compression](./questions/443.String_Compression(Medium).md)|Medium|[Link](https://leetcode.com/problems/string-compression/)|
 |Miscellaneous||||
-|[179. Largest Number](./questions/179.Largest_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/largest-number/description/)|Python|Google OA|
-|[1827. Minimum Operations to Make the Array Increasing](./questions/1827.Minimum_Operations_to_Make_the_Array_Increasing(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description/)|Python|Google OA|
-|[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Python|Google OA|
+|[179. Largest Number](./questions/179.Largest_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/largest-number/description/)|Google OA|
+|[1827. Minimum Operations to Make the Array Increasing](./questions/1827.Minimum_Operations_to_Make_the_Array_Increasing(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description/)|Google OA|
+|[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Google OA|
 |[3024. Type of Triangle](./questions/3024.Type_of_Triangle(Easy).md)|Easy|[Link](https://leetcode.com/problems/type-of-triangle/)|Google Tag|
 
 
@@ -369,13 +369,17 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Binary Search Tree|||
 |---|---|---|
+|LeetCode 150|||
 |[530. Minimum Absolute Difference in BST](./questions/530.Minimum_Absolute_Difference_in_BST_(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)|
 |[230. Kth Smallest Element in a BST](./questions/230.Kth_Smallest_Element_in_a_BST_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)|
 |[98. Validate Binary Search Tree](./questions/98.Validate_Binary_Search_Tree_(Medium).md)|Medium|[Link](https://leetcode.com/problems/validate-binary-search-tree/)|
-|[108. Convert Sorted Array to Binary Search Tree](./questions/108.Convert_Sorted_Array_to_Binary_Search_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|
-|[235. Lowest Common Ancestor of a Binary Search Tree](./questions/235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|
+|LeetCode 75|||
 |[700. Search in a Binary Search Tree](./questions/700.Search_in_a_Binary_Search_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/search-in-a-binary-search-tree/)|
 |[450. Delete Node in a BST](./questions/450.Delete_Node_in_a_BST(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-node-in-a-bst/)|
+|Miscellaneous|||
+|[108. Convert Sorted Array to Binary Search Tree](./questions/108.Convert_Sorted_Array_to_Binary_Search_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|
+|[235. Lowest Common Ancestor of a Binary Search Tree](./questions/235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|
+
 
 <!--
 |[]()|Medium|[Link]()|
@@ -573,15 +577,15 @@ ___
 
 1D DP creates dictionary{} or list[] for cache, save time complexity to check repeated cases.
 
-|1D DP|||
-|---|---|---|
+|1D DP||||
+|---|---|---|---|
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
 |[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
 |[1137. N-th Tribonacci Number](./questions/1137.N-th_Tribonacci_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/n-th-tribonacci-number/)|
 |[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
 |[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
 |[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
-|[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)|
+|[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)|Build a dp table from range(0, amount+1), calculate how many coins need for each amount, take the current coin + dp(a-c)|
 |[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
 |[790. Domino and Tromino Tiling](./questions/790.Domino_and_Tromino_Tiling(Medium).md)|Medium|[Link](https://leetcode.com/problems/domino-and-tromino-tiling/)|
 
@@ -609,6 +613,8 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 |LeetCode 150||||
 |[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
 |LeetCode 75||||
+|Miscellaneous||||
+|[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)|Backtrack + 2D DP|
 
 <!--
 |[]()|Medium|[Link]()|
