@@ -93,7 +93,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1827. Minimum Operations to Make the Array Increasing](./questions/1827.Minimum_Operations_to_Make_the_Array_Increasing(Easy).md)|Easy|[Link](https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description/)|Google OA|
 |[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Google OA|
 |[3024. Type of Triangle](./questions/3024.Type_of_Triangle(Easy).md)|Easy|[Link](https://leetcode.com/problems/type-of-triangle/)|Google Tag|
-
+|[2663. Lexicographically Smallest Beautiful String](./questions/2663.Lexicographically_Smallest_Beautiful_String(Hard).md)|Hard|[Link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/)|Google Tag|Increment the last element and check if current element within range of k letters, iterate to the left and make changes if needed|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -193,6 +193,7 @@ This is the approach when we are required to write an algorithm with $O(log\ n)$
 |[4. Median of Two Sorted Arrays](./questions/4.Median_of_Two_Sorted_Arrays(Hard).md)|Hard|[Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)|
 |LeetCode 75|||||
 |[374. Guess Number Higher or Lower](./questions/374.Guess_Number_Higher_or_Lower(Easy).md)|Easy|[Link](https://leetcode.com/problems/guess-number-higher-or-lower/)|
+|[2300. Successful Pairs of Spells and Potions](./questions/2300.Successful_Pairs_of_Spells_and_Potions(Medium).md)|Medium|[Link](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/)||Sort potions first and then run Binary Search on potions to find the smallest left pointer for each spell|
 |[875. Koko Eating Bananas](./questions/875.Koko_Eating_Bananas(Medium).md)|Medium|[Link](https://leetcode.com/problems/koko-eating-bananas/)||Run Binary Search on range of speed k, update r = k - 1 when hours <= h, update l = k + 1 when hours > h|
 
 <!--
@@ -437,8 +438,10 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 ___
 
 ### Trie
-|Trie|||
-|---|---|---|
+Use {} to save this current node's next characters, "*" to indicate the end of a word.
+
+|Trie|||||
+|---|---|---|---|---|
 |[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree)|
 |[211. Design Add and Search Words Data Structure](./questions/211.Design_Add_and_Search_Words_Data_Structure(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-add-and-search-words-data-structure/)|
 |[212. Word Search II](./questions/212.Word_Search_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-search-ii/)|
