@@ -32,7 +32,7 @@ Template
 - [Kadane's Algorithm](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#kadanes-algorithm)
 - [1D DP](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#1d-dp)
 - [2D DP](https://github.com/JC01111/Leetcode_I_Solved#2d-dp)
-- [Heap](https://github.com/JC01111/Leetcode?tab=readme-ov-file#heap--priority-queue)
+- [Heap](https://github.com/JC01111/Leetcode?tab=readme-ov-file#heap)
 - [Prefix Sum](https://github.com/JC01111/Leetcode?tab=readme-ov-file#prefix-sum)
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
@@ -307,14 +307,16 @@ Binary Tree Problems usually can use Recursion to solve, start from the root, th
 
 It is also convention to use **BFS** (queue), **DFS** (stack) to check each node with the above three conditions.
 
-|Binary Tree General||||
-|---|---|---|---|
+|Binary Tree General|||||
+|---|---|---|---|---|
+|LeetCode 150|||
 |[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|DFS|
 |[100. Same Tree](./questions/100.Same_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/same-tree/)|
 |[226. Invert Binary Tree](./questions/226.Invert_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/invert-binary-tree/)|
 |[101. Symmetric Tree](./questions/101.Symmetric_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/symmetric-tree/)|
 |[105. Construct Binary Tree from Preorder and Inorder Traversal](./questions/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|
 |[106. Construct Binary Tree from Inorder and Postorder Traversal](./questions/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|
+|[117. Populating Next Right Pointers in Each Node II](./questions/117.Populating_Next_Right_Pointers_in_Each_Node_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)||Run BFS on each level and set each node's next to the next node, except the last one|
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|
@@ -322,7 +324,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
@@ -625,14 +627,15 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 
 ---
 
-### Heap / Priority Queue
+### Heap
+Create a `heap = []`, then use `heapq.heapify(nums)` or just `heapq.heappush(minHeap, i)` to make a `minHeap` by default. If we want a `maxHeap`, we need to store the negative value `heapq.heappush(maxHeap, -i)`, so the top will be the max value, when we pop the element, remember to **negate** it back.
 
-Usually we need to use create a `heap = []`, then use `heapq.heapify` or just `heapq.heappush` to make that heap becomes a `minHeap` by default. If we want a `maxHeap`, we need to store the negative value `heapq.heappush(maxHeap, -i)`, so the top will be the max value, when we pop the element, remember to **negate** it back.
+$O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 
 |Heap|||||
 |---|---|---|---|---|
 |[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
-|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|
+|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)||Maintain a minHeap with k elements|
 |[1046. Last Stone Weight](./questions/1046.Last_Stone_Weight(Easy).md)|Easy|[Link](https://leetcode.com/problems/last-stone-weight/)|Python, Java, C++|
 |[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)|Python|
 |[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
