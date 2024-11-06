@@ -149,7 +149,7 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |Miscellaneous|||
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
-|[3318. Find X-Sum of All K-Long Subarrays I](./questions/3318.Find_X-Sum_of_All_K-Long_Subarrays_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)|Sliding Window, maxHeap, hashmap| Google Tag|
+|[3318. Find X-Sum of All K-Long Subarrays I](./questions/3318.Find_X-Sum_of_All_K-Long_Subarrays_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)|Google Tag|Sliding Window, maxHeap, hashmap|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -396,15 +396,15 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Graph General|||||
 |---|---|---|---|---|
-|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Python, C++|
+|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Graph BFS|Run BFS on each entry to find island that has not been visited|
 |[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|Python, Java|
-|[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|Python|
-|[210. Course Schedule II](./questions/210.Course_Schedule_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule-ii/)|Python|
-|[130. Surrounded Regions](./questions/130.Surrounded_Regions(Medium).md)|Medium|[Link](https://leetcode.com/problems/surrounded-regions/)|Python|
+|[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|DFS|Run DFS to check all the prerequisites of a course, if can be completed, remove it and set preMap[crs] = []|
+|[210. Course Schedule II](./questions/210.Course_Schedule_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule-ii/)||
+|[130. Surrounded Regions](./questions/130.Surrounded_Regions(Medium).md)|Medium|[Link](https://leetcode.com/problems/surrounded-regions/)||
 |[286. Walls and Gates](./questions/286.Walls_and_Gates(Medium).md)|Medium|[Link](https://leetcode.com/problems/walls-and-gates/)|Graph BFS|
-|[417. Pacific Atlantic Water Flow](./questions/417.Pacific_Atlantic_Water_Flow(Medium).md)|Medium|[Link](https://leetcode.com/problems/pacific-atlantic-water-flow/)|Python|
-|[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Python|
-|[399. Evaluate Division](./questions/399.Evaluate_Division(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-division/)|Python|
+|[417. Pacific Atlantic Water Flow](./questions/417.Pacific_Atlantic_Water_Flow(Medium).md)|Medium|[Link](https://leetcode.com/problems/pacific-atlantic-water-flow/)||
+|[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)||
+|[399. Evaluate Division](./questions/399.Evaluate_Division(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-division/)||
 |LeetCode 150||||
 |[909. Snakes and Ladders](./questions/909.Snakes_and_Ladders(Medium).md)|Medium|[Link](https://leetcode.com/problems/snakes-and-ladders/)|Graph BFS|
 |[127. Word Ladder](./questions/127.Word_Ladder(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-ladder/)|Graph BFS|
