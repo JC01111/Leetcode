@@ -685,9 +685,11 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[371. Sum of Two Integers](./questions/371.Sum_of_Two_Integers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-of-two-integers/)|
 |LeetCode 75||||
 |[338. Counting Bits](./questions/338.Counting_Bits(Easy).md)|Easy|[Link](https://leetcode.com/problems/counting-bits/)||Use dp to know how many 1s in the previous bits, and use i & 1 to know if the last bit is 1 or not|
+|[1318. Minimum Flips to Make a OR b Equal to c](./questions/1318.Minimum_Flips_to_Make_a_OR_b_Equal_to_c(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)||Compare the last bits of a, b, c, and count how many flips we need|
+
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Medium|[Link]()|
 -->
 <br>
 
