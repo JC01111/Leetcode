@@ -119,7 +119,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 |[11. Container With Most Water](./questions/11.Container_With_Most_Water(Medium).md)|Medium|[Link](https://leetcode.com/problems/container-with-most-water/)|
 |[1679. Max Number of K-Sum Pairs](./questions/1679.Max_Number_of_K-Sum_Pairs(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-number-of-k-sum-pairs/)|
 |Miscellaneous||||
-|[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Amazon, Cisco||
+|[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Amazon, Cisco|Use l, r ptrs to compare if s[l] == s[r] to confirm palindrome, update res with longer substring|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
 
 
@@ -674,18 +674,17 @@ Given an array arr[] of size N, find the prefix sum of the array. A prefix sum a
 ---
 
 ### Bit Manipulation
-
 For this type of question, we usually need to perform `&, |` (and, or) operation elementwise, and maybe need to shift bit by `n >> 1` or `n << 1` to move bits. Sometimes, we may need to start comparing two binary string **backward**, then return the reversed `[::-1]` version.
 
-|Bit Manipulation|||
-|---|---|---|
-|[136. Single Number](./questions/136.Single_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/single-number/)|
+|Bit Manipulation|||||
+|---|---|---|---|---|
+|[136. Single Number](./questions/136.Single_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/single-number/)||XOR will eliminate the same element|
 |[191. Number of 1 Bits](./questions/191.Number_of_1_bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-1-bits/)|
 |[190. Reverse Bits](./questions/190.Reverse_Bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-bits/)|
 |[67. Add Binary](./questions/67.Add_Binary_(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-binary/)|
 |[371. Sum of Two Integers](./questions/371.Sum_of_Two_Integers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-of-two-integers/)|
-
-
+|LeetCode 75||||
+|[338. Counting Bits](./questions/338.Counting_Bits(Easy).md)|Easy|[Link](https://leetcode.com/problems/counting-bits/)||Use dp to know how many 1s in the previous bits, and use i & 1 to know if the last bit is 1 or not|
 
 <!--
 |[]()|Easy|[Link]()|
