@@ -638,12 +638,14 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 
 |Heap|||||
 |---|---|---|---|---|
-|[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
+|LeetCode 150|||||
 |[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)||Maintain a minHeap with k elements|
-|[1046. Last Stone Weight](./questions/1046.Last_Stone_Weight(Easy).md)|Easy|[Link](https://leetcode.com/problems/last-stone-weight/)|Python, Java, C++|
-|[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)||
-|[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)||Use two heaps|
+|[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
+|NeetCode 150|||||
+|[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
+|[1046. Last Stone Weight](./questions/1046.Last_Stone_Weight(Easy).md)|Easy|[Link](https://leetcode.com/problems/last-stone-weight/)|||
+|[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)||
 |[621. Task Scheduler](./questions/621.Task_Scheduler(Medium).md)|Medium|[Link](https://leetcode.com/problems/task-scheduler/)||Use heap and deque|
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
 |LeetCode 75|||||
@@ -651,7 +653,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
