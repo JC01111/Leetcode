@@ -650,6 +650,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
 |LeetCode 75|||||
 |[2336. Smallest Number in Infinite Set](./questions/2336.Smallest_Number_in_Infinite_Set(Medium).md)|Medium|[Link](https://leetcode.com/problems/smallest-number-in-infinite-set/)||Use a variable to keep track of the smallest when heap is empty|
+|[2542. Maximum Subsequence Score](./questions/2542.Maximum_Subsequence_Score(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subsequence-score/)||Merged two nums together and sort them in descending order, maintain a heap with k elements from nums1, calculate res by curSum * val2|
 
 
 <!--
