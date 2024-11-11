@@ -361,7 +361,8 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[872. Leaf-Similar Trees](./questions/872.Leaf_Similar_Trees(Easy).md)|Easy|[Link](https://leetcode.com/problems/leaf-similar-trees/)|
 |[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)||Standard DFS with slightly modification|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)||Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
-
+|Miscellaneous||||
+|[113. Path Sum II](./questions/113.Pat_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
 
 <!--
 |[]()|Medium|[Link]()|
@@ -652,7 +653,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |LeetCode 75|||||
 |[2336. Smallest Number in Infinite Set](./questions/2336.Smallest_Number_in_Infinite_Set(Medium).md)|Medium|[Link](https://leetcode.com/problems/smallest-number-in-infinite-set/)||Use a variable to keep track of the smallest when heap is empty|
 |[2542. Maximum Subsequence Score](./questions/2542.Maximum_Subsequence_Score(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subsequence-score/)||Merged two nums together and sort them in descending order, maintain a heap with k elements from nums1, calculate res by curSum * val2|
-
+|[2462. Total Cost to Hire K Workers](./questions/2462.Total_Cost_to_Hire_K_Workers(Medium).md)|Medium|[Link](https://leetcode.com/problems/total-cost-to-hire-k-workers/)||Maintain 2 minHeaps for left and right, each of the minHeap has length `candidates`. Choose the lowest from these two minHeap, add new element to the minHeap|
 
 <!--
 |[]()|Medium|[Link]()|||
