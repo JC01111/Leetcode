@@ -323,7 +323,6 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[117. Populating Next Right Pointers in Each Node II](./questions/117.Populating_Next_Right_Pointers_in_Each_Node_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)||Run BFS on each level and set each node's next to the next node, except the last one|
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)|
-|[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
 
 
@@ -355,12 +354,14 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 ---
 
 ### Binary Tree DFS
-|Binary Tree DFS||||
-|---|---|---|---|
-|LeetCode 75|||
+|Binary Tree DFS|||||
+|---|---|---|---|---|
+|LeetCode 75||||
 |[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
 |[872. Leaf-Similar Trees](./questions/872.Leaf_Similar_Trees(Easy).md)|Easy|[Link](https://leetcode.com/problems/leaf-similar-trees/)|
-|[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)|Standard DFS with slightly modification|
+|[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)||Standard DFS with slightly modification|
+|[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)||Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
+
 
 <!--
 |[]()|Medium|[Link]()|
