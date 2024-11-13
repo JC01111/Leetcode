@@ -62,7 +62,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[58. Length of Last Word](./questions/58.Length_of_Last_Word(Easy).md)|Easy|[Link](https://leetcode.com/problems/length-of-last-word/)|
 |[151. Reverse Words in a String](./questions/151.Reverse_Words_in_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-words-in-a-string/)|
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)||Use l, r pointers to update maxLeft, maxRight, update res += maxLeft - height[l] or by maxRight, then we update maxLeft, maxRight to a greater value from height[l], height[r]|
-|[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)|
+|[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)||Find the distance to get another char on the same row. Use the normal interval - (current row * 2) to get the extra char on each interval|
 |[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)|
 |[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Cisco|
 |[274. H-Index](./questions/274.H-Index(Medium).md)|Medium|[Link](https://leetcode.com/problems/h-index/)|
