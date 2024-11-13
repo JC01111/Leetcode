@@ -70,7 +70,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[12. Integer to Roman](./questions/12.Integer_to_Roman(Medium).md)|Medium|[Link](https://leetcode.com/problems/integer-to-roman/)|
 |[28. Find the Index of the First Occurrence in a String](./questions/28.Find_the_Index_of_the_First_Occurrence_in_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|
 |[380. Insert Delete GetRandom O(1)](./questions/380.Insert_Delete_GetRandom_O(1)(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-delete-getrandom-o1/)|
-|[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)||Similar to 238, initialize an array and update the # candy to be candy[i-1] + 1 from left to right if a current rating > prev rating, then we update from right to left as well|
+|[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)||Similar to 238, initialize an array and traverse from left to right and right to left to compare their neighbor, and update res[i] accordingly|
 |Blind 75|||
 |[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Amazon|
@@ -218,7 +218,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[39. Combination Sum](./questions/39.Combination_Sum_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum/)|
 |[40. Combination Sum II](./questions/40.Combination_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum-ii/)|
 |[216. Combination Sum III](./questions/216.Combination_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum-iii/)|
-|[17. Letter Combinations of a Phone Number](./questions/17.Letter_Combinations_of_a_Phone_Number_(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|
+|[17. Letter Combinations of a Phone Number](./questions/17.Letter_Combinations_of_a_Phone_Number_(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)||Use index i to traverse each digit in the digitsMap, when len(string) == len(digits), add this to res[], increment index i|
 |[77. Combinations](./questions/77.Combinations_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combinations/)|
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[46. Permutations](./questions/46.Permutations(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations/)|
@@ -322,7 +322,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[106. Construct Binary Tree from Inorder and Postorder Traversal](./questions/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|
 |[117. Populating Next Right Pointers in Each Node II](./questions/117.Populating_Next_Right_Pointers_in_Each_Node_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)||Run BFS on each level and set each node's next to the next node, except the last one|
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
-|[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)|
+|[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)||Run DFS from root to leaf, check if curSum == targetSum|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
 
 
@@ -360,7 +360,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[104. Maximum Depth of Binary Tree](./questions/104.Maximum_Depth_of_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|
 |[872. Leaf-Similar Trees](./questions/872.Leaf_Similar_Trees(Easy).md)|Easy|[Link](https://leetcode.com/problems/leaf-similar-trees/)|
 |[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)||Standard DFS with slightly modification|
-|[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)|||
+|[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)||Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
 |Miscellaneous||||
 |[113. Path Sum II](./questions/113.Pat_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
@@ -654,7 +654,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
 |LeetCode 75|||||
 |[2336. Smallest Number in Infinite Set](./questions/2336.Smallest_Number_in_Infinite_Set(Medium).md)|Medium|[Link](https://leetcode.com/problems/smallest-number-in-infinite-set/)||Use a variable to keep track of the smallest when heap is empty|
-|[2542. Maximum Subsequence Score](./questions/2542.Maximum_Subsequence_Score(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subsequence-score/)||Merged two nums together and sort them in descending order, maintain a heap with k elements from nums1, calculate res by curSum * val2|
+|[2542. Maximum Subsequence Score](./questions/2542.Maximum_Subsequence_Score(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subsequence-score/)||Merged two nums together and sort them in descending order, maintain a heap with k elements for v1, update res by max(res, curSum * v2)|
 |[2462. Total Cost to Hire K Workers](./questions/2462.Total_Cost_to_Hire_K_Workers(Medium).md)|Medium|[Link](https://leetcode.com/problems/total-cost-to-hire-k-workers/)||Maintain 2 minHeaps for left and right, each of the minHeap has length `candidates`. Choose the lowest from these two minHeap, add new element to the minHeap|
 
 <!--
@@ -672,11 +672,15 @@ Given an array arr[] of size N, find the prefix sum of the array. A prefix sum a
 |---|---|---|---|---|
 |LeetCode 75|||
 |[1732. Find the Highest Altitude](./questions/1732.Find_the_Highest_Altitude(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-highest-altitude/)|
-|[724. Find Pivot Index](./questions/724.Find_Pivot_Index(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-pivot-index/)|Maintain prefixSum and suffixSum, return i when they are equal|
+|[724. Find Pivot Index](./questions/724.Find_Pivot_Index(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-pivot-index/)||Maintain prefixSum and suffixSum, return i when they are equal|
 |[3028. Ant on the Boundary](./questions/3028.Ant_on_the_Boundary(Easy).md)|Easy|[Link](https://leetcode.com/problems/ant-on-the-boundary/)|Google Tag|
+|[560. Subarray Sum Equals K](./questions/560.Subarray_Sum_Equals_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/subarray-sum-equals-k/)||Maintain hashmap to keep track of prefix with their counts, if a diff = curSum - k in hashmap, we update res with the diff's counts|
+|Miscellaneous|||||
+|[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
+
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
