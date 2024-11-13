@@ -57,18 +57,18 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[189. Rotate Array](./questions/189.Rotate_Array_(Medium).md)|Mediun|[Link](https://leetcode.com/problems/rotate-array/)||Reverse nums and reverse nums[:k], same as rotate the array to the right by k steps|
 |[121. Best Time to Buy and Sell Stock](./questions/121.Best_Time_to_Buy_and_Sell_Stock_(Easy).md)|Easy|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
 |[122. Best Time to Buy and Sell Stock II](./questions/122.Best_Time_to_Buy_and_Sell_Stock_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|
-|[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)|
+|[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)||Use l, r ptrs to find a reachable range, update farthest variable within the range, update l = r + 1, r = farthest, update jumps by 1|
 |[14. Longest Common Prefix](./questions/14.Longest_Common_Prefix(Easy).md)|Easy|[Link](https://leetcode.com/problems/longest-common-prefix/)|
 |[58. Length of Last Word](./questions/58.Length_of_Last_Word(Easy).md)|Easy|[Link](https://leetcode.com/problems/length-of-last-word/)|
 |[151. Reverse Words in a String](./questions/151.Reverse_Words_in_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-words-in-a-string/)|
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)||Use l, r pointers to update maxLeft, maxRight, update res += maxLeft - height[l] or by maxRight, then we update maxLeft, maxRight to a greater value from height[l], height[r]|
 |[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)||Find the distance to get another char on the same row. Use the normal interval - (current row * 2) to get the extra char on each interval|
-|[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)|
+|[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)||For each row with maxWidth, repeatly add words until a new word cannot be added. Then we compute how many spaces we need to assign after each word|
 |[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Cisco|
-|[274. H-Index](./questions/274.H-Index(Medium).md)|Medium|[Link](https://leetcode.com/problems/h-index/)|
+|[274. H-Index](./questions/274.H-Index(Medium).md)|Medium|[Link](https://leetcode.com/problems/h-index/)||Sort citations in descending order, find when index >= citation, or return len(citations) in the end|
 |[13. Roman to Integer](./questions/13.Roman_to_Integer(Easy).md)|Easy|[Link](https://leetcode.com/problems/roman-to-integer/)|
 |[12. Integer to Roman](./questions/12.Integer_to_Roman(Medium).md)|Medium|[Link](https://leetcode.com/problems/integer-to-roman/)|
-|[28. Find the Index of the First Occurrence in a String](./questions/28.Find_the_Index_of_the_First_Occurrence_in_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|
+|[28. Find the Index of the First Occurrence in a String](./questions/28.Find_the_Index_of_the_First_Occurrence_in_a_String(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)||Brute Force to try each haystack[i:i + len(needle)] == needle|
 |[380. Insert Delete GetRandom O(1)](./questions/380.Insert_Delete_GetRandom_O(1)(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-delete-getrandom-o1/)|
 |[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)||Similar to 238, initialize an array and traverse from left to right and right to left to compare their neighbor, and update res[i] accordingly|
 |Blind 75|||
@@ -136,20 +136,22 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 
 |Sliding Window|||||
 |---|---|---|---|---|
+|LeetCode 150|||||
+|[209. Minimum Size Subarray Sum](./questions/209.Minimum_Size_Subarray_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-size-subarray-sum/)||Maintain a sliding window with curSum, while curSum >= target, we update res = min(res, r - l + 1) and shrink the sliding window to find the minimal length subarray|
 |[3. Longest Substring Without Repeating Characters](./questions/3.Longest_Substring_Without_Repeating_Characters_(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
-|[121. Best Time to Buy and Sell Stock](./questions/121.Best_Time_to_Buy_and_Sell_Stock_(Easy).md)|Easy|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
-|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
-|[209. Minimum Size Subarray Sum](./questions/209.Minimum_Size_Subarray_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-size-subarray-sum/)|
-|[424. Longest Repeating Character Replacement](./questions/424.Longest_Repeating_Character_Replacement(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-repeating-character-replacement/)|
-|[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|
-|[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
-|[567. Permutation in String](./questions/567.Permutation_in_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutation-in-string/)|
 |[30. Substring with Concatenation of All Words](./questions/30.Substring_with_Concatenation_of_All_Words(Hard).md)|Medium|[Link](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|
+|[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|
+|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |LeetCode 75|||
 |[643. Maximum Average Subarray I](./questions/643.Maximum_Average_Subarray_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-average-subarray-i/)||First calculate the sum(nums[:k]) as sliding window result, then update the curSum by removing the left most element and adding the new element|
 |[1456. Maximum Number of Vowels in a Substring of Given Length](./questions/1456.Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|
-|[1493. Longest Subarray of 1's After Deleting One Element](./questions/1493.Longest_Subarray_of_1's_After_Deleting_One_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?envType=study-plan-v2&envId=leetcode-75)|Similar to 487|
+|[1493. Longest Subarray of 1's After Deleting One Element](./questions/1493.Longest_Subarray_of_1's_After_Deleting_One_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?envType=study-plan-v2&envId=leetcode-75)||Similar to 487|
 |[1004. Max Consecutive Ones III](./questions/1004.Max_Consecutive_Ones_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-iii/)|
+|NeetCode 150|||||
+|[121. Best Time to Buy and Sell Stock](./questions/121.Best_Time_to_Buy_and_Sell_Stock_(Easy).md)|Easy|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
+|[424. Longest Repeating Character Replacement](./questions/424.Longest_Repeating_Character_Replacement(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-repeating-character-replacement/)|
+|[567. Permutation in String](./questions/567.Permutation_in_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutation-in-string/)|
+|[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 |Miscellaneous|||
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
@@ -166,13 +168,13 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 
 The trick is to use pointers to keep in track of the boundaries. Then we shrink the boundaries after we finish a traverse or something.
 
-|Matrix|||
-|---|---|---|
+|Matrix|||||
+|---|---|---|---|---|
 |[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|[Link](https://leetcode.com/problems/valid-sudoku/)|
 |[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)|
 |[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
 |[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
-
+|[289. Game of Life](./questions/289.Game_of_Life(Medium).md)|Medium|[Link](https://leetcode.com/problems/game-of-life/)||Traverse the grid to find which entries need to be changed later, and we mark it as other number. Later, we change the marked number back to either live or dead|
 
 <!--
 |[]()|Medium|[Link]()|
