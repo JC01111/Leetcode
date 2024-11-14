@@ -365,7 +365,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)||Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
 |Miscellaneous||||
-|[113. Path Sum II](./questions/113.Pat_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
+|[113. Path Sum II](./questions/113.Path_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
 
 
 <!--
