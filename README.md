@@ -74,7 +74,6 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |Blind 75|||
 |[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Amazon|
-|[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)|
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Amazon|
 |[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Amazon|
 |[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
@@ -138,10 +137,9 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |---|---|---|---|---|
 |LeetCode 150|||||
 |[209. Minimum Size Subarray Sum](./questions/209.Minimum_Size_Subarray_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-size-subarray-sum/)||Maintain a sliding window with curSum, while curSum >= target, we update res = min(res, r - l + 1) and shrink the sliding window to find the minimal length subarray|
-|[3. Longest Substring Without Repeating Characters](./questions/3.Longest_Substring_Without_Repeating_Characters_(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|
+|[3. Longest Substring Without Repeating Characters](./questions/3.Longest_Substring_Without_Repeating_Characters_(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)||Maintain a sliding window, repeatedly update the length when there is no repeated character. When a repeated char exists, shrink the sliding window from the left-most element|
 |[30. Substring with Concatenation of All Words](./questions/30.Substring_with_Concatenation_of_All_Words(Hard).md)|Medium|[Link](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|
 |[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|
-|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |LeetCode 75|||
 |[643. Maximum Average Subarray I](./questions/643.Maximum_Average_Subarray_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-average-subarray-i/)||First calculate the sum(nums[:k]) as sliding window result, then update the curSum by removing the left most element and adding the new element|
 |[1456. Maximum Number of Vowels in a Substring of Given Length](./questions/1456.Maximum_Number_of_Vowels_in_a_Substring_of_Given_Length(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)|
@@ -153,6 +151,7 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[567. Permutation in String](./questions/567.Permutation_in_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutation-in-string/)|
 |[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 |Miscellaneous|||
+|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
 |[3318. Find X-Sum of All K-Long Subarrays I](./questions/3318.Find_X-Sum_of_All_K-Long_Subarrays_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)|Google Tag|Sliding Window, maxHeap, hashmap|
@@ -494,17 +493,19 @@ Usually, we need to sort the array first to better find the overlapping interval
 
 In general, create a hashmap {} and store elements and their indices into the hashmap as the for-loop goes, then in the for loop we check if an element has already in the hashmap or not, or in the case we want to decrement the number of times we have seen an element in the hashmap.
 
-|Hashmap||||
-|---|---|---|---|
+|Hashmap|||||
+|---|---|---|---|---|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
 |[219. Contains Duplicate II](./questions/219.Contains_Duplicate_II_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
 |[383. Ransom Note](./questions/383.Ransom_Note_(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
 |[242. Valid Anagram](./questions/242.Valid_Anagram(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-anagram/)|
 |LeetCode 75 Hashmap/Set|||
-|[1207. Unique Number of Occurrences](./questions/1207.Unique_Number_of_Occurrences(Easy).md)|Easy|[Link](https://leetcode.com/problems/unique-number-of-occurrences/)|Convert arr into hashmap, and add all occurences into set(), if an occurence already exisited in set(), return False. Otherwise, return True in the end|
-|[2215. Find the Difference of Two Arrays](./questions/2215.Find_the_Difference_of_Two_Arrays(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-difference-of-two-arrays/)|Build two hashmaps and loop over to add non-repeatitive keys into set(), and convert to list and append to res|
-|[1657. Determine if Two Strings Are Close](./questions/1657.Determine_if_Two_Strings_Are_Close(Medium).md)|Medium|[Link](https://leetcode.com/problems/determine-if-two-strings-are-close/)|Use two hashmaps and two sets() to compare if the strings' keys and values_counts are the same|
-|[2352. Equal Row and Column Pairs](./questions/2352.Equal_Row_and_Column_Pairs(Medium).md)|Medium|[Link](https://leetcode.com/problems/equal-row-and-column-pairs/)|Convert each row into str(row) and save into rows{}, then form str(col) and update res = rows[str(col)]|
+|[1207. Unique Number of Occurrences](./questions/1207.Unique_Number_of_Occurrences(Easy).md)|Easy|[Link](https://leetcode.com/problems/unique-number-of-occurrences/)||Convert arr into hashmap, and add all occurences into set(), if an occurence already exisited in set(), return False. Otherwise, return True in the end|
+|[2215. Find the Difference of Two Arrays](./questions/2215.Find_the_Difference_of_Two_Arrays(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-difference-of-two-arrays/)||Build two hashmaps and loop over to add non-repeatitive keys into set(), and convert to list and append to res|
+|[1657. Determine if Two Strings Are Close](./questions/1657.Determine_if_Two_Strings_Are_Close(Medium).md)|Medium|[Link](https://leetcode.com/problems/determine-if-two-strings-are-close/)||Use two hashmaps and two sets() to compare if the strings' keys and values_counts are the same|
+|[2352. Equal Row and Column Pairs](./questions/2352.Equal_Row_and_Column_Pairs(Medium).md)|Medium|[Link](https://leetcode.com/problems/equal-row-and-column-pairs/)||Convert each row into str(row) and save into rows{}, then form str(col) and update res = rows[str(col)]|
+|LeetCode 150|||||
+|[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)||Sort word to be the key in hashmap, then append this word to the correpsonding list by the sorted(word) as key|
 |Miscellaneous|||
 |[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
 
@@ -591,21 +592,24 @@ ___
 
 1D DP creates dictionary{} or list[] for cache, save time complexity to check repeated cases.
 
-|1D DP||||
-|---|---|---|---|
-|[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
-|[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
+|1D DP|||||
+|---|---|---|---|---|
+|LeetCode 75|||||
 |[1137. N-th Tribonacci Number](./questions/1137.N-th_Tribonacci_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/n-th-tribonacci-number/)|
+|[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
 |[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
-|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
-|[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
-|[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)|Build a dp table from range(0, amount+1), calculate how many coins need for each amount, take the current coin + dp(a-c)|
-|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|
 |[790. Domino and Tromino Tiling](./questions/790.Domino_and_Tromino_Tiling(Medium).md)|Medium|[Link](https://leetcode.com/problems/domino-and-tromino-tiling/)|
+|LeetCode 150|||||
+|[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
+|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
+|[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)||Build a dp table from range(0, amount+1), calculate how many coins need for each amount, take the current coin + dp(a-c)|
+|[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
+|Miscellaneous|||||
+|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|Amazon OA||
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
