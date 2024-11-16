@@ -497,7 +497,6 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |---|---|---|---|---|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|
 |[219. Contains Duplicate II](./questions/219.Contains_Duplicate_II_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate-ii/)|
-|[383. Ransom Note](./questions/383.Ransom_Note_(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
 |[242. Valid Anagram](./questions/242.Valid_Anagram(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-anagram/)|
 |LeetCode 75 Hashmap/Set|||
 |[1207. Unique Number of Occurrences](./questions/1207.Unique_Number_of_Occurrences(Easy).md)|Easy|[Link](https://leetcode.com/problems/unique-number-of-occurrences/)||Convert arr into hashmap, and add all occurences into set(), if an occurence already exisited in set(), return False. Otherwise, return True in the end|
@@ -505,13 +504,16 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[1657. Determine if Two Strings Are Close](./questions/1657.Determine_if_Two_Strings_Are_Close(Medium).md)|Medium|[Link](https://leetcode.com/problems/determine-if-two-strings-are-close/)||Use two hashmaps and two sets() to compare if the strings' keys and values_counts are the same|
 |[2352. Equal Row and Column Pairs](./questions/2352.Equal_Row_and_Column_Pairs(Medium).md)|Medium|[Link](https://leetcode.com/problems/equal-row-and-column-pairs/)||Convert each row into str(row) and save into rows{}, then form str(col) and update res = rows[str(col)]|
 |LeetCode 150|||||
+|[383. Ransom Note](./questions/383.Ransom_Note_(Easy).md)|Easy|[Link](https://leetcode.com/problems/ransom-note/)|
+|[205. Isomorphic Strings](./questions/205.Isomorphic_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/isomorphic-strings/)||Build two hashmaps to compare the mapping of each two chars, if they don't match, return False|
+|[290. Word Pattern](./questions/290.Word_Pattern(Easy).md)|Easy|[Link](https://leetcode.com/problems/word-pattern/)||Build a hashmap to check the previous mapping, but we also need to check if the mapping is unique, no duplicate words are used, we can use set() to compare|
 |[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)||Sort word to be the key in hashmap, then append this word to the correpsonding list by the sorted(word) as key|
 |Miscellaneous|||
 |[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
 
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Easy|[Link]()|||
 -->
 <br>
 
