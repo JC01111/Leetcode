@@ -78,7 +78,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Amazon|
 |[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
 |[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)||Maintain a list of left product, then traverse from right to left update with product, and update product * nums[i]|
-|[128. Longest Consecutive Sequence](./questions/128.Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-consecutive-sequence/)|
+|[128. Longest Consecutive Sequence](./questions/128.Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-consecutive-sequence/)||Convert `nums` to set() to avoid duplicate elements, then for each base element (check if n-1 in set), we increment by 1 each time when the total is in the set()|
 |LeetCode 75|||||
 |[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|
 |[1071. Greatest Common Divisor of Strings](./questions/1071.Greatest_Common_Divisor_of_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|
