@@ -240,35 +240,36 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 
 ### Stack
 
-|Stack||||
-|---|---|---|---|
+|Stack|||||
+|---|---|---|---|---|
+|LeetCode 150|||||
 |[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|
+|[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)||Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
-|[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
-|[739. Daily Temperatures](./questions/739.Daily_Temperatures(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|
-|LeetCode 75||||
-|[2390. Removing Stars From a String](./questions/2390.Removing_Stars_From_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/removing-stars-from-a-string/)|Use stack to store each element until a "\*", we then pop the top of stack to remove "\*"s left non-star character|
-|[735. Asteroid Collision](./questions/735.Asteroid_Collision(Medium).md)|Medium|[Link](https://leetcode.com/problems/asteroid-collision/)|
-|[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|a
-|Miscellaneous|||
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google VO|
+|LeetCode 75|||||
+|[2390. Removing Stars From a String](./questions/2390.Removing_Stars_From_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/removing-stars-from-a-string/)||Use stack to store each element until a "\*", we then pop the top of stack to remove "\*"s left non-star character|
+|[735. Asteroid Collision](./questions/735.Asteroid_Collision(Medium).md)|Medium|[Link](https://leetcode.com/problems/asteroid-collision/)|
+|[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
+|NeetCode 150|||||
+|[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google Tag|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
 ---
 
 ### Monotonic Stack
-
-|Monotonic Stack||||
-|---|---|---|---|
-|[739. Daily Temperatures](./questions/739.Daily_Temperatures(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)|Maintain a decreasing monotonic stack and update prev less temperature's index with day difference|
-|[901. Online Stock Span](./questions/901.Online_Stock_Span(Medium).md)|Medium|[Link](https://leetcode.com/problems/online-stock-span/)|Maintain an decreasing monotonic stack, when current price >= last elem in stack, add its span with current span, eventually append [price, span] into stack|
+|Monotonic Stack|||||
+|---|---|---|---|---|
+|LeetCode 75|||||
+|[739. Daily Temperatures](./questions/739.Daily_Temperatures(Medium).md)|Medium|[Link](https://leetcode.com/problems/daily-temperatures/)||Maintain a decreasing monotonic stack and update prev less temperature's index with day difference|
+|[901. Online Stock Span](./questions/901.Online_Stock_Span(Medium).md)|Medium|[Link](https://leetcode.com/problems/online-stock-span/)||Maintain an decreasing monotonic stack, when current price >= last elem in stack, add its span with current span, eventually append [price, span] into stack|
 
 <!--
 |[]()|Medium|[Link]()|
