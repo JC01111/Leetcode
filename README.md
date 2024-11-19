@@ -93,6 +93,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Google OA|
 |[3024. Type of Triangle](./questions/3024.Type_of_Triangle(Easy).md)|Easy|[Link](https://leetcode.com/problems/type-of-triangle/)|Google Tag|
 |[2663. Lexicographically Smallest Beautiful String](./questions/2663.Lexicographically_Smallest_Beautiful_String(Hard).md)|Hard|[Link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/)|Google Tag|Increment the last element and check if current element within range of k letters, iterate to the left and make changes if needed|
+|[1652. Defuse the Bomb](./questions/1652.Defuse_the_Bomb(Easy).md)|Easy|[Link](https://leetcode.com/problems/defuse-the-bomb/)||Use % to get the indices we need the calculate the sum, either forward or backward|
+
 
 <!--
 |[]()|Medium|[Link]()|
@@ -280,8 +282,10 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 
 ### Linked List
 
-|Linked List||||
-|---|---|---|---|
+Usually needs to check `if not node`: `return None`
+
+|Linked List|||||
+|---|---|---|---|---|
 |[141. Linked List Cycle](./questions/141.Linked_List_Cycle_(Easy).md)|Easy|[Link](https://leetcode.com/problems/linked-list-cycle/)|
 |[21. Merge Two Sorted Lists](./questions/21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
 |[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
@@ -298,10 +302,11 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)|Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
 |[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)|Flip every node to connect its previous node, and reset prev, head every time|
 |[2130. Maximum Twin Sum of a Linked List](./questions/2130.Maximum_Twin_Sum_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)|Reverse the first half linked-list, update res with the first half.val + second half.val|
-
+|Miscellaneous|||||
+|[83. Remove Duplicates from Sorted List](./questions/83.Remove_Duplicates_from_Sorted_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)||Repeatly set curr.next = curr.next.next to remove duplicate, update curr only a non-duplicated element is found|
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -633,12 +638,13 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 |[714. Best Time to Buy and Sell Stock with Transaction Fee](./questions/714.Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|
 |LeetCode 150||||
 |[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
+|[64. Minimum Path Sum](./questions/64.Minimum_Path_Sum(Medium).md)|Medium|[Link]()|||
 |LeetCode 75||||
 |Miscellaneous||||
 |[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)|Backtrack + 2D DP|
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -719,14 +725,18 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 ### Math
 
-|Math|||
-|---|---|---|
+|Math|||||
+|---|---|---|---|---|
+|LeetCode 150|||||
 |[9. Palindrome Number](./questions/9.Palindrome_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-number/)|
 |[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
+|[69. Sqrt(x)](./questions/69.Sqrt(x)(Easy).md)|Easy|[Link](https://leetcode.com/problems/sqrtx/)||Run Binary Search in `[0, x]` to find the maximum `m` such that `m^2 <= x`|
+|Miscellaneous|||||
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 
+
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Easy|[Link]()|||
 -->
 <br>
 
