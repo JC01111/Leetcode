@@ -294,14 +294,14 @@ Usually needs to check `if not node`: `return None`
 |[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)|
 |[19. Remove Nth Node From End of List](./questions/19.Remove_Nth_Node_From_End_of_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|
-|[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|Python|
+|[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|||
 |[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|Python, C++|
 |[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Python, C++|
 |LeetCode 75|||
-|[2095. Delete the Middle Node of a Linked List](./questions/2095.Delete_the_Middle_Node_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)|Fast, Slow method to remove the middle node|
-|[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)|Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
-|[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)|Flip every node to connect its previous node, and reset prev, head every time|
-|[2130. Maximum Twin Sum of a Linked List](./questions/2130.Maximum_Twin_Sum_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)|Reverse the first half linked-list, update res with the first half.val + second half.val|
+|[2095. Delete the Middle Node of a Linked List](./questions/2095.Delete_the_Middle_Node_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)||Fast, Slow method to remove the middle node|
+|[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)||Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
+|[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)||Flip every node to connect its previous node, and reset prev, head every time|
+|[2130. Maximum Twin Sum of a Linked List](./questions/2130.Maximum_Twin_Sum_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)||Reverse the first half linked-list, update res with the first half.val + second half.val|
 |Miscellaneous|||||
 |[83. Remove Duplicates from Sorted List](./questions/83.Remove_Duplicates_from_Sorted_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)||Repeatly set curr.next = curr.next.next to remove duplicate, update curr only a non-duplicated element is found|
 
@@ -624,8 +624,7 @@ ___
 ---
 
 ### 2D DP
-
-In 2D DP, we usually need to create a dP table, then we start filling out the entries by bottom-up method taking sum or choosing the minimum entry from right, below, or diagonal. But before that, we need to find a pattern first, then apply pattern to the dP table. **Usually**, we can reduce from storing the whole 2d table into only storing the previous row/col.
+Find pattern, base cases, then apply the recurrence relation to fill out the dp table. Sometimes, we can optimize 2D table to 1D array with a dp[] (row).
 
 |2D DP|||||
 |---|---|---|---|---|
@@ -638,7 +637,7 @@ In 2D DP, we usually need to create a dP table, then we start filling out the en
 |[714. Best Time to Buy and Sell Stock with Transaction Fee](./questions/714.Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|
 |LeetCode 150||||
 |[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
-|[64. Minimum Path Sum](./questions/64.Minimum_Path_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-path-sum/)||Build a dp table top-bottom, each entry takes its value + min(left, up)|
+|[64. Minimum Path Sum](./questions/64.Minimum_Path_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-path-sum/)||Build a dp table top-bottom, each entry takes its `grid_val + min(dp_left, dp_up)`|
 |LeetCode 75||||
 |Miscellaneous||||
 |[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)||Backtrack + 2D DP|
