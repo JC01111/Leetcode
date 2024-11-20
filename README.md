@@ -157,9 +157,10 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[485. Max Consecutive Ones](./questions/485.Max_Consecutives_Ones(Easy).md)|Easy|[Link](https://leetcode.com/problems/max-consecutive-ones/)|
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
 |[3318. Find X-Sum of All K-Long Subarrays I](./questions/3318.Find_X-Sum_of_All_K-Long_Subarrays_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)|Google Tag|Sliding Window, maxHeap, hashmap|
+|[2461. Maximum Sum of Distinct Subarrays With Length K](./questions/2461.Maximum_Sum_of_Distinct_Subarrays_With_Length_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)||Sliding window to find max sum of subarray, use hashmap to detect duplicate elements|
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -297,13 +298,14 @@ Usually needs to check `if not node`: `return None`
 |[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|||
 |[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|Python, C++|
 |[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Python, C++|
-|LeetCode 75|||
+|LeetCode 75||||
 |[2095. Delete the Middle Node of a Linked List](./questions/2095.Delete_the_Middle_Node_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)||Fast, Slow method to remove the middle node|
 |[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)||Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
 |[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)||Flip every node to connect its previous node, and reset prev, head every time|
 |[2130. Maximum Twin Sum of a Linked List](./questions/2130.Maximum_Twin_Sum_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)||Reverse the first half linked-list, update res with the first half.val + second half.val|
 |Miscellaneous|||||
 |[83. Remove Duplicates from Sorted List](./questions/83.Remove_Duplicates_from_Sorted_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)||Repeatly set curr.next = curr.next.next to remove duplicate, update curr only a non-duplicated element is found|
+|[82. Remove Duplicates from Sorted List II](./questions/82.Remove_Duplicates_from_Sorted_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)||Use while loop to skip duplicate (while head and head.next and head.val == head.next.val), use prev node to save the non-duplicate element|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -328,13 +330,14 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[105. Construct Binary Tree from Preorder and Inorder Traversal](./questions/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|
 |[106. Construct Binary Tree from Inorder and Postorder Traversal](./questions/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|
 |[117. Populating Next Right Pointers in Each Node II](./questions/117.Populating_Next_Right_Pointers_in_Each_Node_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)||Run BFS on each level and set each node's next to the next node, except the last one|
+|[114. Flatten Binary Tree to Linked List](./questions/114.Flatten_Binary_Tree_to_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)||Find curr's left subtree's rightmost node and set its node.right to curr's right-subtree. Then set curr.right = curr.left, update curr = curr.right|
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)||Run DFS from root to leaf, check if curSum == targetSum|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
