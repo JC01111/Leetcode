@@ -94,10 +94,11 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[3024. Type of Triangle](./questions/3024.Type_of_Triangle(Easy).md)|Easy|[Link](https://leetcode.com/problems/type-of-triangle/)|Google Tag|
 |[2663. Lexicographically Smallest Beautiful String](./questions/2663.Lexicographically_Smallest_Beautiful_String(Hard).md)|Hard|[Link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/)|Google Tag|Increment the last element and check if current element within range of k letters, iterate to the left and make changes if needed|
 |[1652. Defuse the Bomb](./questions/1652.Defuse_the_Bomb(Easy).md)|Easy|[Link](https://leetcode.com/problems/defuse-the-bomb/)||Use % to get the indices we need the calculate the sum, either forward or backward|
+|[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use  pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -258,6 +259,8 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |NeetCode 150|||||
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google Tag|
+|Miscellaneous|||||
+|[1249. Minimum Remove to Make Valid Parentheses](./questions/1249.Minimum_Remove_to_Make_Valid_Parentheses(Medium).md)|Medium|[Link]()|Meta Tag||
 
 
 <!--
@@ -478,20 +481,23 @@ Use {} to save this current node's next characters, "*" to indicate the end of a
 
 ### Intervals
 
-Usually, we need to sort the array first to better find the overlapping intervals. We compare two intervals with the last element of the interval and the first element of another interval to know whether they are overlapped or not.
+Usually, we need to **sort** the array first to better find the overlapping intervals. We compare two intervals with the last element of previous interval and the first element of new interval to know detect overlap.
 
-|Intervals|||
-|---|---|---|
+|Intervals|||||
+|---|---|---|---|---|
 |[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|
 |[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
 |[435. Non-overlapping Intervals](./questions/435.Non-overlapping_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/non-overlapping-intervals/)|
 |[228. Summary Ranges](./questions/228.Summary_Ranges(Easy).md)|Easy|[Link](https://leetcode.com/problems/summary-ranges/)|
 |[452. Minimum Number of Arrows to Burst Balloons](./questions/452.Minimum_Number_of_Arrows_to_Burst_Balloons(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)|
 |[1851. Minimum Interval to Include Each Query](./questions/1851.Minimum_Interval_to_Include_Each_Query(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-interval-to-include-each-query/)|
+|Miscellaneous|||||
+|[252. Meeting Rooms](./questions/252.Meeting_Rooms(Easy).md)|Easy|[Link](https://leetcode.com/problems/meeting-rooms)||First sort intervals, then use `prev` to save the previous interval's end time, then compare with new interval's start time, if `prev > start`, return False|
+|[253. Meeting Rooms II](./questions/253.Meeting_Rooms_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/meeting-rooms-ii)||Use minHeap to save all the current meeting with their end time. For each new interval, we compare their start_i with minHeap[0], if the start_i > minHeap[0], we replace the the room, otherwise, we append new end_i time into minHeap|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 
 <br>
@@ -753,6 +759,19 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 <!--
 |[]()|Easy|[Link]()|
+-->
+<br>
+
+---
+
+### Meta Tag
+
+|Meta Tag|||||
+|---|---|---|---|---|
+|[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
+
+<!--
+|[]()|Easy|[Link]()|||
 -->
 
 <br> <br>
