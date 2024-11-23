@@ -74,7 +74,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |Blind 75|||
 |[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Amazon|
-|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Amazon|
+|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Amazon, Meta Tag|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 |[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Amazon|
 |[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
 |[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)||Maintain a list of left product, then traverse from right to left update with product, and update product * nums[i]|
@@ -123,10 +123,11 @@ Two pointers can save space complexity, because it only uses constant space comp
 |Miscellaneous||||
 |[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Amazon, Cisco|Use l, r ptrs to compare if s[l] == s[r] to confirm palindrome, update res with longer substring|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
+|[680. Valid Palindrome II](./questions/680.Valid_Palindrome_II(Easy).md)|Medium|[Link](https://leetcode.com/problems/valid-palindrome-ii)|Meta Tag|Use two ptrs to find where two chars are different, then check if `s[l+1, r]` or `s[l, r-1]` is a valid palindrome|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -260,7 +261,8 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google Tag|
 |Miscellaneous|||||
-|[1249. Minimum Remove to Make Valid Parentheses](./questions/1249.Minimum_Remove_to_Make_Valid_Parentheses(Medium).md)|Medium|[Link]()|Meta Tag||
+|[1249. Minimum Remove to Make Valid Parentheses](./questions/1249.Minimum_Remove_to_Make_Valid_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|Meta Tag|Use stack to save "(" index, when we encounter ")", we pop the last index from stack to close a parenthese. If we encounter ")" with no "(", change it to ""|
+|[227. Basic Calculator II](./questions/227.Basic_Calculator_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/basic-calculator-ii)|Meta Tag|Use stack to save previous result, we only append new element with sign into stack when we encounter a new sign|
 
 
 <!--
@@ -768,7 +770,12 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 |Meta Tag|||||
 |---|---|---|---|---|
-|[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
+|[1249. Minimum Remove to Make Valid Parentheses](./questions/1249.Minimum_Remove_to_Make_Valid_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|Stack|Use stack to save "(" index, when we encounter ")", we pop the last index from stack to close a parenthese. If we encounter ")" with no "(", change it to ""|
+|[227. Basic Calculator II](./questions/227.Basic_Calculator_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/basic-calculator-ii)|Stack|Use stack to save previous result, we only append new element with sign into stack when we encounter a new sign|
+|[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Array/String|Use pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
+|[680. Valid Palindrome II](./questions/680.Valid_Palindrome_II(Easy).md)|Medium|[Link](https://leetcode.com/problems/valid-palindrome-ii)|Two Pointers|Use two ptrs to find where two chars are different, then check if `s[l+1, r]` or `s[l, r-1]` is a valid palindrome|
+|一亩三分地|||||
+|[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 
 <!--
 |[]()|Easy|[Link]()|||
