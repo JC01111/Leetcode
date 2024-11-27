@@ -94,7 +94,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1526. Minimum Number of Increments on Subarrays to Form a Target Array](./questions/1526.Minimum_Number_of_Increments_on_Subarrays_to_Form_a_Target_Array(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)|Google OA|
 |[3024. Type of Triangle](./questions/3024.Type_of_Triangle(Easy).md)|Easy|[Link](https://leetcode.com/problems/type-of-triangle/)|Google Tag|
 |[2663. Lexicographically Smallest Beautiful String](./questions/2663.Lexicographically_Smallest_Beautiful_String(Hard).md)|Hard|[Link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/)|Google Tag|Increment the last element and check if current element within range of k letters, iterate to the left and make changes if needed|
-|[1652. Defuse the Bomb](./questions/1652.Defuse_the_Bomb(Easy).md)|Easy|[Link](https://leetcode.com/problems/defuse-the-bomb/)||Use % to get the indices we need the calculate the sum, either forward or backward|
+|[1652. Defuse the Bomb](./questions/1652.Defuse_the_Bomb(Easy).md)|Easy|[Link](https://leetcode.com/problems/defuse-the-bomb/)||Use curr % len(code) to get the next k numbers, increment curr k times. Use len(code) + curr % len(code) to get previous k numbers, decrement curr k times|
 |[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use  pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
 
 
@@ -175,14 +175,17 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 
 |Matrix|||||
 |---|---|---|---|---|
-|[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|[Link](https://leetcode.com/problems/valid-sudoku/)|
+|[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|||
 |[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)|
 |[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
 |[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
 |[289. Game of Life](./questions/289.Game_of_Life(Medium).md)|Medium|[Link](https://leetcode.com/problems/game-of-life/)||Traverse the grid to find which entries need to be changed later, and we mark it as other number. Later, we change the marked number back to either live or dead|
+|Miscellaneous|||||
+|[1861. Rotating the Box](./questions/1861.Rotating_the_Box(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotating-the-box)||First move all the stones to the valid spaces, then convert each column into each row of the new matrix|
+
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -336,7 +339,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[105. Construct Binary Tree from Preorder and Inorder Traversal](./questions/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|
 |[106. Construct Binary Tree from Inorder and Postorder Traversal](./questions/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|
 |[117. Populating Next Right Pointers in Each Node II](./questions/117.Populating_Next_Right_Pointers_in_Each_Node_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)||Run BFS on each level and set each node's next to the next node, except the last one|
-|[114. Flatten Binary Tree to Linked List](./questions/114.Flatten_Binary_Tree_to_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)||Find curr's left subtree's rightmost node and set its node.right to curr's right-subtree. Then set curr.right = curr.left, update curr = curr.right|
+|[114. Flatten Binary Tree to Linked List](./questions/114.Flatten_Binary_Tree_to_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)||Find curr's left subtree's rightmost node and set its node.right to curr's right-subtree. Then set curr.right = curr.left, update curr.left = None and curr = curr.right|
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)||Run DFS from root to leaf, check if curSum == targetSum|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
