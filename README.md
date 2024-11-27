@@ -1,5 +1,3 @@
-## Leetcode problems I solved by topics with explanations
-
 <!--
 Template
 |Topic||||
@@ -37,6 +35,9 @@ Template
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
 - [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
+
+### Tag Questions
+- [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
 
 <br>
 
@@ -352,17 +353,20 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 
 BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and follows **LIFO**, both BFS and DFS can be implemented by `list()`.
 
-|Binary Tree BFS||||
-|---|---|---|---|
-|[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|Standard Tree BFS|
+|Binary Tree BFS|||||
+|---|---|---|---|---|
+|[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)||Standard Tree BFS|
 |[637. Average of Levels in Binary Tree](./questions/637.Average_of_Levels_in_Binary_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)|
 |[102. Binary Tree Level Order Traversal](./questions/102.Binary_Tree_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-level-order-traversal/)|
 |[103. Binary Tree Zigzag Level Order Traversal](./questions/103.Binary_Tree_Zigzag_Level_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|
 |LeetCode 75|||
-|[1161. Maximum Level Sum of a Binary Tree](./questions/1161.Maximum_Level_Sum_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)| Similar to 199, standard BFS with slightly modification|
+|[1161. Maximum Level Sum of a Binary Tree](./questions/1161.Maximum_Level_Sum_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)||Similar to 199, standard BFS with slightly modification|
+|Miscellaneous|||||
+|[314. Binary Tree Vertical Order Traversal](./questions/314.Binary_Tree_Vertical_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|Meta Tag|Run BFS to save all the nodes with their column index [node, col] into deque and save them into hashmap {index: [node]}|
+
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -376,10 +380,10 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[872. Leaf-Similar Trees](./questions/872.Leaf_Similar_Trees(Easy).md)|Easy|[Link](https://leetcode.com/problems/leaf-similar-trees/)|
 |[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)||Standard DFS with slightly modification|
 |[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
-|[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)||Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
+|[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|Meta Tag|Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
 |Miscellaneous||||
 |[113. Path Sum II](./questions/113.Path_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
-
+|[1650. Lowest Common Ancestor of a Binary Tree III](./questions/1650.Lowest_Common_Ancestor_of_a_Binary_Tree_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)|Meta Tag|First save the path from `p` to `root`, traverse from `q` to `root`, the first common node is the LCA|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -668,7 +672,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |Heap|||||
 |---|---|---|---|---|
 |LeetCode 150|||||
-|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)||Maintain a minHeap with k elements|
+|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Meta Tag|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)||Use two heaps|
 |[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
 |NeetCode 150|||||
@@ -774,6 +778,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[227. Basic Calculator II](./questions/227.Basic_Calculator_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/basic-calculator-ii)|Stack|Use stack to save previous result, we only append new element with sign into stack when we encounter a new sign|
 |[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Array/String|Use pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
 |[680. Valid Palindrome II](./questions/680.Valid_Palindrome_II(Easy).md)|Medium|[Link](https://leetcode.com/problems/valid-palindrome-ii)|Two Pointers|Use two ptrs to find where two chars are different, then check if `s[l+1, r]` or `s[l, r-1]` is a valid palindrome|
+|[314. Binary Tree Vertical Order Traversal](./questions/314.Binary_Tree_Vertical_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|Binary Tree BFS|Run BFS to save all the nodes with their column index [node, col] into deque and save them into hashmap {index: [node]}|
+|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|minHeap|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
+|[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|Binary Tree DFS|Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
+|[1650. Lowest Common Ancestor of a Binary Tree III](./questions/1650.Lowest_Common_Ancestor_of_a_Binary_Tree_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)|Binary Tree DFS|First save the path from `p` to `root`, traverse from `q` to `root`, the first common node is the LCA|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 
