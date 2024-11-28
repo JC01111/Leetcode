@@ -50,7 +50,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |Array / String|||||
 |---|---|---|---|---|
 |LeetCode 150|||
-|[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)||Compare nums1, nums2 backward and add the larger value into the end of nums1, use three pointers to keep track|
+|[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|Meta Tag|Compare nums1, nums2 backward and add the larger value into the end of nums1, use three pointers to keep track|
 |[27. Remove Element](./questions/27.Remove_Element_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-element/)||Use pointer to keep track of non-val element and replace the index when i != val to remove the val in nums|
 |[26. Remove Duplicates from Sorted Array](./questions/26.Remove_Duplicates_from_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)||Similar to 27, keep track of prev elem, if current n != prev, replace nums[k] = n, update prev = n|
 |[80. Remove Duplicates from Sorted Array II](./questions/80.Remove_Duplicates_from_Sorted_Array_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|
@@ -411,10 +411,11 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |Miscellaneous|||
 |[108. Convert Sorted Array to Binary Search Tree](./questions/108.Convert_Sorted_Array_to_Binary_Search_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|
 |[235. Lowest Common Ancestor of a Binary Search Tree](./questions/235.Lowest_Common_Ancestor_of_a_Binary_Search_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)|
+|[938. Range Sum of BST](./questions/938.Range_Sum_of_BST(Easy).md)|Medium|[Link](https://leetcode.com/problems/range-sum-of-bst)|Meta Tag|Based on the property of BST, we check if current node < low, we recursively call on its right subtree, if current node > high, we recursively call on its left subtree|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -748,6 +749,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[9. Palindrome Number](./questions/9.Palindrome_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-number/)|
 |[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
 |[69. Sqrt(x)](./questions/69.Sqrt(x)(Easy).md)|Easy|[Link](https://leetcode.com/problems/sqrtx/)||Run Binary Search in `[0, x]` to find the maximum `m` such that `m^2 <= x`|
+|[50. Pow(x, n)](./questions/50.Pow(x,%20n)(Medium).md)|Medium|[Link](https://leetcode.com/problems/powx-n)|Meta Tag|Use a pattern to divide the exponent into half based on even or odd each time, so we can save the time complexity to be $O(log\ n)$|
 |Miscellaneous|||||
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 
@@ -785,6 +787,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|minHeap|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|Binary Tree DFS|Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
 |[1650. Lowest Common Ancestor of a Binary Tree III](./questions/1650.Lowest_Common_Ancestor_of_a_Binary_Tree_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)|Binary Tree DFS|First save the path from `p` to `root`, traverse from `q` to `root`, the first common node is the LCA|
+|[50. Pow(x, n)](./questions/50.Pow(x,%20n)(Medium).md)|Medium|[Link](https://leetcode.com/problems/powx-n)|Math|Use a pattern to divide the exponent into half based on even or odd each time, so we can save the time complexity to be $O(log\ n)$|
+|[938. Range Sum of BST](./questions/938.Range_Sum_of_BST(Easy).md)|Medium|[Link](https://leetcode.com/problems/range-sum-of-bst)|Binary Search Tree|Based on the property of BST, we check if current node < low, we recursively call on its right subtree, if current node > high, we recursively call on its left subtree|
+|[88. Merge Sorted Array](./questions/88.Merge_Sorted_Array_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-sorted-array/)|Array/String|Compare nums1, nums2 backward and add the larger value into the end of nums1, use three pointers to keep track|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 
