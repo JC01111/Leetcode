@@ -112,7 +112,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 |Two Pointers|||||
 |---|---|---|---|---|
 |LeetCode 150||||
-|[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)||Use l, r ptrs to compare if two elem are the same, increment or decrement ptr if non-alphanumeric elem exists|
+|[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|Meta Tag|Use l, r ptrs to compare if two elem are the same, increment or decrement ptr if non-alphanumeric elem exists|
 |[167. Two Sum II - Input Array Is Sorted](./questions/167.Two_Sum_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
 |[15. 3Sum](./questions/15.3Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/3sum/)|
@@ -256,7 +256,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |---|---|---|---|---|
 |LeetCode 150|||||
 |[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|
-|[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)||Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
+|[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Meta Tag|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google Tag, Meta Tag|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
@@ -800,6 +800,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[528. Random Pick with Weight](./questions/528.Random_Pick_with_Weight(Medium).md)|Medium|[Link](https://leetcode.com/problems/random-pick-with-weight)|PrefixSum, Binary Search|First initialize each index from [0, len(w)-1] a probability by w[i] / sum(w), then we calculate the prefixSum of each index. Next, randomly generate a prob within [0, 1], then we use Binary Search to find the index with the closest probability|
 |[162. Find Peak Element](./questions/162.Find_Peak_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-peak-element/)|Binary Search|Run Binary Search to check if a peak element exists, if not, update l or r pointer to the greater value neighbor|
 |[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|Binary Tree BFS|Run BFS on each level and only append the last node of each level to res[]|
+|[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Stack|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
+|[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|Two Pointers|Use l, r ptrs to compare if two elem are the same, increment or decrement ptr if non-alphanumeric elem exists|
+
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
