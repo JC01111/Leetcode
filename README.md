@@ -74,7 +74,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[135. Candy](./questions/135.Candy(Hard).md)|Hard|[Link](https://leetcode.com/problems/candy/)||Similar to 238, initialize an array and traverse from left to right and right to left to compare their neighbor, and update res[i] accordingly|
 |Blind 75|||
 |[217. Contains Duplicate](./questions/217.Contains_Duplicate_(Easy).md)|Easy|[Link](https://leetcode.com/problems/contains-duplicate/)|
-|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Amazon|
+|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Amazon, Meta|Save the remainder (target - nums[i]) into hashmap, when a remainder exists in hashmap, return [i, hashmap[nums[i]]]|
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|Amazon, Meta Tag|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 |[692. Top K Frequent Words](./questions/692.Top_K_Frequent_Words(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-words/)|Amazon|
 |[271. Encode and Decode Strings](./questions/271.Encode_and_Decode_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/encode-and-decode-strings/)|
@@ -390,6 +390,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |Miscellaneous||||
 |[113. Path Sum II](./questions/113.Path_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
 |[1650. Lowest Common Ancestor of a Binary Tree III](./questions/1650.Lowest_Common_Ancestor_of_a_Binary_Tree_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)|Meta Tag|First save the path from `p` to `root`, traverse from `q` to `root`, the first common node is the LCA|
+|[543. Diameter of Binary Tree](./questions/543.Diameter_of_Binary_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/diameter-of-binary-tree)|Meta Tag|Run DFS on each node to get its left, right subtree height and update res with left + right, for each node, return max(left, right) + 1|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -802,6 +803,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[199. Binary Tree Right Side View](./questions/199.Binary_Tree_Right_Side_View_(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-right-side-view/)|Binary Tree BFS|Run BFS on each level and only append the last node of each level to res[]|
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Stack|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|Two Pointers|Use l, r ptrs to compare if two elem are the same, increment or decrement ptr if non-alphanumeric elem exists|
+|[543. Diameter of Binary Tree](./questions/543.Diameter_of_Binary_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/diameter-of-binary-tree)|Binary Tree DFS|Run DFS on each node to get its left, right subtree height and update res with left + right, for each node, return max(left, right) + 1|
+|[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Hashmap/Array|Save the remainder (target - nums[i]) into hashmap, when a remainder exists in hashmap, return [i, hashmap[nums[i]]]|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
