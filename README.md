@@ -96,7 +96,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[2663. Lexicographically Smallest Beautiful String](./questions/2663.Lexicographically_Smallest_Beautiful_String(Hard).md)|Hard|[Link](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/)|Google Tag|Increment the last element and check if current element within range of k letters, iterate to the left and make changes if needed|
 |[1652. Defuse the Bomb](./questions/1652.Defuse_the_Bomb(Easy).md)|Easy|[Link](https://leetcode.com/problems/defuse-the-bomb/)||Use curr % len(code) to get the next k numbers, increment curr k times. Use len(code) + curr % len(code) to get previous k numbers, decrement curr k times|
 |[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use  pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
-
+|[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Meta Tag|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -688,7 +688,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |NeetCode 150|||||
 |[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
 |[1046. Last Stone Weight](./questions/1046.Last_Stone_Weight(Easy).md)|Easy|[Link](https://leetcode.com/problems/last-stone-weight/)|||
-|[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)||
+|[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)|Meta Tag|Use minHeap to maintain k closest points|
 |[621. Task Scheduler](./questions/621.Task_Scheduler(Medium).md)|Medium|[Link](https://leetcode.com/problems/task-scheduler/)||Use heap and deque|
 |[355. Design Twitter](./questions/355.Desgin_Twitter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-twitter/)|
 |LeetCode 75|||||
@@ -713,7 +713,7 @@ Given an array arr[] of size N, find the prefix sum of the array. A prefix sum a
 |[1732. Find the Highest Altitude](./questions/1732.Find_the_Highest_Altitude(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-the-highest-altitude/)|
 |[724. Find Pivot Index](./questions/724.Find_Pivot_Index(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-pivot-index/)||Maintain prefixSum and suffixSum, return i when they are equal|
 |[3028. Ant on the Boundary](./questions/3028.Ant_on_the_Boundary(Easy).md)|Easy|[Link](https://leetcode.com/problems/ant-on-the-boundary/)|Google Tag|
-|[560. Subarray Sum Equals K](./questions/560.Subarray_Sum_Equals_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/subarray-sum-equals-k/)||Maintain hashmap to keep track of prefix with their counts, if a diff = curSum - k in hashmap, we update res with the diff's counts|
+|[560. Subarray Sum Equals K](./questions/560.Subarray_Sum_Equals_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/subarray-sum-equals-k/)|Meta|Use hashmap to save diff = curSum - k with its counts, if a diff = curSum - k in hashmap, we update res with diff's counts|
 |Miscellaneous|||||
 |[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
 |Miscellaneous|||||
@@ -804,10 +804,15 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Stack|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|Two Pointers|Use l, r ptrs to compare if two elem are the same, increment or decrement ptr if non-alphanumeric elem exists|
 |[543. Diameter of Binary Tree](./questions/543.Diameter_of_Binary_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/diameter-of-binary-tree)|Binary Tree DFS|Run DFS on each node to get its left, right subtree height and update res with left + right, for each node, return max(left, right) + 1|
+|[560. Subarray Sum Equals K](./questions/560.Subarray_Sum_Equals_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/subarray-sum-equals-k/)|prefixSum, hashmap|Use hashmap to save diff = curSum - k with its counts, if a diff = curSum - k in hashmap, we update res with diff's counts|
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Hashmap/Array|Save the remainder (target - nums[i]) into hashmap, when a remainder exists in hashmap, return [i, hashmap[nums[i]]]|
+|[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)|Heap|Use minHeap to maintain k closest points|
+|[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Array, Hashmap|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
+|[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Stack|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
+
 
 <!--
 |[]()|Easy|[Link]()|||
