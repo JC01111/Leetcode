@@ -240,10 +240,12 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[51. N-Queens](./questions/51.N-Queens(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens/)|
 |[52. N-Queens II](./questions/52.N-Queens_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens-ii/)|
 |[386. Lexicographical Numbers](./questions/386.Lexicographical_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/lexicographical-numbers/description/)|Google Tag| Similar to combination|
+|Miscellaneous|||||
+|[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Meta|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 
 <br>
@@ -812,6 +814,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Stack|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
+|[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Array, Backtrack|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
 
 
 <!--
