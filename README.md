@@ -97,6 +97,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1652. Defuse the Bomb](./questions/1652.Defuse_the_Bomb(Easy).md)|Easy|[Link](https://leetcode.com/problems/defuse-the-bomb/)||Use curr % len(code) to get the next k numbers, increment curr k times. Use len(code) + curr % len(code) to get previous k numbers, decrement curr k times|
 |[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use  pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
 |[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Meta Tag|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
+|[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Meta|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
+
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -308,7 +310,7 @@ Usually needs to check `if not node`: `return None`
 |[138. Copy List with Random Pointer](./questions/138.Copy_List_With_Random_Pointer(Medium).md)|Medium|[Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|
 |[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)|
 |[19. Remove Nth Node From End of List](./questions/19.Remove_Nth_Node_From_End_of_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|
-|[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|
+|[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Meta||
 |[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|||
 |[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|Python, C++|
 |[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Python, C++|
@@ -810,6 +812,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1. Two Sum](./questions/1.Two_Sum_(Easy).md)|Easy|[Link](https://leetcode.com/problems/two-sum/)|Hashmap/Array|Save the remainder (target - nums[i]) into hashmap, when a remainder exists in hashmap, return [i, hashmap[nums[i]]]|
 |[973. K Closest Points to Origin](./questions/973.K_Closest_Points_to_Origin(Medium).md)|Medium|[Link](https://leetcode.com/problems/k-closest-points-to-origin/)|Heap|Use minHeap to maintain k closest points|
 |[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Array, Hashmap|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
+|[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Array, Hashmap|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
