@@ -456,6 +456,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
 |Miscellaneous|||||
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
+|[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Meta|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
 
 
 <!--
@@ -814,6 +815,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Array, Hashmap|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Linked List, Hashmap, Deque|Use two dummy nodes to keep track of the LRU and MRU, if we need to remove the LRU, remove `right.prev`. Insert to `left.next` to add new node. Access value by `hashmap[key].val`|
 |[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Array, Hashmap|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
+|[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Graph BFS|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
