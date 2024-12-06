@@ -506,7 +506,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 
 |Intervals|||||
 |---|---|---|---|---|
-|[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|
+|[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|Meta|Compare new interval with previous interval, if there is overlap, we update the previous interval with [min(x1, x2), max(y1, y2)]. Otherwise, append the new interval to `res[]`|
 |[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
 |[435. Non-overlapping Intervals](./questions/435.Non-overlapping_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/non-overlapping-intervals/)|
 |[228. Summary Ranges](./questions/228.Summary_Ranges(Easy).md)|Easy|[Link](https://leetcode.com/problems/summary-ranges/)|
@@ -816,6 +816,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Linked List, Hashmap, Deque|Use two dummy nodes to keep track of the LRU and MRU, if we need to remove the LRU, remove `right.prev`. Insert to `left.next` to add new node. Access value by `hashmap[key].val`|
 |[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Array, Hashmap|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
 |[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Graph BFS|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
+|[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|Intervals|Compare new interval with previous interval, if there is overlap, we update the previous interval with [min(x1, x2), max(y1, y2)]. Otherwise, append the new interval to `res[]`|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
