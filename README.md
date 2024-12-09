@@ -98,6 +98,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[408. Valid Word Abbreviation](./questions/408.Vaild_Word_Abbreviation(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-word-abbreviation?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days)|Meta Tag|Use  pointer for each string to compare, if abbr[j].isdigit(), we extract the number and increment i += int(number)|
 |[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Meta Tag|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
 |[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Meta|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
+|[1762. Buildings With an Ocean View](./questions/1762.Buildings_With_an_Ocean_View(Medium).md)|Medium|[Link](https://leetcode.com/problems/buildings-with-an-ocean-view)|Meta|Traverse heights from right to left, save the last height as curMax, if heights[i] > curMax, update curMax and save its index into res[], finally, return the reversed res[]|
 
 
 <!--
@@ -313,7 +314,7 @@ Usually needs to check `if not node`: `return None`
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Meta|Use two dummy nodes to keep track of the LRU and MRU, if we need to remove the LRU, remove `right.prev`. Insert to `left.next` to add new node. Access value by `hashmap[key].val`|
 |[25. Reverse Nodes in k-Group](./questions/25.Reverse_Nodes_in_k-Group(Hard).md)|Hard|[Link](https://leetcode.com/problems/reverse-nodes-in-k-group/)|||
 |[61. Rotate List](./questions/61.Rotate_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-list/)|Python, C++|
-|[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Python, C++|
+|[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Meta|Merge 2 lists each time and replace `lists` with the merged sorted lists|
 |LeetCode 75||||
 |[2095. Delete the Middle Node of a Linked List](./questions/2095.Delete_the_Middle_Node_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)||Fast, Slow method to remove the middle node|
 |[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)||Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
@@ -373,6 +374,8 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[1161. Maximum Level Sum of a Binary Tree](./questions/1161.Maximum_Level_Sum_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)||Similar to 199, standard BFS with slightly modification|
 |Miscellaneous|||||
 |[314. Binary Tree Vertical Order Traversal](./questions/314.Binary_Tree_Vertical_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|Meta Tag|Run BFS to save all the nodes with their column index [node, col] into deque and save them into hashmap {index: [node]}|
+|Miscellaneous|||||
+|[863. All Nodes Distance K in Binary Tree](./questions/863.All_Nodes_Distance_K_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|Meta|Build an undirected graph to connect two connected nodes together, then run BFS from `target` to add all its neighbor nodes into deque, when distance == k, we append the node.val into res[]|
 
 
 <!--
@@ -819,6 +822,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Graph BFS|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
 |[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|Intervals|Compare new interval with previous interval, if there is overlap, we update the previous interval with [min(x1, x2), max(y1, y2)]. Otherwise, append the new interval to `res[]`|
 |[426. Convert Binary Search Tree to Sorted Doubly Linked List](./questions/426.Convert_Binary_Search_Tree_to_Sorted_Doubly_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|Binary Search Tree, Linked List|Run DFS in-order traversal: left->root->right and update `head.right = node` and `node.left = head`, then update `head = node`. Finally, connect head and dummy together to be circular|
+|[1762. Buildings With an Ocean View](./questions/1762.Buildings_With_an_Ocean_View(Medium).md)|Medium|[Link](https://leetcode.com/problems/buildings-with-an-ocean-view)|Array|Traverse heights from right to left, save the last height as curMax, if heights[i] > curMax, update curMax and save its index into res[], finally, return the reversed res[]|
+|[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Linked List|Merge 2 lists each time and replace `lists` with the merged sorted lists|
+|[863. All Nodes Distance K in Binary Tree](./questions/863.All_Nodes_Distance_K_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|Binary Tree BFS|Build an undirected graph to connect two connected nodes together, then run BFS from `target` to add all its neighbor nodes into deque, when distance == k, we append the node.val into res[]|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
