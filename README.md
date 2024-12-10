@@ -99,6 +99,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1570. Dot Product of Two Sparse Vectors](./questions/1570.Dot_Product_of_Two_Sparse_Vectors(Medium).md)|Medium|[Link](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)|Meta Tag|Use hashmap to save nonzero element with its index as key to hashmap{}. Update res with an index exists in both hashmaps|
 |[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Meta|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
 |[1762. Buildings With an Ocean View](./questions/1762.Buildings_With_an_Ocean_View(Medium).md)|Medium|[Link](https://leetcode.com/problems/buildings-with-an-ocean-view)|Meta|Traverse heights from right to left, save the last height as curMax, if heights[i] > curMax, update curMax and save its index into res[], finally, return the reversed res[]|
+|[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Meta|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")".|
 
 
 <!--
@@ -275,6 +276,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |Miscellaneous|||||
 |[1249. Minimum Remove to Make Valid Parentheses](./questions/1249.Minimum_Remove_to_Make_Valid_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|Meta Tag|Use stack to save "(" index, when we encounter ")", we pop the last index from stack to close a parenthese. If we encounter ")" with no "(", change it to ""|
 |[227. Basic Calculator II](./questions/227.Basic_Calculator_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/basic-calculator-ii)|Meta Tag|Use stack to save previous result, we only append new element with sign into stack when we encounter a new sign|
+|[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Meta|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")".|
 
 
 <!--
@@ -561,14 +563,16 @@ ___
 
 ### Queue
 
-|Queue||||
-|------|---|-----|-----|
-|[933. Number of Recent Calls](./questions/933.Number_of_Recent_Calls(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-recent-calls/)|Maintain a deque and pop the top when time expires|
-|[649. Dota2 Senate](./questions/649.Dota2_Senate(Medium).md)|Medium|[Link](https://leetcode.com/problems/dota2-senate/)|Maintain 2 deques to fight with each party, the lower index party will win and requeue, the loser will not be added back. When one deque is empty, another party will announce victory|
+|Queue|||||
+|---|---|---|---|---|
+|[933. Number of Recent Calls](./questions/933.Number_of_Recent_Calls(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-recent-calls/)||Maintain a deque and pop the top when time expires|
+|[649. Dota2 Senate](./questions/649.Dota2_Senate(Medium).md)|Medium|[Link](https://leetcode.com/problems/dota2-senate/)||Maintain 2 deques to fight with each party, the lower index party will win and requeue, the loser will not be added back. When one deque is empty, another party will announce victory|
+|Miscellaneous|||||
+|[346. Moving Average from Data Stream](./questions/346.Moving_Average_from_Data_Stream(Medium).md)|Easy|[Link](https://leetcode.com/problems/moving-average-from-data-stream)|Meta|Use deque[] to save `k` elements with `curSum`, when `len(deque) == size`, we remove the left-most element then add the right-most element into `deque[]`|
 
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Easy|[Link]()|||
 -->
 <br>
 
@@ -825,6 +829,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1762. Buildings With an Ocean View](./questions/1762.Buildings_With_an_Ocean_View(Medium).md)|Medium|[Link](https://leetcode.com/problems/buildings-with-an-ocean-view)|Array|Traverse heights from right to left, save the last height as curMax, if heights[i] > curMax, update curMax and save its index into res[], finally, return the reversed res[]|
 |[23. Merge k Sorted Lists](./questions/23.Merge_k_Sorted_Lists(Hard).md)|Hard|[Link](https://leetcode.com/problems/merge-k-sorted-lists/)|Linked List|Merge 2 lists each time and replace `lists` with the merged sorted lists|
 |[863. All Nodes Distance K in Binary Tree](./questions/863.All_Nodes_Distance_K_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|Binary Tree BFS|Build an undirected graph to connect two connected nodes together, then run BFS from `target` to add all its neighbor nodes into deque, when distance == k, we append the node.val into res[]|
+|[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|String, Stack|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")"|
+|[346. Moving Average from Data Stream](./questions/346.Moving_Average_from_Data_Stream(Medium).md)|Easy|[Link](https://leetcode.com/problems/moving-average-from-data-stream)|Deque|Use deque[] to save `k` elements with `curSum`, when `len(deque) == size`, we remove the left-most element then add the right-most element into `deque[]`|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
