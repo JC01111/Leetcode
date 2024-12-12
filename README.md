@@ -100,6 +100,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[791. Custom Sort String](./questions/791.Custom_Sort_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/custom-sort-string)|Meta|Use hashmap to save each char in `s` with counts, traverse `order` and add char in hashmap with repeated times to `res`, traverse hashmap to add missing chars to res|
 |[1762. Buildings With an Ocean View](./questions/1762.Buildings_With_an_Ocean_View(Medium).md)|Medium|[Link](https://leetcode.com/problems/buildings-with-an-ocean-view)|Meta|Traverse heights from right to left, save the last height as curMax, if heights[i] > curMax, update curMax and save its index into res[], finally, return the reversed res[]|
 |[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Meta|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")".|
+|[65. Valid Number](./questions/65.Valid_Number(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-number)|Meta|Keep track of `seenDigit`, `seenExponent`, `seenDot`, then we check if the current char is valid base on some rules|
 
 
 <!--
@@ -310,7 +311,7 @@ Usually needs to check `if not node`: `return None`
 |[21. Merge Two Sorted Lists](./questions/21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
 |[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
 |[92. Reverse Linked List II](./questions/92.Reverse_Linked_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-linked-list-ii/)|
-|[138. Copy List with Random Pointer](./questions/138.Copy_List_With_Random_Pointer(Medium).md)|Medium|[Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|
+|[138. Copy List with Random Pointer](./questions/138.Copy_List_With_Random_Pointer(Medium).md)|Medium|[Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|Meta|Use hashmap to save each node with new node, traverse `head` to assign .next, .random to be the new node in hashmap|
 |[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)|
 |[19. Remove Nth Node From End of List](./questions/19.Remove_Nth_Node_From_End_of_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Meta|Use two dummy nodes to keep track of the LRU and MRU, if we need to remove the LRU, remove `right.prev`. Insert to `left.next` to add new node. Access value by `hashmap[key].val`|
@@ -521,6 +522,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |Miscellaneous|||||
 |[252. Meeting Rooms](./questions/252.Meeting_Rooms(Easy).md)|Easy|[Link](https://leetcode.com/problems/meeting-rooms)||First sort intervals, then use `prev` to save the previous interval's end time, then compare with new interval's start time, if `prev > start`, return False|
 |[253. Meeting Rooms II](./questions/253.Meeting_Rooms_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/meeting-rooms-ii)||Use minHeap to save all the current meeting with their end time. For each new interval, we compare their start_i with minHeap[0], if the start_i > minHeap[0], we replace the the room, otherwise, we append new end_i time into minHeap|
+|[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Meta|Use two ptrs to find the intersection, keep the interval with greater end|
 
 
 <!--
@@ -831,6 +833,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[863. All Nodes Distance K in Binary Tree](./questions/863.All_Nodes_Distance_K_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|Binary Tree BFS|Build an undirected graph to connect two connected nodes together, then run BFS from `target` to add all its neighbor nodes into deque, when distance == k, we append the node.val into res[]|
 |[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|String, Stack|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")"|
 |[346. Moving Average from Data Stream](./questions/346.Moving_Average_from_Data_Stream(Medium).md)|Easy|[Link](https://leetcode.com/problems/moving-average-from-data-stream)|Deque|Use deque[] to save `k` elements with `curSum`, when `len(deque) == size`, we remove the left-most element then add the right-most element into `deque[]`|
+|[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Intervals|Use two ptrs to find the intersection, keep the interval with greater end|
+|[138. Copy List with Random Pointer](./questions/138.Copy_List_With_Random_Pointer(Medium).md)|Medium|[Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|Linked List|Use hashmap to save each node with new node, traverse `head` to assign .next, .random to be the new node in hashmap|
+|[65. Valid Number](./questions/65.Valid_Number(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-number)|Array/String|Keep track of `seenDigit`, `seenExponent`, `seenDot`, then we check if the current char is valid base on some rules|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
