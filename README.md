@@ -466,6 +466,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |Miscellaneous|||||
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
 |[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Meta|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
+|[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Meta|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
 
 
 <!--
@@ -840,6 +841,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[65. Valid Number](./questions/65.Valid_Number(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-number)|Array/String|Keep track of `seenDigit`, `seenExponent`, `seenDot`, then we check if the current char is valid base on some rules|
 |[129. Sum Root to Leaf Numbers](./questions/129.Sum_Root_to_Leaf_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-root-to-leaf-numbers)|Binary Tree DFS|Run DFS to add every number in the path, when reaches the leaf node, return `curSum`, return `node.left` + `node.right`|
 |[1004. Max Consecutive Ones III](./questions/1004.Max_Consecutive_Ones_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-iii/)|Sliding window|Maintain sliding window with at most k `0`, each time if `nums[r]` is `0`, we decrement k, when k is negative, we update `l += 1`, same as moving the current max sliding window to the right|
+|[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Graph General|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
