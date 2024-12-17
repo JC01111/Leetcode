@@ -686,6 +686,8 @@ Find pattern, base cases, then apply the recurrence relation to fill out the dp 
 |LeetCode 75||||
 |Miscellaneous||||
 |[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)||Backtrack + 2D DP|
+|[516. Longest Palindromic Subsequence](./questions/516.Longest_Palindromic_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-subsequence)|Meta|Build 2d DP with string `s` and its reverse, we compare if two chars are the same, if yes, we upate `dp[r][c] = dp[r-1][c-1]+ 1`, otherwise, we update `dp[r][c] = max(dp[r-1][c], dp[r][c-1]`|
+
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -847,6 +849,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[270. Closest Binary Search Tree Value](./questions/270.Closest_Binary_Search_Tree_Value(Easy).md)|Easy|[Link](https://leetcode.com/problems/closest-binary-search-tree-value)|Binary Search Tree|Compare the `abs(node.val-target)` with `abs(res-target)`, if they equal, update res to be the smaller val, otherwise, update res to the one will smaller difference. Run DFS with Binary Search to find the closer one|
 |[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|Sliding Window|Use two hashmaps and 2 counts to keep track of every chars, update res when sCount == tCount, and we start shrinking the sliding window|
 |[958. Check Completeness of a Binary Tree](./questions/958.Check_Completeness_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|Binary Tree BFS|Run BFS with `seenNull` to check if a null node exists, if it exists and we have other non-null nodes, return False|
+|[516. Longest Palindromic Subsequence](./questions/516.Longest_Palindromic_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-subsequence)|2D DP|Build 2d DP with string `s` and its reverse, we compare if two chars are the same, if yes, we upate `dp[r][c] = dp[r-1][c-1]+ 1`, otherwise, we update `dp[r][c] = max(dp[r-1][c], dp[r][c-1]`|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
