@@ -34,7 +34,6 @@ Template
 - [Prefix Sum](https://github.com/JC01111/Leetcode?tab=readme-ov-file#prefix-sum)
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
-- [Others](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#others)
 
 ### Tag Questions
 - [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
@@ -101,6 +100,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1762. Buildings With an Ocean View](./questions/1762.Buildings_With_an_Ocean_View(Medium).md)|Medium|[Link](https://leetcode.com/problems/buildings-with-an-ocean-view)|Meta|Traverse heights from right to left, save the last height as curMax, if heights[i] > curMax, update curMax and save its index into res[], finally, return the reversed res[]|
 |[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Meta|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")".|
 |[65. Valid Number](./questions/65.Valid_Number(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-number)|Meta|Keep track of `seenDigit`, `seenExponent`, `seenDot`, then we check if the current char is valid base on some rules|
+|[415. Add Strings](./questions/415.Add_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-strings)|Meta|Use two ptrs to access two chars backward + carry to perform addition, and append the result to `[]`|
+|[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)||Fast and Slow method|
 
 
 <!--
@@ -309,7 +310,7 @@ Usually needs to check `if not node`: `return None`
 |---|---|---|---|---|
 |[141. Linked List Cycle](./questions/141.Linked_List_Cycle_(Easy).md)|Easy|[Link](https://leetcode.com/problems/linked-list-cycle/)|
 |[21. Merge Two Sorted Lists](./questions/21.Merge_Two_Sorted_Lists_(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-two-sorted-lists/)|
-|[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|
+|[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|Meta|Create dummy node with `carry` to save the sum|
 |[92. Reverse Linked List II](./questions/92.Reverse_Linked_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-linked-list-ii/)|
 |[138. Copy List with Random Pointer](./questions/138.Copy_List_With_Random_Pointer(Medium).md)|Medium|[Link](https://leetcode.com/problems/copy-list-with-random-pointer/)|Meta|Use hashmap to save each node with new node, traverse `head` to assign .next, .random to be the new node in hashmap|
 |[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)|
@@ -576,6 +577,7 @@ ___
 |[649. Dota2 Senate](./questions/649.Dota2_Senate(Medium).md)|Medium|[Link](https://leetcode.com/problems/dota2-senate/)||Maintain 2 deques to fight with each party, the lower index party will win and requeue, the loser will not be added back. When one deque is empty, another party will announce victory|
 |Miscellaneous|||||
 |[346. Moving Average from Data Stream](./questions/346.Moving_Average_from_Data_Stream(Medium).md)|Easy|[Link](https://leetcode.com/problems/moving-average-from-data-stream)|Meta|Use deque[] to save `k` elements with `curSum`, when `len(deque) == size`, we remove the left-most element then add the right-most element into `deque[]`|
+|[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
 
 
 <!--
@@ -686,7 +688,8 @@ Find pattern, base cases, then apply the recurrence relation to fill out the dp 
 |LeetCode 75||||
 |Miscellaneous||||
 |[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)||Backtrack + 2D DP|
-|[516. Longest Palindromic Subsequence](./questions/516.Longest_Palindromic_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-subsequence)|Meta|Build 2d DP with string `s` and its reverse, we compare if two chars are the same, if yes, we upate `dp[r][c] = dp[r-1][c-1]+ 1`, otherwise, we update `dp[r][c] = max(dp[r-1][c], dp[r][c-1]`|
+|[516. Longest Palindromic Subsequence](./questions/516.Longest_Palindromic_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-subsequence)||Build 2d DP with string `s` and its reverse, we compare if two chars are the same, if yes, we upate `dp[r][c] = dp[r-1][c-1]+ 1`, otherwise, we update `dp[r][c] = max(dp[r-1][c], dp[r][c-1]`|
+|[1216. Valid Palindrome III](./questions/1216.Valid_Palindrome_III(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-palindrome-iii)|Meta|Build a dp table of `s` and `s_reversed`, check `len(s) - dp[-1][-1] <= k` so we know we can have k-palindrome|
 
 
 <!--
@@ -790,20 +793,6 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 ---
 
-### Others
-
-|Others|||
-|---|---|---|
-|[239. Sliding Window Maximum](./questions/239.Sliding_Window_Maximum(Hard).md)|Hard|[Link](https://leetcode.com/problems/sliding-window-maximum/)|
-|[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)|
-
-<!--
-|[]()|Easy|[Link]()|
--->
-<br>
-
----
-
 ### Meta Tag
 
 |Meta Tag|||||
@@ -849,7 +838,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[270. Closest Binary Search Tree Value](./questions/270.Closest_Binary_Search_Tree_Value(Easy).md)|Easy|[Link](https://leetcode.com/problems/closest-binary-search-tree-value)|Binary Search Tree|Compare the `abs(node.val-target)` with `abs(res-target)`, if they equal, update res to be the smaller val, otherwise, update res to the one will smaller difference. Run DFS with Binary Search to find the closer one|
 |[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|Sliding Window|Use two hashmaps and 2 counts to keep track of every chars, update res when sCount == tCount, and we start shrinking the sliding window|
 |[958. Check Completeness of a Binary Tree](./questions/958.Check_Completeness_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|Binary Tree BFS|Run BFS with `seenNull` to check if a null node exists, if it exists and we have other non-null nodes, return False|
-|[516. Longest Palindromic Subsequence](./questions/516.Longest_Palindromic_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-subsequence)|2D DP|Build 2d DP with string `s` and its reverse, we compare if two chars are the same, if yes, we upate `dp[r][c] = dp[r-1][c-1]+ 1`, otherwise, we update `dp[r][c] = max(dp[r-1][c], dp[r][c-1]`|
+|[415. Add Strings](./questions/415.Add_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-strings)|Array/String|Use two ptrs to access two chars backward + carry to perform addition, and append the result to `[]`|
+|[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|Linked List|Create dummy node with `carry` to save the sum|
+|[1216. Valid Palindrome III](./questions/1216.Valid_Palindrome_III(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-palindrome-iii)|2D DP|Build a dp table of `s` and `s_reversed`, check `len(s) - dp[-1][-1] <= k` so we know we can have k-palindrome|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
