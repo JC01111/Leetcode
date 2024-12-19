@@ -102,6 +102,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[65. Valid Number](./questions/65.Valid_Number(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-number)|Meta|Keep track of `seenDigit`, `seenExponent`, `seenDot`, then we check if the current char is valid base on some rules|
 |[415. Add Strings](./questions/415.Add_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-strings)|Meta|Use two ptrs to access two chars backward + carry to perform addition, and append the result to `[]`|
 |[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)||Fast and Slow method|
+|[31. Next Permutation](./questions/31.Next_Permutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/next-permutation)|Meta|Find index such that `nums[i] < nums[i+1]`, then find another element `nums[j] > nums[i]` from backward, swap them, and reverse `nums[i+1:]`|
 
 
 <!--
@@ -232,7 +233,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 
 |Backtracking|||||
 |---|---|---|---|---|
-|[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|
+|[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|Meta|Use backtrack with index `i` to keep track of current `curSum[]`, when `i==len(nums)`, we append `curSum` into `res[]` and return, we pop the last element and add new element into `curSum` with `i += 1`|
 |[90. Subsets II](./questions/90.Subsets_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets-ii/)|
 |[39. Combination Sum](./questions/39.Combination_Sum_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum/)|
 |[40. Combination Sum II](./questions/40.Combination_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum-ii/)|
@@ -357,6 +358,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
 
 
+
 <!--
 |[]()|Medium|[Link]()|||
 -->
@@ -398,6 +400,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[872. Leaf-Similar Trees](./questions/872.Leaf_Similar_Trees(Easy).md)|Easy|[Link](https://leetcode.com/problems/leaf-similar-trees/)|
 |[1448. Count Good Nodes in Binary Tree](./questions/1448.Count_Food_Nodes_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)||Standard DFS with slightly modification|
 |[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
+|[1372. Longest ZigZag Path in a Binary Tree](./questions/1372.Longest_ZigZag_Path_in_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree)||Run DFS on each node, use `goLeft` to know if we should continue the path to `node.left`, we also run DFS on the opposite direction for each node with depth 1|
 |[236. Lowest Common Ancestor of a Binary Tree](./questions/236.Lowest_Common_Ancestor_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|Meta Tag|Recursively go to root's left and right subtree to find if a node == p or node == q, if both node can be found, means the common ancestor is the root. Otherwise, either l or r is the ancestor|
 |Miscellaneous||||
 |[113. Path Sum II](./questions/113.Path_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-ii/)||Run DFS to reach the leaf and compare if curSum == targetSum, if so, copy the current path into res[], and pop, remove (backtrack) the current node.val to explore other paths|
@@ -454,7 +457,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[130. Surrounded Regions](./questions/130.Surrounded_Regions(Medium).md)|Medium|[Link](https://leetcode.com/problems/surrounded-regions/)||
 |[286. Walls and Gates](./questions/286.Walls_and_Gates(Medium).md)|Medium|[Link](https://leetcode.com/problems/walls-and-gates/)|Graph BFS|
 |[417. Pacific Atlantic Water Flow](./questions/417.Pacific_Atlantic_Water_Flow(Medium).md)|Medium|[Link](https://leetcode.com/problems/pacific-atlantic-water-flow/)||
-|[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)||
+|[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Meta|Create each node's copy into `hashmap{node: new_node}`, run DFS to append each node's neighbors|
 |[399. Evaluate Division](./questions/399.Evaluate_Division(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-division/)||
 |LeetCode 150||||
 |[909. Snakes and Ladders](./questions/909.Snakes_and_Ladders(Medium).md)|Medium|[Link](https://leetcode.com/problems/snakes-and-ladders/)|Graph BFS|
@@ -841,6 +844,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[415. Add Strings](./questions/415.Add_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-strings)|Array/String|Use two ptrs to access two chars backward + carry to perform addition, and append the result to `[]`|
 |[2. Add Two Numbers](./questions/2.Add_Two_Numbers_(Medium).md)|Medium|[Link](https://leetcode.com/problems/add-two-numbers/)|Linked List|Create dummy node with `carry` to save the sum|
 |[1216. Valid Palindrome III](./questions/1216.Valid_Palindrome_III(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-palindrome-iii)|2D DP|Build a dp table of `s` and `s_reversed`, check `len(s) - dp[-1][-1] <= k` so we know we can have k-palindrome|
+|[31. Next Permutation](./questions/31.Next_Permutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/next-permutation)|Array|Find index such that `nums[i] < nums[i+1]`, then find another element `nums[j] > nums[i]` from backward, swap them, and reverse `nums[i+1:]`|
+|[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|Backtrack|Use backtrack with index `i` to keep track of current `curSum[]`, when `i==len(nums)`, we append `curSum` into `res[]` and return, we pop the last element and add new element into `curSum` with `i += 1`|
+|[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Graph General|Create each node's copy into `hashmap{node: new_node}`, run DFS to append each node's neighbors|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
