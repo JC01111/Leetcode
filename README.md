@@ -21,6 +21,7 @@ Template
 - [Binary Search Tree](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-search-tree)
 - [Graph General](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#graph-general)
 - [Advanced Graph (Shortest Path)](https://github.com/JC01111/Leetcode?tab=readme-ov-file#advanced-graph-shortest-path)
+- [Union Find (Disjoint Set)](https://github.com/JC01111/Leetcode?tab=readme-ov-file#union-find-disjoint-set)
 - [Trie](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#trie)
 - [Intervals](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#intervals)
 - [Hashmap](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#hashmap)
@@ -356,7 +357,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)||Run DFS from root to leaf, check if curSum == targetSum|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
-
+|[987. Vertical Order Traversal of a Binary Tree](./questions/987.Vertical_Order_Traversal_of_a_Binary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|Meta|Save `(node, row, col)` into `deque[]`, and run BFS to append `node.left` with `(row+1, col-1)` and `node.right` with `(row+1, col+1)`. Add all nodes with the same col into `hashmap{col: [node.val]}`. Sort `col` and `row` in the end|
 
 
 <!--
@@ -495,6 +496,30 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 -->
 <br>
 
+---
+
+### Union Find (Disjoint Set)
+
+More to pratice: <br>
+547. Number of Provinces <br>
+952. Largest Component Size by Common Factor <br>
+947. Most Stones Removed with Same Row or Column <br>
+1319. Number of Operations to Make Network Connected <br>
+684. Redundant Connection <br>
+990. Satisfiability of Equality Equations <br>
+1202. Smallest String With Swaps <br>
+2421. Number of Good Paths
+
+|Union Find|||||
+|---|---|---|---|---|
+|[]()|Medium|[Link]()|||
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+<br>
+
 ___
 
 ### Trie
@@ -613,8 +638,8 @@ In most cases, we need to first find the mid point by `len(nums) // 2`, then rec
 
 Greedy problems are hard to identify pattern, but one type of them can be solved by **Kadane's Algorithm**.
 
-|Greedy|||
-|---|---|---|
+|Greedy|||||
+|---|---|---|---|---|
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |[55. Jump Game](./questions/55.Jump_Game_(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game/)|
 |[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)|
@@ -624,6 +649,8 @@ Greedy problems are hard to identify pattern, but one type of them can be solved
 |[763. Partition Labels](./questions/763.Partition_Labels(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-labels/)|
 |[678. Valid Parenthesis String](./questions/678.Valid_Parenthesis_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-parenthesis-string/)|
 |[1899. Merge Triplets to Form Target Triplet](./questions/1899.Merge_Triplets_to_Form_Target_Triplet(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)|
+|Miscellaneous|||||
+|[670. Maximum Swap](./questions/670.Maximum_Swap(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-swap)|Meta|Use variables to keep track of the current maximum index and swap indices, update them based on `num[i]`, finally check if both swap_ids are valid and swap, then return|
 
 
 <!--
@@ -847,6 +874,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[31. Next Permutation](./questions/31.Next_Permutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/next-permutation)|Array|Find index such that `nums[i] < nums[i+1]`, then find another element `nums[j] > nums[i]` from backward, swap them, and reverse `nums[i+1:]`|
 |[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|Backtrack|Use backtrack with index `i` to keep track of current `curSum[]`, when `i==len(nums)`, we append `curSum` into `res[]` and return, we pop the last element and add new element into `curSum` with `i += 1`|
 |[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Graph General|Create each node's copy into `hashmap{node: new_node}`, run DFS to append each node's neighbors|
+|[987. Vertical Order Traversal of a Binary Tree](./questions/987.Vertical_Order_Traversal_of_a_Binary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|Binary Tree General|Save `(node, row, col)` into `deque[]`, and run BFS to append `node.left` with `(row+1, col-1)` and `node.right` with `(row+1, col+1)`. Add all nodes with the same col into `hashmap{col: [node.val]}`. Sort `col` and `row` in the end|
+|[670. Maximum Swap](./questions/670.Maximum_Swap(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-swap)|Greedy|Use variables to keep track of the current maximum index and swap indices, update them based on `num[i]`, finally check if both swap_ids are valid and swap, then return|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
