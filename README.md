@@ -219,10 +219,11 @@ This is the approach when we are required to write an algorithm with $O(log\ n)$
 |[875. Koko Eating Bananas](./questions/875.Koko_Eating_Bananas(Medium).md)|Medium|[Link](https://leetcode.com/problems/koko-eating-bananas/)||Run Binary Search on range of speed k, update r = k - 1 when hours <= h, update l = k + 1 when hours > h|
 |Miscellaneous|||||
 |[528. Random Pick with Weight](./questions/528.Random_Pick_with_Weight(Medium).md)|Medium|[Link](https://leetcode.com/problems/random-pick-with-weight)|Meta Tag|First initialize each index from [0, len(w)-1] a probability by w[i] / sum(w), then we calculate the prefixSum of each index. Next, randomly generate a prob within [0, 1], then we use Binary Search to find the index with the closest probability|
+|[1539. Kth Missing Positive Number](./questions/1539.Kth_Missing_Positive_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-missing-positive-number)|Meta||
 
 
 <!--
-|[]()|Easy|[Link]()|
+|[]()|Easy|[Link]()|||
 -->
 <br>
 
@@ -329,6 +330,8 @@ Usually needs to check `if not node`: `return None`
 |Miscellaneous|||||
 |[83. Remove Duplicates from Sorted List](./questions/83.Remove_Duplicates_from_Sorted_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)||Repeatly set curr.next = curr.next.next to remove duplicate, update curr only a non-duplicated element is found|
 |[82. Remove Duplicates from Sorted List II](./questions/82.Remove_Duplicates_from_Sorted_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)||Use while loop to skip duplicate (while head and head.next and head.val == head.next.val), use prev node to save the non-duplicate element|
+|[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Meta|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
+
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -474,6 +477,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
 |[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Meta|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
 |[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Meta|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
+|[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
 
 
 <!--
@@ -512,7 +516,7 @@ More to pratice: <br>
 
 |Union Find|||||
 |---|---|---|---|---|
-|[]()|Medium|[Link]()|||
+|[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
 
 
 <!--
@@ -686,7 +690,7 @@ ___
 |[790. Domino and Tromino Tiling](./questions/790.Domino_and_Tromino_Tiling(Medium).md)|Medium|[Link](https://leetcode.com/problems/domino-and-tromino-tiling/)|
 |LeetCode 150|||||
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
-|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|
+|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|Meta|Build 1d DP to check if an index `s[i:i+len(word)] == word`, then we set `dp[i] = dp[i+len(word)]`|
 |[322. Coin Change](./questions/322.Coin_Change(Medium).md)|Medium|[Link](https://leetcode.com/problems/coin-change/)||Build a dp table from range(0, amount+1), calculate how many coins need for each amount, take the current coin + dp(a-c)|
 |[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
 |Miscellaneous|||||
@@ -876,6 +880,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Graph General|Create each node's copy into `hashmap{node: new_node}`, run DFS to append each node's neighbors|
 |[987. Vertical Order Traversal of a Binary Tree](./questions/987.Vertical_Order_Traversal_of_a_Binary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|Binary Tree General|Save `(node, row, col)` into `deque[]`, and run BFS to append `node.left` with `(row+1, col-1)` and `node.right` with `(row+1, col+1)`. Add all nodes with the same col into `hashmap{col: [node.val]}`. Sort `col` and `row` in the end|
 |[670. Maximum Swap](./questions/670.Maximum_Swap(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-swap)|Greedy|Use variables to keep track of the current maximum index and swap indices, update them based on `num[i]`, finally check if both swap_ids are valid and swap, then return|
+|[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Union Find, DFS|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
+|[1539. Kth Missing Positive Number](./questions/1539.Kth_Missing_Positive_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-missing-positive-number)|Binary Search||
+|[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|1D DP|Build 1d DP to check if an index `s[i:i+len(word)] == word`, then we set `dp[i] = dp[i+len(word)]`|
+|[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Linked List|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
