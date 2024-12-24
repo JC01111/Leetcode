@@ -200,7 +200,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 ---
 
 ### Binary Search
-This is the approach when we are required to write an algorithm with $O(log\ n)$ runtime. Usually, we just need to define the left & right pointer, then we iteratively find the mid point by `(left + right) // 2`, and compare the mid point with `target`, if `target < m`, we update the `right` by `m - 1`, if `target > m`, we update `left` by `m + 1`. 
+Use this method when we see sorted in **non-decreasing** order or when we need to write an algorithm in $O(log\ n)$ runtime. Use left & right pointer, then we iteratively find the mid point by `(left + right) // 2`, and compare the mid point with `target`, if `target < m`, we update the `right` by `m - 1`, if `target > m`, we update `left` by `m + 1`. 
 
 |Binary Search|||||
 |---|---|---|---|---|
@@ -211,7 +211,7 @@ This is the approach when we are required to write an algorithm with $O(log\ n)$
 |[153. Find Minimum in Rotated Sorted Array](./questions/153.Find_Minimum_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|
 |[33. Search in Rotated Sorted Array](./questions/33.Search_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)|
 |[162. Find Peak Element](./questions/162.Find_Peak_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-peak-element/)|Meta Tag|Run Binary Search to check if a peak element exists, if not, update l or r pointer to the greater value neighbor|
-|[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|
+|[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Meta|Find the left end and right end of `nums` by running Binary Search twice, update different ptr each time|
 |[4. Median of Two Sorted Arrays](./questions/4.Median_of_Two_Sorted_Arrays(Hard).md)|Hard|[Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)|
 |LeetCode 75|||||
 |[374. Guess Number Higher or Lower](./questions/374.Guess_Number_Higher_or_Lower(Easy).md)|Easy|[Link](https://leetcode.com/problems/guess-number-higher-or-lower/)|
@@ -884,6 +884,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1539. Kth Missing Positive Number](./questions/1539.Kth_Missing_Positive_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-missing-positive-number)|Binary Search|Run Binary Search with k on the difference between the original `arr` and current `arr`|
 |[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|1D DP|Build 1d DP to check if an index `s[i:i+len(word)] == word`, then we set `dp[i] = dp[i+len(word)]`|
 |[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Linked List|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
+|[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Binary Search|Find the left end and right end of `nums` by running Binary Search twice, update different ptr each time|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
