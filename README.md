@@ -553,9 +553,10 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |---|---|---|---|---|
 |[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|Meta|Compare new interval with previous interval, if there is overlap, we update the previous interval with [min(x1, x2), max(y1, y2)]. Otherwise, append the new interval to `res[]`|
 |[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
+|LeetCode 75|||||
 |[435. Non-overlapping Intervals](./questions/435.Non-overlapping_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/non-overlapping-intervals/)|
+|[452. Minimum Number of Arrows to Burst Balloons](./questions/452.Minimum_Number_of_Arrows_to_Burst_Balloons(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)||Use `prev` to compare with current interval, if `start <= prev[1]`, there is overlap and update `prev`|
 |[228. Summary Ranges](./questions/228.Summary_Ranges(Easy).md)|Easy|[Link](https://leetcode.com/problems/summary-ranges/)|
-|[452. Minimum Number of Arrows to Burst Balloons](./questions/452.Minimum_Number_of_Arrows_to_Burst_Balloons(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)|
 |[1851. Minimum Interval to Include Each Query](./questions/1851.Minimum_Interval_to_Include_Each_Query(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-interval-to-include-each-query/)|
 |Miscellaneous|||||
 |[252. Meeting Rooms](./questions/252.Meeting_Rooms(Easy).md)|Easy|[Link](https://leetcode.com/problems/meeting-rooms)||First sort intervals, then use `prev` to save the previous interval's end time, then compare with new interval's start time, if `prev > start`, return False|
