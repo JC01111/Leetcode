@@ -81,7 +81,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[238. Product of Array Except Self](./questions/238.Product_of_Array_Except_Self(Medium).md)|Medium|[Link](https://leetcode.com/problems/product-of-array-except-self/)||Maintain a list of left product, then traverse from right to left update with product, and update product * nums[i]|
 |[128. Longest Consecutive Sequence](./questions/128.Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-consecutive-sequence/)||Convert `nums` to set() to avoid duplicate elements, then for each base element (check if n-1 in set), we increment by 1 each time when the total is in the set()|
 |LeetCode 75|||||
-|[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|
+|[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|Meta|Use two ptrs to add chars from two strings alternatively, then check to add the remaining from `word1` or `word2`|
 |[1071. Greatest Common Divisor of Strings](./questions/1071.Greatest_Common_Divisor_of_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|
 |[1431. Kids With the Greatest Number of Candies](./questions/1431.Kids_With_the_Greatest_Number_of_Candies(Easy).md)|Easy|[Link](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)||Easy Not worthy to redo|
 |[605. Can Place Flowers](./questions/605.Can_Place_Flowers(Easy).md)|Easy|[Link](https://leetcode.com/problems/can-place-flowers/)|
@@ -104,6 +104,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[415. Add Strings](./questions/415.Add_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-strings)|Meta|Use two ptrs to access two chars backward + carry to perform addition, and append the result to `[]`|
 |[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)||Fast and Slow method|
 |[31. Next Permutation](./questions/31.Next_Permutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/next-permutation)|Meta|Find index such that `nums[i] < nums[i+1]`, then find another element `nums[j] > nums[i]` from backward, swap them, and reverse `nums[i+1:]`|
+|[3043. Find the Length of the Longest Common Prefix](./questions/3043.Find_the_Length_of_the_Longest_Common_Prefix(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix)|Uber OA|Use hashset to save all the prefixes of `x` from `arr1`, and compare each prefixes of `y` from `arr2`|
 
 
 <!--
@@ -886,6 +887,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[139. Word Break](./questions/139.Word_Break_(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-break/)|1D DP|Build 1d DP to check if an index `s[i:i+len(word)] == word`, then we set `dp[i] = dp[i+len(word)]`|
 |[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Linked List|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
 |[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Binary Search|Find the left end and right end of `nums` by running Binary Search twice, update different ptr each time|
+|[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|Two Pointers|Use two ptrs to add chars from two strings alternatively, then check to add the remaining from `word1` or `word2`|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
