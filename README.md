@@ -192,6 +192,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |Miscellaneous|||||
 |[1861. Rotating the Box](./questions/1861.Rotating_the_Box(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotating-the-box)||First move all the stones to the valid spaces, then convert each column into each row of the new matrix|
 |[498. Diagonal Traverse](./questions/498.Diagonal_Traverse(Medium).md)|Medium|[Link](https://leetcode.com/problems/diagonal-traverse)|Meta|Save the diagonal index by (r+c) with values `{diagonal_idx: [val]}`, then check `idx % 2` to decide whether reverse the saved values' list or not|
+|[766. Toeplitz Matrix](./questions/766.Toeplitz_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/toeplitz-matrix)|Meta|Compare each entry with their bottom-right neighbor (if exists)|
 
 
 <!--
@@ -481,6 +482,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Meta|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
 |[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
 |[329. Longest Increasing Path in a Matrix](./questions/329.Longest_Increasing_Path_in_a_Matrix(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|Meta|2D DP + DFS on entry's neighbors|
+|[1443. Minimum Time to Collect All Apples in a Tree](./questions/1443.Minimum_Time_to_Collect_All_Apples_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree)|Meta|Build adjacent graph and run DFS to search if node's children has apple, if so return `secs + 2`, otherwise, return 2 if `node` is apple, `0` else|
 
 
 <!--
@@ -892,8 +894,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Binary Search|Find the left end and right end of `nums` by running Binary Search twice, update different ptr each time|
 |[1768. Merge Strings Alternately](./questions/1768.Merge_Strings_Alternately(Easy).md)|Easy|[Link](https://leetcode.com/problems/merge-strings-alternately/)|Two Pointers|Use two ptrs to add chars from two strings alternatively, then check to add the remaining from `word1` or `word2`|
 |[498. Diagonal Traverse](./questions/498.Diagonal_Traverse(Medium).md)|Medium|[Link](https://leetcode.com/problems/diagonal-traverse)|Matrix|Save the diagonal index by (r+c) with values `{diagonal_idx: [val]}`, then check `idx % 2` to decide whether reverse the saved values' list or not|
-|[605. Can Place Flowers](./questions/605.Can_Place_Flowers(Easy).md)|Easy|[Link](https://leetcode.com/problems/can-place-flowers/)|Meta|Append `0` to two ends of `flowerbed`, check `flowerbed[i]` and its neighbors are all `0` or not, if so, replace `0` to `1` and decrement `n`. Return `n <= 0`|
+|[605. Can Place Flowers](./questions/605.Can_Place_Flowers(Easy).md)|Easy|[Link](https://leetcode.com/problems/can-place-flowers/)|Array|Append `0` to two ends of `flowerbed`, check `flowerbed[i]` and its neighbors are all `0` or not, if so, replace `0` to `1` and decrement `n`. Return `n <= 0`|
 |[329. Longest Increasing Path in a Matrix](./questions/329.Longest_Increasing_Path_in_a_Matrix(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|2D DP, Graph General|2D DP + DFS on entry's neighbors|
+|[766. Toeplitz Matrix](./questions/766.Toeplitz_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/toeplitz-matrix)|Matrix|Compare each entry with their bottom-right neighbor (if exists)|
+|[1443. Minimum Time to Collect All Apples in a Tree](./questions/1443.Minimum_Time_to_Collect_All_Apples_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree)|Graph General, DFS|Build adjacent graph and run DFS to search if node's children has apple, if so return `secs + 2`, otherwise, return 2 if `node` is apple, `0` else|
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Stack|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |一亩三分地|||||
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
