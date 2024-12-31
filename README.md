@@ -184,7 +184,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 
 |Matrix|||||
 |---|---|---|---|---|
-|[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|||
+|[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|Meta|Use three dicts to check repetition|
 |[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)|
 |[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
 |[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
@@ -193,6 +193,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |[1861. Rotating the Box](./questions/1861.Rotating_the_Box(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotating-the-box)||First move all the stones to the valid spaces, then convert each column into each row of the new matrix|
 |[498. Diagonal Traverse](./questions/498.Diagonal_Traverse(Medium).md)|Medium|[Link](https://leetcode.com/problems/diagonal-traverse)|Meta|Save the diagonal index by (r+c) with values `{diagonal_idx: [val]}`, then check `idx % 2` to decide whether reverse the saved values' list or not|
 |[766. Toeplitz Matrix](./questions/766.Toeplitz_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/toeplitz-matrix)|Meta|Compare each entry with their bottom-right neighbor (if exists)|
+|[37. Sudoku Solver](./questions/37.Sudoku_Solver(Hard).md)|Medium|[Link](https://leetcode.com/problems/sudoku-solver)|Meta|Use 3 sets to save existed vals, backtrack number `i` from `[1, 9]` for `'.'`|
 
 
 <!--
@@ -903,6 +904,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[347. Top K Frequent Elements](./questions/347.Top_K_Frequent_Elements(Medium).md)|Medium|[Link](https://leetcode.com/problems/top-k-frequent-elements/)|minHeap|Count num with their counts, use minHeap to sort the counts then append num k times from minHeap to res[]|
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Stack|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Array, Backtrack|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
+|[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|Matrix|Use three dicts to check repetition|
+|[37. Sudoku Solver](./questions/37.Sudoku_Solver(Hard).md)|Medium|[Link](https://leetcode.com/problems/sudoku-solver)|Matrix, Backtrack|Use 3 sets to save existed vals, backtrack number `i` from `[1, 9]` for `'.'`|
 
 
 <!--
