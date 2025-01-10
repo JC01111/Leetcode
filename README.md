@@ -598,6 +598,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[205. Isomorphic Strings](./questions/205.Isomorphic_Strings(Easy).md)|Easy|[Link](https://leetcode.com/problems/isomorphic-strings/)||Build two hashmaps to compare the mapping of each two chars, if they don't match, return False|
 |[290. Word Pattern](./questions/290.Word_Pattern(Easy).md)|Easy|[Link](https://leetcode.com/problems/word-pattern/)||Build a hashmap to check the previous mapping, but we also need to check if the mapping is unique, no duplicate words are used, we can use set() to compare|
 |[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)||Sort word to be the key in hashmap, then append this word to the correpsonding list by the sorted(word) as key|
+|[202. Happy Number](./questions/202.Happy_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/happy-number)||Use `set()` to detect when there is repeated number, so we can stop|
 |Miscellaneous|||
 |[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
 
