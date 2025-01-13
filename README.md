@@ -331,6 +331,8 @@ Usually needs to check `if not node`: `return None`
 |[328. Odd Even Linked List](./questions/328.Odd_Even_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/odd-even-linked-list/)||Create odd and even linkedlist, add even linked list to the end of odd linkedlist|
 |[206. Reverse Linked List](./questions/206.Reverse_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-linked-list/)||Flip every node to connect its previous node, and reset prev, head every time|
 |[2130. Maximum Twin Sum of a Linked List](./questions/2130.Maximum_Twin_Sum_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)||Reverse the first half linked-list, update res with the first half.val + second half.val|
+|LeetCode 150||||
+|[86. Partition List](./questions/86.Partition_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-list)||Use two nodes to save lists of nodes less than `x` and nodes greater or equal to `x`|
 |Miscellaneous|||||
 |[83. Remove Duplicates from Sorted List](./questions/83.Remove_Duplicates_from_Sorted_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)||Repeatly set curr.next = curr.next.next to remove duplicate, update curr only a non-duplicated element is found|
 |[82. Remove Duplicates from Sorted List II](./questions/82.Remove_Duplicates_from_Sorted_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)||Use while loop to skip duplicate (while head and head.next and head.val == head.next.val), use prev node to save the non-duplicate element|
