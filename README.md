@@ -363,6 +363,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[106. Construct Binary Tree from Inorder and Postorder Traversal](./questions/106.Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)|
 |[117. Populating Next Right Pointers in Each Node II](./questions/117.Populating_Next_Right_Pointers_in_Each_Node_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)||Run BFS on each level and set each node's next to the next node, except the last one|
 |[114. Flatten Binary Tree to Linked List](./questions/114.Flatten_Binary_Tree_to_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)||Find curr's left subtree's rightmost node and set its node.right to curr's right-subtree. Then set curr.right = curr.left, update curr.left = None and curr = curr.right|
+|[173. Binary Search Tree Iterator](./questions/173.Binary_Search_Tree_Iterator(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-search-tree-iterator)||Use `stack[]` to save nodes in descending order, so we can always find the next smallest value by popping|
 |[222. Count Complete Tree Nodes](./questions/222.Count_Complete_Tree_Nodes(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-complete-tree-nodes/)|
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)||Run DFS from root to leaf, check if curSum == targetSum|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
@@ -678,12 +679,16 @@ Greedy problems are hard to identify pattern, but one type of them can be solved
 ### Kadane's Algorithm
 Kadane's Algorithm maintains a `curSum` which keep tracks of contiguous summation, it is always `0` if the `curSum + nums[i] < 0`, which means we will not take this element at index `i`. If `curSum > 0` we will keep unpdating `curSum += nums[i]` and update `maxSum = max(maxSum, curSum)`. This is the standard approach of Kadane's algorithm.
 
-|Kadane's Algorithm|||
-|---|---|---|
+|Kadane's Algorithm|||||
+|---|---|---|---|---|
+|LeetCode 150|||||
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
+|[918. Maximum Sum Circular Subarray](./questions/918.Maximum_Sum_Circular_Subarray(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-sum-circular-subarray)||Use Kadane's alg to find globalMin and globalMax, return max(globalMax, sum(nums)-globalMin)|
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
 
-
+<!--
+|[]()|Medium|[Link]()|||
+-->
 <br>
 
 ___
