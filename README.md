@@ -736,6 +736,7 @@ Find pattern, base cases, then apply the recurrence relation to fill out the dp 
 |LeetCode 150||||
 |[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
 |[64. Minimum Path Sum](./questions/64.Minimum_Path_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-path-sum/)||Build a dp table top-bottom, each entry takes its `grid_val + min(dp_left, dp_up)`|
+|[63. Unique Paths II](./questions/63.Unique_Paths_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths-ii)||Modify the original grid as DP, each grid represents how many ways to go|
 |LeetCode 75||||
 |Miscellaneous||||
 |[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)||Backtrack + 2D DP|
