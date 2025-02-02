@@ -105,7 +105,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)||Fast and Slow method|
 |[31. Next Permutation](./questions/31.Next_Permutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/next-permutation)|Meta|Find index such that `nums[i] < nums[i+1]`, then find another element `nums[j] > nums[i]` from backward, swap them, and reverse `nums[i+1:]`|
 |[3043. Find the Length of the Longest Common Prefix](./questions/3043.Find_the_Length_of_the_Longest_Common_Prefix(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix)|Uber OA|Use hashset to save all the prefixes of `x` from `arr1`, and compare each prefixes of `y` from `arr2`|
-
+|[3151. Special Array I](./questions/3151.Special_Array_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/special-array-i)||Use `prev` to keep track previous parity and check if it matches the current parity|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -762,6 +762,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |LeetCode 150|||||
 |[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Meta Tag|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)||Use two heaps|
+|[373. Find K Pairs with Smallest Sums](./questions/373.Find_K_Pairs_with_Smallest_Sums(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)|||
 |[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
 |NeetCode 150|||||
 |[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
