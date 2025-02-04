@@ -762,7 +762,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |LeetCode 150|||||
 |[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Meta Tag|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)||Use two heaps|
-|[373. Find K Pairs with Smallest Sums](./questions/373.Find_K_Pairs_with_Smallest_Sums(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)|||
+|[373. Find K Pairs with Smallest Sums](./questions/373.Find_K_Pairs_with_Smallest_Sums(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)||Save every elements of nums1 with the first index `0` of `nums2` with the total sum|
 |[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
 |NeetCode 150|||||
 |[703. Kth Largest Element in a Stream](./questions/703.Kth_Largest_Element_in_a_Stream_(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-largest-element-in-a-stream/)|
