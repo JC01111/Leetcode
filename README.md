@@ -106,6 +106,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[31. Next Permutation](./questions/31.Next_Permutation(Medium).md)|Medium|[Link](https://leetcode.com/problems/next-permutation)|Meta|Find index such that `nums[i] < nums[i+1]`, then find another element `nums[j] > nums[i]` from backward, swap them, and reverse `nums[i+1:]`|
 |[3043. Find the Length of the Longest Common Prefix](./questions/3043.Find_the_Length_of_the_Longest_Common_Prefix(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix)|Uber OA|Use hashset to save all the prefixes of `x` from `arr1`, and compare each prefixes of `y` from `arr2`|
 |[3151. Special Array I](./questions/3151.Special_Array_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/special-array-i)||Use `prev` to keep track previous parity and check if it matches the current parity|
+|[1800. Maximum Ascending Subarray Sum](./questions/1800.Maximum_Ascending_Subarray_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-ascending-subarray-sum)||Kadane's Algorithm, when a non-ascending element exists, reset `curSum = 0`|
+
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -686,6 +688,9 @@ Kadane's Algorithm maintains a `curSum` which keep tracks of contiguous summatio
 |[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
 |[918. Maximum Sum Circular Subarray](./questions/918.Maximum_Sum_Circular_Subarray(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-sum-circular-subarray)||Use Kadane's alg to find globalMin and globalMax, return max(globalMax, sum(nums)-globalMin)|
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
+|Miscellaneous|||||
+|[1800. Maximum Ascending Subarray Sum](./questions/1800.Maximum_Ascending_Subarray_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-ascending-subarray-sum)||Kadane's Algorithm, when a non-ascending element exists, reset `curSum = 0`|
+
 
 <!--
 |[]()|Medium|[Link]()|||
