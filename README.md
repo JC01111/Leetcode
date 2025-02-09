@@ -608,7 +608,8 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[202. Happy Number](./questions/202.Happy_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/happy-number)||Use `set()` to detect when there is repeated number, so we can stop|
 |Miscellaneous|||
 |[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
-
+|Miscellaneous|||||
+|[1726. Tuple with Same Product](./questions/1726.Tuple_with_Same_Product(Medium).md)|Medium|[Link](https://leetcode.com/problems/tuple-with-same-product)||Use dict with the multiplication of two integers as key, save two pairs of these two integers. Count each val number of permutation|
 
 <!--
 |[]()|Easy|[Link]()|||
