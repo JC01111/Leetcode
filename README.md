@@ -56,8 +56,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[80. Remove Duplicates from Sorted Array II](./questions/80.Remove_Duplicates_from_Sorted_Array_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)|
 |[169. Majority Element](./questions/169.Majority_Element_(Easy).md)|Easy|[Link](https://leetcode.com/problems/majority-element/)||Use two variables to keep track of curMax element and its count, decrement count if current elem != val, when count == 0, update curMax = i. Otherwise, increment count|
 |[189. Rotate Array](./questions/189.Rotate_Array_(Medium).md)|Mediun|[Link](https://leetcode.com/problems/rotate-array/)||Reverse nums and reverse nums[:k], same as rotate the array to the right by k steps|
-|[121. Best Time to Buy and Sell Stock](./questions/121.Best_Time_to_Buy_and_Sell_Stock_(Easy).md)|Easy|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|
-|[122. Best Time to Buy and Sell Stock II](./questions/122.Best_Time_to_Buy_and_Sell_Stock_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|
+|[121. Best Time to Buy and Sell Stock](./questions/121.Best_Time_to_Buy_and_Sell_Stock_(Easy).md)|Easy|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)||Keep track of `mini` and `maxi`|
+|[122. Best Time to Buy and Sell Stock II](./questions/122.Best_Time_to_Buy_and_Sell_Stock_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)||Similar to 121|
 |[45. Jump Game II](./questions/45.Jump_Game_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/jump-game-ii/)||Use l, r ptrs to find a reachable range, update farthest variable within the range, update l = r + 1, r = farthest, update jumps by 1|
 |[14. Longest Common Prefix](./questions/14.Longest_Common_Prefix(Easy).md)|Easy|[Link](https://leetcode.com/problems/longest-common-prefix/)|
 |[58. Length of Last Word](./questions/58.Length_of_Last_Word(Easy).md)|Easy|[Link](https://leetcode.com/problems/length-of-last-word/)|
@@ -744,6 +744,7 @@ Find pattern, base cases, then apply the recurrence relation to fill out the dp 
 |[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
 |[64. Minimum Path Sum](./questions/64.Minimum_Path_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-path-sum/)||Build a dp table top-bottom, each entry takes its `grid_val + min(dp_left, dp_up)`|
 |[63. Unique Paths II](./questions/63.Unique_Paths_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths-ii)||Modify the original grid as DP, each grid represents how many ways to go|
+|[221. Maximal Square](/questions/221.Maximal_Square(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximal-square)||Find the minimum of three neighbors + 1 to update `dp[r][c]`|
 |LeetCode 75||||
 |Miscellaneous||||
 |[312. Burst Balloons](./questions/312.Burst_Balloons(Hard).md)|Hard|[Link](https://leetcode.com/problems/burst-balloons/)||Backtrack + 2D DP|
@@ -843,6 +844,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[66. Plus One](./questions/66.Plus_One_(Easy).md)|Easy|[Link](https://leetcode.com/problems/plus-one/)|
 |[69. Sqrt(x)](./questions/69.Sqrt(x)(Easy).md)|Easy|[Link](https://leetcode.com/problems/sqrtx/)||Run Binary Search in `[0, x]` to find the maximum `m` such that `m^2 <= x`|
 |[50. Pow(x, n)](./questions/50.Pow(x,%20n)(Medium).md)|Medium|[Link](https://leetcode.com/problems/powx-n)|Meta Tag|Use a pattern to divide the exponent into half based on even or odd each time, so we can save the time complexity to be $O(log\ n)$|
+|[149. Max Points on a Line](./questions/149.Max_Points_on_a_Line(Hard).md)|Hard|[Link](https://leetcode.com/problems/max-points-on-a-line)||For every point, save the slope of this point with other points as key, update with counts, udpate max everytime with current slope|
 |Miscellaneous|||||
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 
