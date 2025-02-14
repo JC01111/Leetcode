@@ -819,18 +819,21 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 |Bit Manipulation|||||
 |---|---|---|---|---|
-|[136. Single Number](./questions/136.Single_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/single-number/)||XOR will eliminate the same element|
-|[191. Number of 1 Bits](./questions/191.Number_of_1_bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-1-bits/)|
-|[190. Reverse Bits](./questions/190.Reverse_Bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-bits/)|
+|LeetCode 150||||
 |[67. Add Binary](./questions/67.Add_Binary_(Easy).md)|Easy|[Link](https://leetcode.com/problems/add-binary/)|
-|[371. Sum of Two Integers](./questions/371.Sum_of_Two_Integers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-of-two-integers/)|
+|[190. Reverse Bits](./questions/190.Reverse_Bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/reverse-bits/)|
+|[191. Number of 1 Bits](./questions/191.Number_of_1_bits_(Easy).md)|Easy|[Link](https://leetcode.com/problems/number-of-1-bits/)|
+|[136. Single Number](./questions/136.Single_Number_(Easy).md)|Easy|[Link](https://leetcode.com/problems/single-number/)||XOR will eliminate the same element|
+|[137. Single Number II](./questions/137.Single_Number_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/single-number-ii)||Each bit's occurrences `% 3` to update `res`'s bit|
+|[201. Bitwise AND of Numbers Range](./questions/201.Bitwise_AND_of_Numbers_Range(Medium).md)|Medium|[Link](https://leetcode.com/problems/bitwise-and-of-numbers-range)||Right shift bits until `left = right`, also count how many bits we move, then move the bits left back|
 |LeetCode 75||||
 |[338. Counting Bits](./questions/338.Counting_Bits(Easy).md)|Easy|[Link](https://leetcode.com/problems/counting-bits/)||Use dp to know how many 1s in the previous bits, and use i & 1 to know if the last bit is 1 or not|
 |[1318. Minimum Flips to Make a OR b Equal to c](./questions/1318.Minimum_Flips_to_Make_a_OR_b_Equal_to_c(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)||Compare the last bits of a, b, c, and count how many flips we need|
-
+|Miscellaneous|||||
+|[371. Sum of Two Integers](./questions/371.Sum_of_Two_Integers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-of-two-integers/)|
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
