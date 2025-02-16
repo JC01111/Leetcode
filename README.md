@@ -849,6 +849,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[69. Sqrt(x)](./questions/69.Sqrt(x)(Easy).md)|Easy|[Link](https://leetcode.com/problems/sqrtx/)||Run Binary Search in `[0, x]` to find the maximum `m` such that `m^2 <= x`|
 |[50. Pow(x, n)](./questions/50.Pow(x,%20n)(Medium).md)|Medium|[Link](https://leetcode.com/problems/powx-n)|Meta Tag|Use a pattern to divide the exponent into half based on even or odd each time, so we can save the time complexity to be $O(log\ n)$|
 |[149. Max Points on a Line](./questions/149.Max_Points_on_a_Line(Hard).md)|Hard|[Link](https://leetcode.com/problems/max-points-on-a-line)||For every point, save the slope of this point with other points as key, update with counts, udpate max everytime with current slope|
+|[172. Factorial Trailing Zeroes](./questions/172.Factorial_Trailing_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/factorial-trailing-zeroes)||Count number of `10 = 2 * 5`, so we find the number of `5` that we can find|
 |Miscellaneous|||||
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 
