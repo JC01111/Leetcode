@@ -108,6 +108,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[3151. Special Array I](./questions/3151.Special_Array_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/special-array-i)||Use `prev` to keep track previous parity and check if it matches the current parity|
 |[1800. Maximum Ascending Subarray Sum](./questions/1800.Maximum_Ascending_Subarray_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-ascending-subarray-sum)||Kadane's Algorithm, when a non-ascending element exists, reset `curSum = 0`|
 |[1790. Check if One String Swap Can Make Strings Equal](./questions/1790.Check_if_One_String_Swap_Can_Make_Strings_Equal(Easy).md)|Easy|[Link](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal)||Use two variables to keep track of the difference indices, only `counts == 0 or 2` are possible for the swap|
+|[767. Reorganize String](./questions/767.Reorganize_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorganize-string)|Amazon Tag|Count the frequency of each char and use maxHeap to alternate placing the most frequent chars|
 
 
 <!--
@@ -745,6 +746,7 @@ Find pattern, base cases, then apply the recurrence relation to fill out the dp 
 |[120. Triangle](./questions/120.Triangle(Medium).md)|Medium|[Link](https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150)|
 |[64. Minimum Path Sum](./questions/64.Minimum_Path_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-path-sum/)||Build a dp table top-bottom, each entry takes its `grid_val + min(dp_left, dp_up)`|
 |[63. Unique Paths II](./questions/63.Unique_Paths_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/unique-paths-ii)||Modify the original grid as DP, each grid represents how many ways to go|
+|[188. Best Time to Buy and Sell Stock IV](./questions/188.Best_Time_to_Buy_and_Sell_Stock_IV(Hard).md)|Hard|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv)||Update profits of `stock` and `cash` for each transaction|
 |[221. Maximal Square](/questions/221.Maximal_Square(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximal-square)||Find the minimum of three neighbors + 1 to update `dp[r][c]`|
 |LeetCode 75||||
 |Miscellaneous||||
