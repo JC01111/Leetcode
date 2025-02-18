@@ -41,6 +41,10 @@ Template
 
 <br>
 
+### [Concurrency](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#concurrency)
+
+<br>
+
 ___
 
 ### Array / String
@@ -940,6 +944,21 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 <!--
 |[]()|Easy|[Link]()|||
 -->
+<br>
+
+---
+
+### Concurrency
+
+|Concurrency|||||
+|---|---|---|---|---|
+|[1114. Print in Order](./questions/1114.Print_in_Order(Easy).md)|Easy|[Link](https://leetcode.com/problems/print-in-order)||Semophores to lock resource and wait to release|
+
+
+<!--
+|[]()|Easy|[Link]()|||
+-->
+<br>
 
 <br> <br>
 
