@@ -263,7 +263,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[386. Lexicographical Numbers](./questions/386.Lexicographical_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/lexicographical-numbers/description/)|Google Tag| Similar to combination|
 |Miscellaneous|||||
 |[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Meta|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
-
+|[1079. Letter Tile Possibilities](./questions/1079.Letter_Tile_Possibilities(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-tile-possibilities)||Save each char's frequency into list of 26 chars, each time we use 1 char, reduce the count in list, then run backtrack with this list to count|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -953,10 +953,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |Concurrency|||||
 |---|---|---|---|---|
 |[1114. Print in Order](./questions/1114.Print_in_Order(Easy).md)|Easy|[Link](https://leetcode.com/problems/print-in-order)||Semophores to lock resource and wait to release|
-
+|[1116. Print Zero Even Odd](./questions/1116.Print_Zero_Even_Odd(Medium).md)|Medium|[Link](https://leetcode.com/problems/print-zero-even-odd)||From `zero()` we identify and unlock the semophores for `even()` or `odd()` base on the `i`, then we `printNumber(i)` and unlock `sem_zero` to back continue|
 
 <!--
-|[]()|Easy|[Link]()|||
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
