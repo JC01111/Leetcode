@@ -1,5 +1,5 @@
 ## 0. Name (Medium)
-**Date and Time:** Feb 19, 2025,  (EST)
+**Date and Time:** Feb 20, 2025,  (EST)
 
 Link: 
 
@@ -43,12 +43,10 @@ Link:
 
 <br>
 
-### Python Solution:
-```python
+### C++ Solution:
+```cpp
 
 ```
-**Time Complexity:** $O()$ <br>
-**Space Complexity:** $O()$
 
 <br>
 
