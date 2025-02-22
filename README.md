@@ -399,9 +399,9 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[1161. Maximum Level Sum of a Binary Tree](./questions/1161.Maximum_Level_Sum_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)||Similar to 199, standard BFS with slightly modification|
 |Miscellaneous|||||
 |[314. Binary Tree Vertical Order Traversal](./questions/314.Binary_Tree_Vertical_Order_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)|Meta|Run BFS to save all the nodes with their column index [node, col] into deque and save them into hashmap {index: [node]}|
-|Miscellaneous|||||
 |[863. All Nodes Distance K in Binary Tree](./questions/863.All_Nodes_Distance_K_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|Meta|Build an undirected graph to connect two connected nodes together, then run BFS from `target` to add all its neighbor nodes into deque, when distance == k, we append the node.val into res[]|
 |[958. Check Completeness of a Binary Tree](./questions/958.Check_Completeness_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|Meta|Run BFS with `seenNull` to check if a null node exists, if it exists and we have other non-null nodes, return False|
+|[1261. Find Elements in a Contaminated Binary Tree](./questions/1261.Find_Elements_in_a_Contaminated_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree)||Run BFS to change the value back, and use `set()` to find if a value exists|
 
 
 <!--
