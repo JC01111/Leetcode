@@ -956,6 +956,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1116. Print Zero Even Odd](./questions/1116.Print_Zero_Even_Odd(Medium).md)|Medium|[Link](https://leetcode.com/problems/print-zero-even-odd)||From `zero()` we identify and unlock the semophores for `even()` or `odd()` base on the `i`, then we `printNumber(i)` and unlock `sem_zero` to back continue|
 |[1115. Print FooBar Alternately](./questions/1115.Print_FooBar_Alternately(Medium).md)|Medium|[Link](https://leetcode.com/problems/print-foobar-alternately)||Set `sem_foo` with higher priority, so we can always start with `foo`, then release `sem_bar`|
 |[1117. Building H2O](./questions/1117.Building_H20(Medium).md)|Medium|[Link](https://leetcode.com/problems/building-h2o)||Use two semaphores for `hydrogen` and `oxygen`, allow 2 `hydrogen` can be accessed at the same time, use `count` to unlock `sem_oxy`|
+|[1188. Design Bounded Blocking Queue](./questions/1188.Design_Bounded_Blocking_Queue(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-bounded-blocking-queue)||Using two semaphores with one mutex, define one semaphore with `capacity`|
 
 
 <!--
