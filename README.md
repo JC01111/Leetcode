@@ -255,7 +255,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[17. Letter Combinations of a Phone Number](./questions/17.Letter_Combinations_of_a_Phone_Number_(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)||Use index i to traverse each digit in the digitsMap, when len(string) == len(digits), add this to res[], increment index i|
 |[77. Combinations](./questions/77.Combinations_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combinations/)|
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
-|[46. Permutations](./questions/46.Permutations(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations/)|
+|[46. Permutations](./questions/46.Permutations(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations/)||backtrack from each element to form permutation with unvisited elements|
 |[79. Word Search](./questions/79.Word_Search(Medium).md)|Medium|[Link](https://leetcode.com/problems/word-search/)|
 |[131. Palindrome Partitioning](./questions/131.Palindrome_Partitioning(Medium).md)|Medium|[Link](https://leetcode.com/problems/palindrome-partitioning/)|
 |[51. N-Queens](./questions/51.N-Queens(Hard).md)|Hard|[Link](https://leetcode.com/problems/n-queens/)|
