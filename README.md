@@ -859,6 +859,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[172. Factorial Trailing Zeroes](./questions/172.Factorial_Trailing_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/factorial-trailing-zeroes)||Count number of `10 = 2 * 5`, so we find the number of `5` that we can find|
 |Miscellaneous|||||
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
+|[1780. Check if Number is a Sum of Powers of Three](./questions/1780.Check_if_Number_is_a_Sum_of_Powers_of_Three(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three)||Iteratively minus $3^x$ from `n` if $3^x$ `<= n`|
 
 
 <!--
