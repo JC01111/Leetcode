@@ -1,5 +1,5 @@
 ## 0. Name (Medium)
-**Date and Time:** Mar 3, 2025,  (EST)
+**Date and Time:** Mar 5, 2025,  (EST)
 
 Link: 
 
@@ -11,24 +11,18 @@ Link:
 <br>
 
 **Example 1:**
-> **Input:**
-> 
-> **Output:**
->
+> **Input:** <br>
+> **Output:** <br>
 > **Explanation:**
 
 **Example 2:**
-> **Input:**
-> 
-> **Output:**
->
+> **Input:** <br>
+> **Output:** <br>
 > **Explanation:**
 
 **Example 3:**
-> **Input:**
-> 
-> **Output:**
->
+> **Input:** <br>
+> **Output:** <br>
 > **Explanation:**
 
 <br>

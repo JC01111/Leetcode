@@ -376,6 +376,8 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[112. Path Sum](./questions/112.Path_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/path-sum/)||Run DFS from root to leaf, check if curSum == targetSum|
 |[124. Binary Tree Maximum Path Sum](./questions/124.Binary_Tree_Maximum_Path_Sum(Hard).md)|Hard|[Link](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|
 |[987. Vertical Order Traversal of a Binary Tree](./questions/987.Vertical_Order_Traversal_of_a_Binary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|Meta|Save `(node, row, col)` into `deque[]`, and run BFS to append `node.left` with `(row+1, col-1)` and `node.right` with `(row+1, col+1)`. Add all nodes with the same col into `hashmap{col: [node.val]}`. Sort `col` and `row` in the end|
+|Miscellaneous|||||
+|[889. Construct Binary Tree from Preorder and Postorder Traversal](./questions/889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal)||Find the left-root accordingly from `preorder` and find offset of how many nodes to be included in the left-subtree, then recursively build tree|
 
 
 <!--
@@ -612,10 +614,11 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[290. Word Pattern](./questions/290.Word_Pattern(Easy).md)|Easy|[Link](https://leetcode.com/problems/word-pattern/)||Build a hashmap to check the previous mapping, but we also need to check if the mapping is unique, no duplicate words are used, we can use set() to compare|
 |[49. Group Anagrams](./questions/49.Group_Anagrams(Medium).md)|Medium|[Link](https://leetcode.com/problems/group-anagrams/)||Sort word to be the key in hashmap, then append this word to the correpsonding list by the sorted(word) as key|
 |[202. Happy Number](./questions/202.Happy_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/happy-number)||Use `set()` to detect when there is repeated number, so we can stop|
-|Miscellaneous|||
-|[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
 |Miscellaneous|||||
+|[359. Logger Rate Limiter](./questions/359.Logger_Rate_Limiter(Easy).md)|Easy|[Link](https://leetcode.com/problems/logger-rate-limiter/)|Google VO|
 |[1726. Tuple with Same Product](./questions/1726.Tuple_with_Same_Product(Medium).md)|Medium|[Link](https://leetcode.com/problems/tuple-with-same-product)||Use dict with the multiplication of two integers as key, save two pairs of these two integers. Count each val number of permutation|
+|[2965. Find Missing and Repeated Values](./questions/2965.Find_Missing_and_Repeated_Values(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-missing-and-repeated-values)||Use `set()` to find the repeated value, later check elements from `(1, n)` not in `set()` as missing value|
+
 
 <!--
 |[]()|Easy|[Link]()|||
@@ -860,6 +863,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |Miscellaneous|||||
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 |[1780. Check if Number is a Sum of Powers of Three](./questions/1780.Check_if_Number_is_a_Sum_of_Powers_of_Three(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three)||Iteratively minus $3^x$ from `n` if $3^x$ `<= n`|
+|[2579. Count Total Number of Colored Cells](./questions/2579.Count_Total_Number_of_Colored_Cells(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-total-number-of-colored-cells)||Each time we update number of cells by multiple of `4`|
 
 
 <!--
