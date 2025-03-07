@@ -113,6 +113,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1800. Maximum Ascending Subarray Sum](./questions/1800.Maximum_Ascending_Subarray_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-ascending-subarray-sum)||Kadane's Algorithm, when a non-ascending element exists, reset `curSum = 0`|
 |[1790. Check if One String Swap Can Make Strings Equal](./questions/1790.Check_if_One_String_Swap_Can_Make_Strings_Equal(Easy).md)|Easy|[Link](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal)||Use two variables to keep track of the difference indices, only `counts == 0 or 2` are possible for the swap|
 |[767. Reorganize String](./questions/767.Reorganize_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorganize-string)|Amazon Tag|Count the frequency of each char and use maxHeap to alternate placing the most frequent chars|
+|[3461. Check If Digits Are Equal in String After Operations I](./questions/3461.Check_If_Digits_Are_Equal_in_String_After_Operations_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i)||Repeatly update `s` until `len(s)==2`, then compare if the first and the second strings are equal|
 
 
 <!--
