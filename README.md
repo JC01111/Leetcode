@@ -179,6 +179,8 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[487. Max Consecutive Ones II](./questions/487.Max_Consecutive_Ones_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-consecutive-ones-ii/)|Similar to 1493|
 |[3318. Find X-Sum of All K-Long Subarrays I](./questions/3318.Find_X-Sum_of_All_K-Long_Subarrays_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/)|Google Tag|Sliding Window, maxHeap, hashmap|
 |[2461. Maximum Sum of Distinct Subarrays With Length K](./questions/2461.Maximum_Sum_of_Distinct_Subarrays_With_Length_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)||Sliding window to find max sum of subarray, use hashmap to detect duplicate elements|
+|[1358. Number of Substrings Containing All Three Characters](./questions/1358.Number_of_Substrings_Containing_All_Three_Characters(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)|Daily Question|Maintain a valid sliding window, then count how many extra char we can add. Then shrink the sliding window to be invalid, repeat|
+
 
 <!--
 |[]()|Medium|[Link]()|||
