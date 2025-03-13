@@ -41,9 +41,9 @@ Template
 
 <br>
 
-### [Concurrency](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#concurrency)
+### [Concurrency](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#concurrency-1)
 
-### [SQL](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#sql)
+### [SQL](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#sql-1)
 
 <br>
 
@@ -982,6 +982,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |SQL|||||
 |---|---|---|---|---|
 |[1757. Recyclable and Low Fat Products](./questions/1757.Recyclable_and_Low_Fat_Products(Easy).md)|Easy|[Link](https://leetcode.com/problems/recyclable-and-low-fat-products?envType=study-plan-v2&envId=top-sql-50)|||
+|[584. Find Customer Referee]()|Easy|[Link](https://leetcode.com/problems/find-customer-referee)|||
 
 
 <!--
