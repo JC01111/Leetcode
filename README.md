@@ -43,6 +43,8 @@ Template
 
 ### [Concurrency](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#concurrency)
 
+### [SQL](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#sql)
+
 <br>
 
 ___
@@ -235,6 +237,7 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |Miscellaneous|||||
 |[528. Random Pick with Weight](./questions/528.Random_Pick_with_Weight(Medium).md)|Medium|[Link](https://leetcode.com/problems/random-pick-with-weight)|Meta Tag|First initialize each index from [0, len(w)-1] a probability by w[i] / sum(w), then we calculate the prefixSum of each index. Next, randomly generate a prob within [0, 1], then we use Binary Search to find the index with the closest probability|
 |[1539. Kth Missing Positive Number](./questions/1539.Kth_Missing_Positive_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-missing-positive-number)|Meta|Run Binary Search with k on the difference between the original `arr` and current `arr`|
+|[2529. Maximum Count of Positive Integer and Negative Integer](./questions/2529.Maximum_Count_of_Positive_Integer_and_Negative_Integer(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer)|Daily Question|Use Binary search to find the begin and end of 0 to determine the number of positive ints and negative ints|
 
 
 <!--
@@ -966,6 +969,19 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1115. Print FooBar Alternately](./questions/1115.Print_FooBar_Alternately(Medium).md)|Medium|[Link](https://leetcode.com/problems/print-foobar-alternately)||Set `sem_foo` with higher priority, so we can always start with `foo`, then release `sem_bar`|
 |[1117. Building H2O](./questions/1117.Building_H20(Medium).md)|Medium|[Link](https://leetcode.com/problems/building-h2o)||Use two semaphores for `hydrogen` and `oxygen`, allow 2 `hydrogen` can be accessed at the same time, use `count` to unlock `sem_oxy`|
 |[1188. Design Bounded Blocking Queue](./questions/1188.Design_Bounded_Blocking_Queue(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-bounded-blocking-queue)||Using two semaphores with one mutex, define one semaphore with `capacity`|
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+<br>
+
+---
+
+### SQL
+|SQL|||||
+|---|---|---|---|---|
+|[1757. Recyclable and Low Fat Products](./questions/1757.Recyclable_and_Low_Fat_Products(Easy).md)|Easy|[Link](https://leetcode.com/problems/recyclable-and-low-fat-products?envType=study-plan-v2&envId=top-sql-50)|||
 
 
 <!--
