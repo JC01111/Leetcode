@@ -239,7 +239,7 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |[1539. Kth Missing Positive Number](./questions/1539.Kth_Missing_Positive_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-missing-positive-number)|Meta|Run Binary Search with k on the difference between the original `arr` and current `arr`|
 |[2529. Maximum Count of Positive Integer and Negative Integer](./questions/2529.Maximum_Count_of_Positive_Integer_and_Negative_Integer(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer)|Daily Question|Use Binary search to find the begin and end of 0 to determine the number of positive ints and negative ints|
 |[3356. Zero Array Transformation II](./questions/3356.Zero_Array_Transformation_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/zero-array-transformation-ii)|Daily Question|Use Binary Search to find the minimum number of queries we need by creating difference array and compare prefixSum with each element in `nums`|
-|[]()|Medium|[Link]()|Daily Question||
+|[2226. Maximum Candies Allocated to K Children](./questions/2226.Maximum_Candies_Allocated_to_K_Children(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-candies-allocated-to-k-children)|Daily Question|Run Binary search on `[1,max(candies)]`, calculate if current `m` candies can be allocated to `K` children, then update `l, r` accordingly|
 
 
 <!--
@@ -984,11 +984,13 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |SQL|||||
 |---|---|---|---|---|
 |[1757. Recyclable and Low Fat Products](./questions/1757.Recyclable_and_Low_Fat_Products(Easy).md)|Easy|[Link](https://leetcode.com/problems/recyclable-and-low-fat-products?envType=study-plan-v2&envId=top-sql-50)|||
-|[584. Find Customer Referee]()|Easy|[Link](https://leetcode.com/problems/find-customer-referee)|||
+|[584. Find Customer Referee](./questions/584.Find_Customer_Referee(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-customer-referee)|||
+|[595. Big Countries](./questions/595.Big_Countries(Easy).md)|Easy|[Link](https://leetcode.com/problems/big-countries)|||
+|[1378. Replace Employee ID With The Unique Identifier](./questions/1378.Replace_Employee_ID_With_The_Unique_Identifer(Easy).md)|Easy|[Link](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier)|||
 
 
 <!--
-|[]()|Medium|[Link]()|||
+|[]()|Easy|[Link]()|||
 -->
 <br>
 
