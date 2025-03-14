@@ -238,6 +238,8 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |[528. Random Pick with Weight](./questions/528.Random_Pick_with_Weight(Medium).md)|Medium|[Link](https://leetcode.com/problems/random-pick-with-weight)|Meta Tag|First initialize each index from [0, len(w)-1] a probability by w[i] / sum(w), then we calculate the prefixSum of each index. Next, randomly generate a prob within [0, 1], then we use Binary Search to find the index with the closest probability|
 |[1539. Kth Missing Positive Number](./questions/1539.Kth_Missing_Positive_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/kth-missing-positive-number)|Meta|Run Binary Search with k on the difference between the original `arr` and current `arr`|
 |[2529. Maximum Count of Positive Integer and Negative Integer](./questions/2529.Maximum_Count_of_Positive_Integer_and_Negative_Integer(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer)|Daily Question|Use Binary search to find the begin and end of 0 to determine the number of positive ints and negative ints|
+|[3356. Zero Array Transformation II](./questions/3356.Zero_Array_Transformation_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/zero-array-transformation-ii)|Daily Question|Use Binary Search to find the minimum number of queries we need by creating difference array and compare prefixSum with each element in `nums`|
+|[]()|Medium|[Link]()|Daily Question||
 
 
 <!--
