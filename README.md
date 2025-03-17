@@ -241,6 +241,7 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |[3356. Zero Array Transformation II](./questions/3356.Zero_Array_Transformation_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/zero-array-transformation-ii)|Daily Question|Use Binary Search to find the minimum number of queries we need by creating difference array and compare prefixSum with each element in `nums`|
 |[2226. Maximum Candies Allocated to K Children](./questions/2226.Maximum_Candies_Allocated_to_K_Children(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-candies-allocated-to-k-children)|Daily Question|Run Binary search on `[1,max(candies)]`, calculate if current `m` candies can be allocated to `K` children, then update `l, r` accordingly|
 |[2560. House Robber IV](./questions/2560.House_Robber_IV(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber-iv)|Daily Question|Run Binary Search on range `[1, max(nums)]` and loop over `nums` to compare with `nums[m]` we find, if the num of houses we can rob `>=k`, update `r=m-1`, otherwise, update `l=m+1`|
+|[2594. Minimum Time to Repair Cars](./questions/2594.Minimum_Time_to_Repair_Cars(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-time-to-repair-cars)|Daily Questioin|Run Binary Search on `[1, min(ranks)*car^2]` by the formula, then count the total cars can be repaired under different rank, and update `l, r` accordingly|
 
 
 <!--
