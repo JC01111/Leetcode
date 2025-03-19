@@ -852,6 +852,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1318. Minimum Flips to Make a OR b Equal to c](./questions/1318.Minimum_Flips_to_Make_a_OR_b_Equal_to_c(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)||Compare the last bits of a, b, c, and count how many flips we need|
 |Miscellaneous|||||
 |[371. Sum of Two Integers](./questions/371.Sum_of_Two_Integers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-of-two-integers/)|
+|[2401. Longest Nice Subarray](./questions/2401.Longest_Nice_Subarray(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-nice-subarray)|Daily Question|Maintain sliding window with a variable `past` by OR operation, if `past` has common bit with current digit, removing by XOR|
+|[3191. Minimum Operations to Make Binary Array Elements Equal to One I](./questions/3191.Minimum_Operations_to_Make_Binary_Array_Elements_Equal_to_One_I(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i)|Daily Question|Loop over to check when `nums[i] = 0`, if the next two elements are in bound, we can flip them by XOR with `1`|
+
 
 <!--
 |[]()|Medium|[Link]()|||
