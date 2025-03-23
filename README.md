@@ -548,6 +548,7 @@ More to pratice: <br>
 |Union Find|||||
 |---|---|---|---|---|
 |[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
+|[2685. Count the Number of Complete Components](./questions/2685.Count_the_Number_of_Complete_Components(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-the-number-of-complete-components)|Daily Question|Use union find or DFS to find connected components|
 
 
 <!--
