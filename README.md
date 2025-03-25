@@ -38,6 +38,7 @@ Template
 
 ### Tag Questions
 - [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
+- [Amazon](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#amazon-tag)
 
 <br>
 
@@ -519,15 +520,16 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 ---
 
 ### Advanced Graph (Shortest Path)
-|Advanced Graph||||
-|---|---|---|---|
+|Advanced Graph|||||
+|---|---|---|---|---|
 |[743. Network Delay Time](./questions/743.Network_Delay_Time(Medium).md)|Medium|[Link](https://leetcode.com/problems/network-delay-time/)| Dijkstra's|
 |[787. Cheapest Flights Within K Stops](./questions/787.Cheapest_Flights_Within_K_Stops(Medium).md)|Medium|[Link](https://leetcode.com/problems/cheapest-flights-within-k-stops/)|Bellman Ford|
 |[269. Alien Dictionary](./questions/269.Alien_Dictionary(Hard).md)|Hard|[Link](https://leetcode.com/problems/alien-dictionary/)|Topological Sort/Post-order DFS|
+|[1976. Number of Ways to Arrive at Destination](./questions/1976.Number_of_Ways_to_Arrive_at_Destination(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination)|Daily Question|Run Dijkstra with list to record path and distance (time)|Run Dijkstra to find the shortest path and use `path_cnt[]` to keep track of number of ways to reach at certain node|
 
 
 <!--
-|[]()|Medium|[Link]()|
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -595,6 +597,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |[253. Meeting Rooms II](./questions/253.Meeting_Rooms_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/meeting-rooms-ii)||Use minHeap to save all the current meeting with their end time. For each new interval, we compare their start_i with minHeap[0], if the start_i > minHeap[0], we replace the the room, otherwise, we append new end_i time into minHeap|
 |[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Meta|Use two ptrs to find the intersection, keep the interval with greater end|
 |[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`|
+|[3169. Count Days Without Meetings](./questions/3169.Count_Days_Without_Meetings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-days-without-meetings)|Daily Question|Sort intervals, then count the gap between intervals|
 
 
 <!--
@@ -965,6 +968,22 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 <!--
 |[]()|Easy|[Link]()|||
 -->
+
+<br>
+
+---
+
+### Amazon Tag
+
+|Amazon Tag|||||
+|---|---|---|---|---|
+
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+
 <br>
 
 ---

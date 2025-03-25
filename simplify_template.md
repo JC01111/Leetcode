@@ -5,34 +5,12 @@ Link:
 
 <br>
 
-### Question:
+### Edge Cases:
 
-
-<br>
-
-**Example 1:**
+**Edge Case 1:**
 > **Input:** <br>
 > **Output:** <br>
 > **Explanation:**
-
-**Example 2:**
-> **Input:** <br>
-> **Output:** <br>
-> **Explanation:**
-
-**Example 3:**
-> **Input:** <br>
-> **Output:** <br>
-> **Explanation:**
-
-<br>
-
-#### Constraints:
-* 
-
-* 
-
-* 
 
 <br>
 
