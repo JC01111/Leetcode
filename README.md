@@ -808,6 +808,9 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |[2336. Smallest Number in Infinite Set](./questions/2336.Smallest_Number_in_Infinite_Set(Medium).md)|Medium|[Link](https://leetcode.com/problems/smallest-number-in-infinite-set/)||Use a variable to keep track of the smallest when heap is empty|
 |[2542. Maximum Subsequence Score](./questions/2542.Maximum_Subsequence_Score(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subsequence-score/)||Merged two nums together and sort them in descending order, maintain a heap with k elements for v1, update res by max(res, curSum * v2)|
 |[2462. Total Cost to Hire K Workers](./questions/2462.Total_Cost_to_Hire_K_Workers(Medium).md)|Medium|[Link](https://leetcode.com/problems/total-cost-to-hire-k-workers/)||Maintain 2 minHeaps for left and right, each of the minHeap has length `candidates`. Choose the lowest from these two minHeap, add new element to the minHeap|
+|Miscellaneous|||||
+|[1094. Car Pooling](./questions/1094.Car_Pooling(Medium).md)|Medium|[Link](https://leetcode.com/problems/car-pooling)|Daily Question|Use minHeap to keep track of previous end position with number of passengers|
+
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -882,6 +885,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[7. Reverse Integer](./questions/7.Reverse_Integer(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-integer/)|
 |[1780. Check if Number is a Sum of Powers of Three](./questions/1780.Check_if_Number_is_a_Sum_of_Powers_of_Three(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three)||Iteratively minus $3^x$ from `n` if $3^x$ `<= n`|
 |[2579. Count Total Number of Colored Cells](./questions/2579.Count_Total_Number_of_Colored_Cells(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-total-number-of-colored-cells)||Each time we update number of cells by multiple of `4`|
+|[2790. Maximum Number of Groups With Increasing Length](./questions/2790.Maximum_Number_of_Groups_With_Increasing_Length(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length)|Amazon Tag|Sort it and find the pattern to satisfy each `k` group|
 
 
 <!--
@@ -977,8 +981,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 |Amazon Tag|||||
 |---|---|---|---|---|
-
-
+|[146.LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium||||
+|[2790. Maximum Number of Groups With Increasing Length](./questions/2790.Maximum_Number_of_Groups_With_Increasing_Length(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length)||Sort it and find the pattern to satisfy each `k` group|
 
 <!--
 |[]()|Medium|[Link]()|||
