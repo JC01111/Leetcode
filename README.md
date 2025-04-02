@@ -598,6 +598,8 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Meta|Use two ptrs to find the intersection, keep the interval with greater end|
 |[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`|
 |[3169. Count Days Without Meetings](./questions/3169.Count_Days_Without_Meetings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-days-without-meetings)|Daily Question|Sort intervals, then count the gap between intervals|
+|[3394. Check if Grid can be Cut into Sections](./questions/3394.Check_if_Grid_can_be_Cut_into_Sections(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections)|Daily Question|Sort intervals base on x, y coordiates. Then find if we can have at least 2 gaps for either x or y coordinate|
+|[836. Rectangle Overlap](./questions/836.Rectangle_Overlap(Easy).md)|Easy|[Link](https://leetcode.com/problems/rectangle-overlap)||Check if `rec1` is on the left, right, top, bottom of `rec2`, if none of them is true, that means they must overlap|
 
 
 <!--
@@ -744,6 +746,7 @@ ___
 |[123. Best Time to Buy and Sell Stock III](./questions/123.Best_Time_to_Buy_and_Sell_Stock_III(Hard).md)|Hard|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)||Save two dps of the maximum profit we can get at index `i` for its left maximum profit and right maximum profit|
 |Miscellaneous|||||
 |[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|Amazon OA||
+|[2140. Solving Questions With Brainpower](./questions/2140.Solving_Questions_With_Brainpower(Medium).md)|Medium|[Link](https://leetcode.com/problems/solving-questions-with-brainpower)||Fill dp backward, and dp[i] should be the maximum points we can find in [i, n-1]|
 
 
 <!--
