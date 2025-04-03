@@ -289,7 +289,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |Stack|||||
 |---|---|---|---|---|
 |LeetCode 150|||||
-|[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|
+|[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|AutoX Tag||
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Meta Tag|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
@@ -483,7 +483,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |Graph General|||||
 |---|---|---|---|---|
 |[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Graph BFS|Run BFS on each entry to find island that has not been visited|
-|[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|Python, Java|
+|[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|AutoX Tag||
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|DFS|Run DFS to check all the prerequisites of a course, if can be completed, remove it and set preMap[crs] = []|
 |[210. Course Schedule II](./questions/210.Course_Schedule_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule-ii/)||
 |[130. Surrounded Regions](./questions/130.Surrounded_Regions(Medium).md)|Medium|[Link](https://leetcode.com/problems/surrounded-regions/)||
@@ -599,7 +599,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`|
 |[3169. Count Days Without Meetings](./questions/3169.Count_Days_Without_Meetings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-days-without-meetings)|Daily Question|Sort intervals, then count the gap between intervals|
 |[3394. Check if Grid can be Cut into Sections](./questions/3394.Check_if_Grid_can_be_Cut_into_Sections(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections)|Daily Question|Sort intervals base on x, y coordiates. Then find if we can have at least 2 gaps for either x or y coordinate|
-|[836. Rectangle Overlap](./questions/836.Rectangle_Overlap(Easy).md)|Easy|[Link](https://leetcode.com/problems/rectangle-overlap)||Check if `rec1` is on the left, right, top, bottom of `rec2`, if none of them is true, that means they must overlap|
+|[836. Rectangle Overlap](./questions/836.Rectangle_Overlap(Easy).md)|Easy|[Link](https://leetcode.com/problems/rectangle-overlap)|AutoX Tag|Check if `rec1` is on the left, right, top, bottom of `rec2`, if none of them is true, that means they must overlap|
 
 
 <!--
@@ -984,7 +984,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 |Amazon Tag|||||
 |---|---|---|---|---|
-|[146.LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium||||
+|[146.LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|||
+|[767.Reorganize String](./questions/767.Reorganize_String(Medium).md)|Medium|
 |[2790. Maximum Number of Groups With Increasing Length](./questions/2790.Maximum_Number_of_Groups_With_Increasing_Length(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length)||Sort it and find the pattern to satisfy each `k` group|
 
 <!--
