@@ -117,6 +117,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[1790. Check if One String Swap Can Make Strings Equal](./questions/1790.Check_if_One_String_Swap_Can_Make_Strings_Equal(Easy).md)|Easy|[Link](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal)||Use two variables to keep track of the difference indices, only `counts == 0 or 2` are possible for the swap|
 |[767. Reorganize String](./questions/767.Reorganize_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorganize-string)|Amazon Tag|Count the frequency of each char and use maxHeap to alternate placing the most frequent chars|
 |[3461. Check If Digits Are Equal in String After Operations I](./questions/3461.Check_If_Digits_Are_Equal_in_String_After_Operations_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i)||Repeatly update `s` until `len(s)==2`, then compare if the first and the second strings are equal|
+|[2873. Maximum Value of an Ordered Triplet I](./questions/2873.Maximum_Value_of_an_Ordered_Triplet_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i)|Daily Question|Brute Force so far|
 
 
 <!--
@@ -199,7 +200,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |Matrix|||||
 |---|---|---|---|---|
 |[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|Meta|Use three dicts to check repetition|
-|[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)|
+|[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)||Use four variables `l, r, t, b` to process in four directions `l->r, t->b, r->l, b->t`|
 |[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
 |[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
 |[289. Game of Life](./questions/289.Game_of_Life(Medium).md)|Medium|[Link](https://leetcode.com/problems/game-of-life/)||Traverse the grid to find which entries need to be changed later, and we mark it as other number. Later, we change the marked number back to either live or dead|
@@ -208,6 +209,8 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |[498. Diagonal Traverse](./questions/498.Diagonal_Traverse(Medium).md)|Medium|[Link](https://leetcode.com/problems/diagonal-traverse)|Meta|Save the diagonal index by (r+c) with values `{diagonal_idx: [val]}`, then check `idx % 2` to decide whether reverse the saved values' list or not|
 |[766. Toeplitz Matrix](./questions/766.Toeplitz_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/toeplitz-matrix)|Meta|Compare each entry with their bottom-right neighbor (if exists)|
 |[37. Sudoku Solver](./questions/37.Sudoku_Solver(Hard).md)|Medium|[Link](https://leetcode.com/problems/sudoku-solver)|Meta|Use 3 sets to save existed vals, backtrack number `i` from `[1, 9]` for `'.'`|
+|[59. Spiral Matrix II](./questions/59.Spiral_Matrix_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix-ii)|AutoX Tag|Similar to [54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md), use four variables `l, r, t, b` to proceed four directions fill in|
+|[311. Sparse Matrix Multiplication](./questions/311.Sparse_Matrix_Multiplication(Medium).md)|Medium|[Link](https://leetcode.com/problems/sparse-matrix-multiplication)|AutoX Tag||
 
 
 <!--
@@ -482,7 +485,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Graph General|||||
 |---|---|---|---|---|
-|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|Graph BFS|Run BFS on each entry to find island that has not been visited|
+|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|AutoX Tag|Run BFS on each entry to find island that has not been visited|
 |[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|AutoX Tag||
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|DFS|Run DFS to check all the prerequisites of a course, if can be completed, remove it and set preMap[crs] = []|
 |[210. Course Schedule II](./questions/210.Course_Schedule_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule-ii/)||
@@ -693,7 +696,7 @@ Greedy problems are hard to identify pattern, but one type of them can be solved
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
 |[846. Hand of Straights](./questions/846.Hand_of_Straights(Medium).md)|Medium|[Link](https://leetcode.com/problems/hand-of-straights/)|
 |[1296. Divide Array in Sets of K Consecutive Numbers](./questions/1296.Divide_Array_in_Sets_of_K_Consecutive_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)|
-|[763. Partition Labels](./questions/763.Partition_Labels(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-labels/)|
+|[763. Partition Labels](./questions/763.Partition_Labels(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-labels/)||Maintain `maxEnd` for a letter's farthest index, if current index `i == maxEnd`, we find a partition|
 |[678. Valid Parenthesis String](./questions/678.Valid_Parenthesis_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-parenthesis-string/)|
 |[1899. Merge Triplets to Form Target Triplet](./questions/1899.Merge_Triplets_to_Form_Target_Triplet(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)|
 |Miscellaneous|||||
