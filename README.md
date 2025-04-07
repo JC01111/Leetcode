@@ -210,7 +210,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |[766. Toeplitz Matrix](./questions/766.Toeplitz_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/toeplitz-matrix)|Meta|Compare each entry with their bottom-right neighbor (if exists)|
 |[37. Sudoku Solver](./questions/37.Sudoku_Solver(Hard).md)|Medium|[Link](https://leetcode.com/problems/sudoku-solver)|Meta|Use 3 sets to save existed vals, backtrack number `i` from `[1, 9]` for `'.'`|
 |[59. Spiral Matrix II](./questions/59.Spiral_Matrix_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix-ii)|AutoX Tag|Similar to [54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md), use four variables `l, r, t, b` to proceed four directions fill in|
-|[311. Sparse Matrix Multiplication](./questions/311.Sparse_Matrix_Multiplication(Medium).md)|Medium|[Link](https://leetcode.com/problems/sparse-matrix-multiplication)|AutoX Tag||
+|[311. Sparse Matrix Multiplication](./questions/311.Sparse_Matrix_Multiplication(Medium).md)|Medium|[Link](https://leetcode.com/problems/sparse-matrix-multiplication)|AutoX Tag|Optimize space by saving each row's nonzero elements' cols into a dictionary, then use each row's nonzero's col from `mat1` to access `mat2`'s row's nonzero cols and multiply to update the result matrix|
 
 
 <!--
