@@ -38,7 +38,6 @@ Template
 
 ### Tag Questions
 - [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
-- [Amazon](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#amazon-tag)
 
 <br>
 
@@ -816,6 +815,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |[2462. Total Cost to Hire K Workers](./questions/2462.Total_Cost_to_Hire_K_Workers(Medium).md)|Medium|[Link](https://leetcode.com/problems/total-cost-to-hire-k-workers/)||Maintain 2 minHeaps for left and right, each of the minHeap has length `candidates`. Choose the lowest from these two minHeap, add new element to the minHeap|
 |Miscellaneous|||||
 |[1094. Car Pooling](./questions/1094.Car_Pooling(Medium).md)|Medium|[Link](https://leetcode.com/problems/car-pooling)|Daily Question|Use minHeap to keep track of previous end position with number of passengers|
+|[2551. Put Marbles in Bags](./questions/2551.Put_Marbles_in_Bags(Hard).md)|Hard|[Link](https://leetcode.com/problems/put-marbles-in-bags)|Amazon Tag|Observe the pattern to find the scores of max and min, then use heaps to solve|
 
 
 <!--
@@ -977,22 +977,6 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 <!--
 |[]()|Easy|[Link]()|||
--->
-
-<br>
-
----
-
-### Amazon Tag
-
-|Amazon Tag|||||
-|---|---|---|---|---|
-|[146.LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|||
-|[767.Reorganize String](./questions/767.Reorganize_String(Medium).md)|Medium|
-|[2790. Maximum Number of Groups With Increasing Length](./questions/2790.Maximum_Number_of_Groups_With_Increasing_Length(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length)||Sort it and find the pattern to satisfy each `k` group|
-
-<!--
-|[]()|Medium|[Link]()|||
 -->
 
 <br>
