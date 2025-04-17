@@ -484,7 +484,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 
 |Graph General|||||
 |---|---|---|---|---|
-|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|AutoX Tag|Run BFS on each entry to find island that has not been visited|
+|[200. Number of Islands](./questions/200.Number_of_Islands_(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-islands/)|AutoX, Amazon|Run BFS on each entry to find island that has not been visited|
 |[695. Max Area of Island](./questions/695.Max_Area_of_Island(Medium).md)|Medium|[Link](https://leetcode.com/problems/max-area-of-island/)|AutoX Tag||
 |[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|DFS|Run DFS to check all the prerequisites of a course, if can be completed, remove it and set preMap[crs] = []|
 |[210. Course Schedule II](./questions/210.Course_Schedule_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule-ii/)||
@@ -700,6 +700,7 @@ Greedy problems are hard to identify pattern, but one type of them can be solved
 |[1899. Merge Triplets to Form Target Triplet](./questions/1899.Merge_Triplets_to_Form_Target_Triplet(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/)|
 |Miscellaneous|||||
 |[670. Maximum Swap](./questions/670.Maximum_Swap(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-swap)|Meta|Use variables to keep track of the current maximum index and swap indices, update them based on `num[i]`, finally check if both swap_ids are valid and swap, then return|
+|[1235. Maximum Profit in Job Scheduling](./questions/1235.Maximum_Profit_in_Job_Scheduling(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-profit-in-job-scheduling)|Amazon|Use minHeap and greedy to update the maxProfit|
 
 
 <!--
