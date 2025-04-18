@@ -637,6 +637,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[1726. Tuple with Same Product](./questions/1726.Tuple_with_Same_Product(Medium).md)|Medium|[Link](https://leetcode.com/problems/tuple-with-same-product)||Use dict with the multiplication of two integers as key, save two pairs of these two integers. Count each val number of permutation|
 |[2965. Find Missing and Repeated Values](./questions/2965.Find_Missing_and_Repeated_Values(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-missing-and-repeated-values)||Use `set()` to find the repeated value, later check elements from `(1, n)` not in `set()` as missing value|
 |[2206. Divide Array Into Equal Pairs](./questions/2206.Divide_Array_Into_Equal_Pairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/divide-array-into-equal-pairs)|Daily Question|Use hashmap to count each integer with their counts, then iterate hashmap to check if any `counts % 2 != 0`|
+|[1152. Analyze User Website Visit Pattern](./questions/1152.Analyze_User_Website_Visit_Pattern(Medium).md)|Medium|[Link](https://leetcode.com/problems/analyze-user-website-visit-pattern)|Amazon|Use multiple dictionaries to save intermediate results, remember to first zip (timestamp, username, website) and sort by timestamp|
 
 
 <!--
