@@ -358,6 +358,7 @@ Usually needs to check `if not node`: `return None`
 |[83. Remove Duplicates from Sorted List](./questions/83.Remove_Duplicates_from_Sorted_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)||Repeatly set curr.next = curr.next.next to remove duplicate, update curr only a non-duplicated element is found|
 |[82. Remove Duplicates from Sorted List II](./questions/82.Remove_Duplicates_from_Sorted_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)||Use while loop to skip duplicate (while head and head.next and head.val == head.next.val), use prev node to save the non-duplicate element|
 |[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Meta|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
+|[460. LFU Cache](./questions/460.LFU_Cache(Hard).md)|Hard|[Link](https://leetcode.com/problems/lfu-cache)|Amazon||
 
 
 <!--
@@ -501,7 +502,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[841. Keys and Rooms](./questions/841.Keys_and_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/keys-and-rooms/)|Graph DFS|
 |[547. Number of Provinces](./questions/547.Number_of_Provinces(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-provinces/)|Graph DFS|For each unvisited city, run DFS to add all connected cities into visited(), increment res|
 |[1466. Reorder Routes to Make All Paths Lead to the City Zero](./questions/1466.Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|Graph DFS|
-|[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|
+|[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|Amazon|
 |[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
 |Miscellaneous|||||
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
