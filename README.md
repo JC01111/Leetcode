@@ -641,6 +641,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[2206. Divide Array Into Equal Pairs](./questions/2206.Divide_Array_Into_Equal_Pairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/divide-array-into-equal-pairs)|Daily Question|Use hashmap to count each integer with their counts, then iterate hashmap to check if any `counts % 2 != 0`|
 |[1152. Analyze User Website Visit Pattern](./questions/1152.Analyze_User_Website_Visit_Pattern(Medium).md)|Medium|[Link](https://leetcode.com/problems/analyze-user-website-visit-pattern)|Amazon|Use multiple dictionaries to save intermediate results, remember to first zip (timestamp, username, website) and sort by timestamp|
 |[1399. Count Largest Group](./questions/1399.Count_Largest_Group(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-largest-group)|Daily Question|Use hashmap to map digit_sum with a list of digits with the same digit_sum, use two variables to keep track|
+|[3527. Find the Most Common Response](./questions/3527.Find_the_Most_Common_Response(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-most-common-response)|Biweekly Contest|Use set() to remove duplicate and hashmap to count|
 
 
 <!--
