@@ -246,10 +246,11 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |[2226. Maximum Candies Allocated to K Children](./questions/2226.Maximum_Candies_Allocated_to_K_Children(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-candies-allocated-to-k-children)|Daily Question|Run Binary search on `[1,max(candies)]`, calculate if current `m` candies can be allocated to `K` children, then update `l, r` accordingly|
 |[2560. House Robber IV](./questions/2560.House_Robber_IV(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber-iv)|Daily Question|Run Binary Search on range `[1, max(nums)]` and loop over `nums` to compare with `nums[m]` we find, if the num of houses we can rob `>=k`, update `r=m-1`, otherwise, update `l=m+1`|
 |[2594. Minimum Time to Repair Cars](./questions/2594.Minimum_Time_to_Repair_Cars(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-time-to-repair-cars)|Daily Questioin|Run Binary Search on `[1, min(ranks)*car^2]` by the formula, then count the total cars can be repaired under different rank, and update `l, r` accordingly|
+|[3531. Count Covered Buildings](./questions/3531.Count_Covered_Buildings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-covered-buildings)|Weekly Contest 447|Use dictionaries to save each pt's col and row, then sort `rows(), cols()`, and use binary search later to check a pt's row space and col space to see if we have point on its left, right, top, bottom|
 
 
 <!--
-|[]()|Easy|[Link]()|||
+|[]()|Medium|[Link]()|||
 -->
 <br>
 
@@ -555,6 +556,7 @@ More to pratice: <br>
 |---|---|---|---|---|
 |[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
 |[2685. Count the Number of Complete Components](./questions/2685.Count_the_Number_of_Complete_Components(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-the-number-of-complete-components)|Daily Question|Use union find or DFS to find connected components|
+|[3532. Path Existence Queries in a Graph I](./questions/3532.Path_Existence_Queries_in_a_Graph_I(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-existence-queries-in-a-graph-i)|Weekly Contest 447|Union Find to solve graph problem to find if path exists between two nodes|
 
 
 <!--
