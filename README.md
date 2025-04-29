@@ -515,6 +515,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[1443. Minimum Time to Collect All Apples in a Tree](./questions/1443.Minimum_Time_to_Collect_All_Apples_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree)|Meta|Build adjacent graph and run DFS to search if node's children has apple, if so return `secs + 2`, otherwise, return 2 if `node` is apple, `0` else|
 |[489. Robot Room Cleaner](./questions/489.Robot_Room_Cleaner(Hard).md)|Hard|[Link](https://leetcode.com/problems/robot-room-cleaner)||Run DFS and backtrack|
 |[2467. Most Profitable Path in a Tree](./questions/2467.Most_Profitable_Path_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/most-profitable-path-in-a-tree)||Run DFS to find path from `bob` to `0`, then run BFS from `0` to all leaf nodes to find the maximum `income` for alice|
+|[934. Shortest Bridge](./questions/934.Shortest_Bridge(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-bridge)|Tik Tok|Combination of DFS and BFS|
 
 
 <!--
