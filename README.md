@@ -310,6 +310,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[227. Basic Calculator II](./questions/227.Basic_Calculator_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/basic-calculator-ii)|Meta Tag|Use stack to save previous result, we only append new element with sign into stack when we encounter a new sign|
 |[921. Minimum Add to Make Parentheses Valid](./questions/921.Minimum_Add_to_Make_Parentheses_Valid(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)|Meta|Count "(" and ")", when encounter ")", check if we have "(" to remove or decrement, otherwise, increment the count of ")".|
 |[316. Remove Duplicate Letters](./questions/316.Remove_Duplicate_Letters(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicate-letters)|ByteDance|Use stack and compare previous letters by some constraints|
+|[1081. Smallest Subsequence of Distinct Characters](./questions/1081.Smallest_Subsequence_of_Distinct_Characters(Medium).md)|Medium|[Link](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters)|ByteDance|Same as 316.Remove Duplicate Letters|
 
 
 <!--
