@@ -163,7 +163,7 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |---|---|---|---|---|
 |LeetCode 150|||||
 |[209. Minimum Size Subarray Sum](./questions/209.Minimum_Size_Subarray_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-size-subarray-sum/)||Maintain a sliding window with curSum, while curSum >= target, we update res = min(res, r - l + 1) and shrink the sliding window to find the minimal length subarray|
-|[3. Longest Substring Without Repeating Characters](./questions/3.Longest_Substring_Without_Repeating_Characters_(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)||Maintain a sliding window, repeatedly update the length when there is no repeated character. When a repeated char exists, shrink the sliding window from the left-most element|
+|[3. Longest Substring Without Repeating Characters](./questions/3.Longest_Substring_Without_Repeating_Characters_(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|ByteDance|Maintain a sliding window, repeatedly update the length when there is no repeated character. When a repeated char exists, shrink the sliding window from the left-most element|
 |[30. Substring with Concatenation of All Words](./questions/30.Substring_with_Concatenation_of_All_Words(Hard).md)|Medium|[Link](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)|
 |[76. Minimum Window Substring](./questions/76.Minimum_Window_Substring(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-window-substring/)|Meta|Use two hashmaps and 2 counts to keep track of every chars, update res when sCount == tCount, and we start shrinking the sliding window|
 |LeetCode 75|||
@@ -279,6 +279,8 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |Miscellaneous|||||
 |[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Meta|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
 |[1079. Letter Tile Possibilities](./questions/1079.Letter_Tile_Possibilities(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-tile-possibilities)||Save each char's frequency into list of 26 chars, each time we use 1 char, reduce the count in list, then run backtrack with this list to count|
+|[47. Permutations II](./questions/47.Permutations_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations-ii)|ByteDance|Similar to 46.Permutation, we maintain subset with hashmap of all integers we can use for each backtrack()|
+
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -422,6 +424,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[863. All Nodes Distance K in Binary Tree](./questions/863.All_Nodes_Distance_K_in_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree)|Meta|Build an undirected graph to connect two connected nodes together, then run BFS from `target` to add all its neighbor nodes into deque, when distance == k, we append the node.val into res[]|
 |[958. Check Completeness of a Binary Tree](./questions/958.Check_Completeness_of_a_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-completeness-of-a-binary-tree)|Meta|Run BFS with `seenNull` to check if a null node exists, if it exists and we have other non-null nodes, return False|
 |[1261. Find Elements in a Contaminated Binary Tree](./questions/1261.Find_Elements_in_a_Contaminated_Binary_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree)||Run BFS to change the value back, and use `set()` to find if a value exists|
+|[145. Binary Tree Postorder Traversal](./questions/145.Binary_Tree_Postorder_Traversal(Easy).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-postorder-traversal)|ByteDance|Run DFS will have postorder traversal|
 
 
 <!--
@@ -762,6 +765,7 @@ ___
 |[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|Amazon OA||
 |[2140. Solving Questions With Brainpower](./questions/2140.Solving_Questions_With_Brainpower(Medium).md)|Medium|[Link](https://leetcode.com/problems/solving-questions-with-brainpower)||Fill dp backward, and dp[i] should be the maximum points we can find in [i, n-1]|
 |[416. Partition Equal Subset Sum](./questions/416.Partition_Equal_Subset_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-equal-subset-sum)||Check if `nums` can be partitioned by taking the sum divide by 2, then check if there is a subset sums up to sum divide by 2|
+|[1997. First Day Where You Have Been in All the Rooms](./questions/1997.First_Day_Where_You_Have_Been_in_All_the_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms?envType=company&envId=bytedance&favoriteSlug=bytedance-all)|ByteDance|Use dp and find the recurrence relation to account the total days we need from room `i-1` for two scenarios to reach room `i`|
 
 
 <!--
@@ -829,6 +833,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |Miscellaneous|||||
 |[1094. Car Pooling](./questions/1094.Car_Pooling(Medium).md)|Medium|[Link](https://leetcode.com/problems/car-pooling)|Daily Question|Use minHeap to keep track of previous end position with number of passengers|
 |[2551. Put Marbles in Bags](./questions/2551.Put_Marbles_in_Bags(Hard).md)|Hard|[Link](https://leetcode.com/problems/put-marbles-in-bags)|Amazon Tag|Observe the pattern to find the scores of max and min, then use heaps to solve|
+|[362. Design Hit Counter](./questions/362.Design_Hit_Counter(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-hit-counter)|Amazon|Maintain `minHeap[]` and `cnt` variable, compare `minHeap[0]` with `timestamp`|
 
 
 <!--
