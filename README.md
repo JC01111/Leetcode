@@ -117,6 +117,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[767. Reorganize String](./questions/767.Reorganize_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorganize-string)|Amazon Tag|Count the frequency of each char and use maxHeap to alternate placing the most frequent chars|
 |[3461. Check If Digits Are Equal in String After Operations I](./questions/3461.Check_If_Digits_Are_Equal_in_String_After_Operations_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i)||Repeatly update `s` until `len(s)==2`, then compare if the first and the second strings are equal|
 |[2873. Maximum Value of an Ordered Triplet I](./questions/2873.Maximum_Value_of_an_Ordered_Triplet_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i)|Daily Question|Brute Force so far|
+|[3536. Maximum Product of Two Digits](./questions/3536.Maximum_Product_of_Two_Digits(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-product-of-two-digits)|Weekly Contest 448|Brute force to find the two biggest integers|
+|[838. Push Dominoes](./questions/838.Push_Dominoes(Medium).md)|Medium|[Link](https://leetcode.com/problems/push-dominoes)|Daily Question|Calculate the power of letter 'R', 'L', then take the sum of these power to decide whether this dominoe direction|
 
 
 <!--
@@ -264,7 +266,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |---|---|---|---|---|
 |[78. Subsets](./questions/78.Subsets_(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets)|Meta|Use backtrack with index `i` to keep track of current `curSum[]`, when `i==len(nums)`, we append `curSum` into `res[]` and return, we pop the last element and add new element into `curSum` with `i += 1`|
 |[90. Subsets II](./questions/90.Subsets_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/subsets-ii/)|
-|[39. Combination Sum](./questions/39.Combination_Sum_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum/)|
+|[39. Combination Sum](./questions/39.Combination_Sum_(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum/)|ByteDance|Use backtrack on (subset, remain, i) to try each unique combination|
 |[40. Combination Sum II](./questions/40.Combination_Sum_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum-ii/)|
 |[216. Combination Sum III](./questions/216.Combination_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/combination-sum-iii/)|
 |[17. Letter Combinations of a Phone Number](./questions/17.Letter_Combinations_of_a_Phone_Number_(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)||Use index i to traverse each digit in the digitsMap, when len(string) == len(digits), add this to res[], increment index i|
@@ -799,6 +801,7 @@ Find pattern, base cases, then apply the recurrence relation to fill out the dp 
 |[516. Longest Palindromic Subsequence](./questions/516.Longest_Palindromic_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-subsequence)||Build 2d DP with string `s` and its reverse, we compare if two chars are the same, if yes, we upate `dp[r][c] = dp[r-1][c-1]+ 1`, otherwise, we update `dp[r][c] = max(dp[r-1][c], dp[r][c-1]`|
 |[1216. Valid Palindrome III](./questions/1216.Valid_Palindrome_III(Hard).md)|Hard|[Link](https://leetcode.com/problems/valid-palindrome-iii)|Meta|Build a dp table of `s` and `s_reversed`, check `len(s) - dp[-1][-1] <= k` so we know we can have k-palindrome|
 |[329. Longest Increasing Path in a Matrix](./questions/329.Longest_Increasing_Path_in_a_Matrix(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|Meta|2D DP + DFS on entry's neighbors|
+|[583. Delete Operation for Two Strings](./questions/583.Delete_Operation_for_Two_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-operation-for-two-strings)|ByteDance|First find longest common subsequence between `word1, word2`, then use the total length minus 2 * LCS|
 
 
 <!--
@@ -816,7 +819,7 @@ $O(nlogn)$ for heapify(), $O(logn)$ for heappush() and heappop().
 |Heap|||||
 |---|---|---|---|---|
 |LeetCode 150|||||
-|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Meta Tag|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
+|[215. Kth Largest Element in an Array](./questions/215.Kth_Largest_Element_in_an_Array_(Medium).md)|Medium|[Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Meta, ByteDance|Maintain a minHeap with k elements, the top of the minHeap is the kth largest element|
 |[502. IPO](./questions/502.IPO(Hard).md)|Hard|[Link](https://leetcode.com/problems/ipo/)||Use two heaps|
 |[373. Find K Pairs with Smallest Sums](./questions/373.Find_K_Pairs_with_Smallest_Sums(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)||Save every elements of nums1 with the first index `0` of `nums2` with the total sum|
 |[295. Find Median from Data Stream](./questions/295.Find_Median_from_Data_Stream(Hard).md)|Hard|[Link](https://leetcode.com/problems/find-median-from-data-stream/)||Use two heaps|
