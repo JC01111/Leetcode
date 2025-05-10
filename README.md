@@ -68,7 +68,6 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[14. Longest Common Prefix](./questions/14.Longest_Common_Prefix(Easy).md)|Easy|[Link](https://leetcode.com/problems/longest-common-prefix/)|
 |[58. Length of Last Word](./questions/58.Length_of_Last_Word(Easy).md)|Easy|[Link](https://leetcode.com/problems/length-of-last-word/)|
 |[151. Reverse Words in a String](./questions/151.Reverse_Words_in_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/reverse-words-in-a-string/)|
-|[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)||Use l, r pointers to update maxLeft, maxRight, update res += maxLeft - height[l] or by maxRight, then we update maxLeft, maxRight to a greater value from height[l], height[r]|
 |[6. Zigzag Conversion](./questions/6.Zigzag_Conversion(Medium).md)|Medium|[Link](https://leetcode.com/problems/zigzag-conversion/)||Find the distance to get another char on the same row. Use the normal interval - (current row * 2) to get the extra char on each interval|
 |[68. Text Justification](./questions/68.Text_Justification(Hard).md)|Hard|[Link](https://leetcode.com/problems/text-justification/)||For each row with maxWidth, repeatly add words until a new word cannot be added. Then we compute how many spaces we need to assign after each word|
 |[1380. Lucky Numbers in a Matrix](./questions/1380.Lucky_Numbers_in_a_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/lucky-numbers-in-a-matrix/)|Cisco|
@@ -137,7 +136,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 |LeetCode 150||||
 |[125. Valid Palindrome](./questions/125.Valid_Palindrome_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-palindrome/)|Meta Tag|Use l, r ptrs to compare if two elem are the same, increment or decrement ptr if non-alphanumeric elem exists|
 |[167. Two Sum II - Input Array Is Sorted](./questions/167.Two_Sum_II_(Medium).md)|Medium|[Link](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|
-|[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|
+|[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|ByteDance|Use l, r pointers to update maxLeft, maxRight, update res += maxLeft - height[l] or by maxRight, then we update maxLeft, maxRight to a greater value from height[l], height[r]|
 |[15. 3Sum](./questions/15.3Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/3sum/)|
 |LeetCode 75||||
 |[283. Move Zeroes](./questions/283.Move_Zeroes(Easy).md)|Easy|[Link](https://leetcode.com/problems/move-zeroes/)|
@@ -524,6 +523,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[2467. Most Profitable Path in a Tree](./questions/2467.Most_Profitable_Path_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/most-profitable-path-in-a-tree)||Run DFS to find path from `bob` to `0`, then run BFS from `0` to all leaf nodes to find the maximum `income` for alice|
 |[934. Shortest Bridge](./questions/934.Shortest_Bridge(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-bridge)|Tik Tok|Combination of DFS and BFS|
 |[3528. Unit Conversion I](./questions/3528.Unit_Conversion_I(Medium).md)|Medium|[Link](https://leetcode.com/problems/unit-conversion-i)|Biweekly Contest 155|First build graph to add each source's destinations to be their neighbor with conversionFactor. Then run BFS to update each conversion's factor.|
+|[317. Shortest Distance from All Buildings](./questions/317.Shortest_Distance_from_All_Buildings(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-distance-from-all-buildings)|ByteDance|Run BFS from each building to empty land, keep track of steps and number of buildings for each grid|
 
 
 <!--
@@ -764,7 +764,7 @@ ___
 |[300. Longest Increasing Subsequence](./questions/300.Longest_Increasing_Subsequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-increasing-subsequence/)|
 |[123. Best Time to Buy and Sell Stock III](./questions/123.Best_Time_to_Buy_and_Sell_Stock_III(Hard).md)|Hard|[Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)||Save two dps of the maximum profit we can get at index `i` for its left maximum profit and right maximum profit|
 |Miscellaneous|||||
-|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching_(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|Amazon OA||
+|[10. Regular Expression Matching](./questions/10.Regular_Expression_Matching(Hard).md)|Hard|[Link](https://leetcode.com/problems/regular-expression-matching/)|Amazon OA, ByteDance||
 |[2140. Solving Questions With Brainpower](./questions/2140.Solving_Questions_With_Brainpower(Medium).md)|Medium|[Link](https://leetcode.com/problems/solving-questions-with-brainpower)||Fill dp backward, and dp[i] should be the maximum points we can find in [i, n-1]|
 |[416. Partition Equal Subset Sum](./questions/416.Partition_Equal_Subset_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-equal-subset-sum)||Check if `nums` can be partitioned by taking the sum divide by 2, then check if there is a subset sums up to sum divide by 2|
 |[1997. First Day Where You Have Been in All the Rooms](./questions/1997.First_Day_Where_You_Have_Been_in_All_the_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms?envType=company&envId=bytedance&favoriteSlug=bytedance-all)|ByteDance|Use dp and find the recurrence relation to account the total days we need from room `i-1` for two scenarios to reach room `i`|
