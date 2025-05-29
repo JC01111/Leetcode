@@ -118,6 +118,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[2873. Maximum Value of an Ordered Triplet I](./questions/2873.Maximum_Value_of_an_Ordered_Triplet_I(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i)|Daily Question|Brute Force so far|
 |[3536. Maximum Product of Two Digits](./questions/3536.Maximum_Product_of_Two_Digits(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-product-of-two-digits)|Weekly Contest 448|Brute force to find the two biggest integers|
 |[838. Push Dominoes](./questions/838.Push_Dominoes(Medium).md)|Medium|[Link](https://leetcode.com/problems/push-dominoes)|Daily Question|Calculate the power of letter 'R', 'L', then take the sum of these power to decide whether this dominoe direction|
+|[2942. Find Words Containing Character](./questions/2942.Find_Words_Containing_Character(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-words-containing-character)|Daily Question||
 
 
 <!--
@@ -366,6 +367,7 @@ Usually needs to check `if not node`: `return None`
 |[82. Remove Duplicates from Sorted List II](./questions/82.Remove_Duplicates_from_Sorted_List_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)||Use while loop to skip duplicate (while head and head.next and head.val == head.next.val), use prev node to save the non-duplicate element|
 |[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Meta|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
 |[460. LFU Cache](./questions/460.LFU_Cache(Hard).md)|Hard|[Link](https://leetcode.com/problems/lfu-cache)|Amazon||
+|[1171. Remove Zero Sum Consecutive Nodes from Linked List](./questions/1171.Remove_Zero_Sum_Consecutive_Nodes_from_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)|ByteDance Interview|Calculate prefixSum from each node, if a path leads to 0, we cut the current nodes|
 
 
 <!--
@@ -515,7 +517,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |Miscellaneous|||||
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
 |[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Meta|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
-|[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Meta|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
+|[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Meta, ByteDance|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
 |[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
 |[329. Longest Increasing Path in a Matrix](./questions/329.Longest_Increasing_Path_in_a_Matrix(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|Meta|2D DP + DFS on entry's neighbors|
 |[1443. Minimum Time to Collect All Apples in a Tree](./questions/1443.Minimum_Time_to_Collect_All_Apples_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree)|Meta|Build adjacent graph and run DFS to search if node's children has apple, if so return `secs + 2`, otherwise, return 2 if `node` is apple, `0` else|
@@ -653,6 +655,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[1152. Analyze User Website Visit Pattern](./questions/1152.Analyze_User_Website_Visit_Pattern(Medium).md)|Medium|[Link](https://leetcode.com/problems/analyze-user-website-visit-pattern)|Amazon|Use multiple dictionaries to save intermediate results, remember to first zip (timestamp, username, website) and sort by timestamp|
 |[1399. Count Largest Group](./questions/1399.Count_Largest_Group(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-largest-group)|Daily Question|Use hashmap to map digit_sum with a list of digits with the same digit_sum, use two variables to keep track|
 |[3527. Find the Most Common Response](./questions/3527.Find_the_Most_Common_Response(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-most-common-response)|Biweekly Contest|Use set() to remove duplicate and hashmap to count|
+|[3541. Find Most Frequent Vowel and Consonant](./questions/3541.Find_Most_Frequent_Vowel_and_Consonant(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant)|Biweekly Contest 156|Use two hashmaps and two counts for vowel and consonant|
 
 
 <!--
