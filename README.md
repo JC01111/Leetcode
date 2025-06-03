@@ -282,6 +282,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Meta|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
 |[1079. Letter Tile Possibilities](./questions/1079.Letter_Tile_Possibilities(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-tile-possibilities)||Save each char's frequency into list of 26 chars, each time we use 1 char, reduce the count in list, then run backtrack with this list to count|
 |[47. Permutations II](./questions/47.Permutations_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations-ii)|ByteDance|Similar to 46.Permutation, we maintain subset with hashmap of all integers we can use for each backtrack()|
+|[140. Word Break II](./questions/140.Word_Break_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-break-ii)|Amazon Tag|Start from each index of s to form word, if one word matches s[i:j+1], run backtrack on index j+1|
 
 
 <!--
