@@ -186,6 +186,7 @@ Sliding Window technique is similar to Two Pointers, usually use a left pointer 
 |[2461. Maximum Sum of Distinct Subarrays With Length K](./questions/2461.Maximum_Sum_of_Distinct_Subarrays_With_Length_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)||Sliding window to find max sum of subarray, use hashmap to detect duplicate elements|
 |[1358. Number of Substrings Containing All Three Characters](./questions/1358.Number_of_Substrings_Containing_All_Three_Characters(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)|Daily Question|Maintain a valid sliding window, then count how many extra char we can add. Then shrink the sliding window to be invalid, repeat|
 |[2799. Count Complete Subarrays in an Array](./questions/2799.Count_Complete_Subarrays_in_an_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-complete-subarrays-in-an-array)|Daily Question|Use Sliding Window and count to solve|
+|[2747. Count Zero Request Servers](./questions/2747.Count_Zero_Request_Servers(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-zero-request-servers)|Amazon Tag|Sort queries and log by its receiving time, then use sliding window to find # of servers have received requests during that time|
 
 
 <!--
