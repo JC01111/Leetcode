@@ -774,6 +774,7 @@ ___
 |[2140. Solving Questions With Brainpower](./questions/2140.Solving_Questions_With_Brainpower(Medium).md)|Medium|[Link](https://leetcode.com/problems/solving-questions-with-brainpower)||Fill dp backward, and dp[i] should be the maximum points we can find in [i, n-1]|
 |[416. Partition Equal Subset Sum](./questions/416.Partition_Equal_Subset_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-equal-subset-sum)||Check if `nums` can be partitioned by taking the sum divide by 2, then check if there is a subset sums up to sum divide by 2|
 |[1997. First Day Where You Have Been in All the Rooms](./questions/1997.First_Day_Where_You_Have_Been_in_All_the_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms?envType=company&envId=bytedance&favoriteSlug=bytedance-all)|ByteDance|Use dp and find the recurrence relation to account the total days we need from room `i-1` for two scenarios to reach room `i`|
+|[472. Concatenated Words](./questions/472.Concatenated_Words(Hard).md)|Hard|[Link](https://leetcode.com/problems/concatenated-words)|Amazon Tag|1D DP + DFS|
 
 
 <!--
