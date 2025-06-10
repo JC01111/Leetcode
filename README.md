@@ -148,6 +148,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 |[5. Longest Palindromic Substring](./questions/5.Longest_Palindromic_Substring(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-palindromic-substring/)|Amazon, Cisco|Use l, r ptrs to compare if s[l] == s[r] to confirm palindrome, update res with longer substring|
 |[1268. Search Suggestions System](./questions/1268.Search_Suggestions_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-suggestions-system/)|
 |[680. Valid Palindrome II](./questions/680.Valid_Palindrome_II(Easy).md)|Medium|[Link](https://leetcode.com/problems/valid-palindrome-ii)|Meta Tag|Use two ptrs to find where two chars are different, then check if `s[l+1, r]` or `s[l, r-1]` is a valid palindrome|
+|[18. 4Sum](./questions/18.4Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/4sum)|Amazon Tag|Similar to 3Sum, sorting + fix two points and two ptrs|
 
 
 <!--
