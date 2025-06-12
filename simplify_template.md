@@ -5,6 +5,12 @@ Link:
 
 <br>
 
+|Access Time|Time|Y/N|
+|---|---|---|
+|||
+
+<br>
+
 ### Edge Cases:
 
 **Edge Case 1:**
