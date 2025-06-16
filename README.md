@@ -119,6 +119,8 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[3536. Maximum Product of Two Digits](./questions/3536.Maximum_Product_of_Two_Digits(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-product-of-two-digits)|Weekly Contest 448|Brute force to find the two biggest integers|
 |[838. Push Dominoes](./questions/838.Push_Dominoes(Medium).md)|Medium|[Link](https://leetcode.com/problems/push-dominoes)|Daily Question|Calculate the power of letter 'R', 'L', then take the sum of these power to decide whether this dominoe direction|
 |[2942. Find Words Containing Character](./questions/2942.Find_Words_Containing_Character(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-words-containing-character)|Daily Question||
+|[3423. Maximum Difference Between Adjacent Elements in a Circular Array](./questions/3423.Maximum_Difference_Between_Adjacent_Elements_in_a_Circular_Array(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array)|Daily Question||
+|[2566. Maximum Difference by Remapping a Digit](./questions/2566.Maximum_Difference_by_Remapping_a_Digit(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit?envType=daily-question&envId=2025-06-14)|Daily Question|Use hashmaps to change the specific digit|
 
 
 <!--
@@ -530,6 +532,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[3528. Unit Conversion I](./questions/3528.Unit_Conversion_I(Medium).md)|Medium|[Link](https://leetcode.com/problems/unit-conversion-i)|Biweekly Contest 155|First build graph to add each source's destinations to be their neighbor with conversionFactor. Then run BFS to update each conversion's factor.|
 |[317. Shortest Distance from All Buildings](./questions/317.Shortest_Distance_from_All_Buildings(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-distance-from-all-buildings)|ByteDance|Run BFS from each building to empty land, keep track of steps and number of buildings for each grid|
 |[1298. Maximum Candies You Can Get from Boxes](./questions/1298.Maximum_Candies_You_Can_Get_from_Boxes(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|||
+|[733. Flood Fill](./questions/733.Flood_Fill(Easy).md)|Easy|[Link](https://leetcode.com/problems/flood-fill)|Amazon Tag|Run BFS|
 
 
 <!--
