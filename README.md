@@ -747,6 +747,7 @@ Kadane's Algorithm maintains a `curSum` which keep tracks of contiguous summatio
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
 |Miscellaneous|||||
 |[1800. Maximum Ascending Subarray Sum](./questions/1800.Maximum_Ascending_Subarray_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-ascending-subarray-sum)||Kadane's Algorithm, when a non-ascending element exists, reset `curSum = 0`|
+|[3434. Maximum Frequency After Subarray Operation](./questions/3434.Maximum_Frequency_After_Subarray_Operation(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-frequency-after-subarray-operation)|Amazon Tag||
 
 
 <!--
