@@ -1,12 +1,12 @@
 ## 0. Name (Medium)
 
-Link: []()
+Link: 
 
 <br>
 
 |Date|Stopwatch|Y/N|Feedback|
 |---|---|---|----------|
-|Jun 21, 2025||||
+|Jul 6, 2025||||
 
 <br>
 

@@ -533,6 +533,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[317. Shortest Distance from All Buildings](./questions/317.Shortest_Distance_from_All_Buildings(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-distance-from-all-buildings)|ByteDance|Run BFS from each building to empty land, keep track of steps and number of buildings for each grid|
 |[1298. Maximum Candies You Can Get from Boxes](./questions/1298.Maximum_Candies_You_Can_Get_from_Boxes(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|||
 |[733. Flood Fill](./questions/733.Flood_Fill(Easy).md)|Easy|[Link](https://leetcode.com/problems/flood-fill)|Amazon Tag|Run BFS|
+|[261. Graph Valid Tree](./questions/261.Graph_Valid_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/graph-valid-tree)|||
 
 
 <!--
