@@ -287,6 +287,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[1079. Letter Tile Possibilities](./questions/1079.Letter_Tile_Possibilities(Medium).md)|Medium|[Link](https://leetcode.com/problems/letter-tile-possibilities)||Save each char's frequency into list of 26 chars, each time we use 1 char, reduce the count in list, then run backtrack with this list to count|
 |[47. Permutations II](./questions/47.Permutations_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations-ii)|ByteDance|Similar to 46.Permutation, we maintain subset with hashmap of all integers we can use for each backtrack()|
 |[140. Word Break II](./questions/140.Word_Break_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-break-ii)|Amazon Tag|Start from each index of s to form word, if one word matches s[i:j+1], run backtrack on index j+1|
+|[301. Remove Invalid Parentheses](./questions/301.Remove_Invalid_Parentheses(Hard).md)|Hard|[Link](https://leetcode.com/problems/remove-invalid-parentheses)||Generate substrings of cases to take parenthese or not, finally compare number of opening and closing parentheses to decide what to add into set()|
 
 
 <!--
