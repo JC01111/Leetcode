@@ -626,6 +626,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |[3169. Count Days Without Meetings](./questions/3169.Count_Days_Without_Meetings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-days-without-meetings)|Daily Question|Sort intervals, then count the gap between intervals|
 |[3394. Check if Grid can be Cut into Sections](./questions/3394.Check_if_Grid_can_be_Cut_into_Sections(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections)|Daily Question|Sort intervals base on x, y coordiates. Then find if we can have at least 2 gaps for either x or y coordinate|
 |[836. Rectangle Overlap](./questions/836.Rectangle_Overlap(Easy).md)|Easy|[Link](https://leetcode.com/problems/rectangle-overlap)|AutoX Tag|Check if `rec1` is on the left, right, top, bottom of `rec2`, if none of them is true, that means they must overlap|
+|[1353. Maximum Number of Events That Can Be Attended](./questions/1353.Maximum_Number_of_Events_That_Can_Be_Attended(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended)|||
 
 
 <!--
