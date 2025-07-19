@@ -121,6 +121,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[2942. Find Words Containing Character](./questions/2942.Find_Words_Containing_Character(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-words-containing-character)|Daily Question||
 |[3423. Maximum Difference Between Adjacent Elements in a Circular Array](./questions/3423.Maximum_Difference_Between_Adjacent_Elements_in_a_Circular_Array(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array)|Daily Question||
 |[2566. Maximum Difference by Remapping a Digit](./questions/2566.Maximum_Difference_by_Remapping_a_Digit(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit?envType=daily-question&envId=2025-06-14)|Daily Question|Use hashmaps to change the specific digit|
+|[3618. Split Array by Prime Indices](./questions/3618.Split_Array_by_Prime_Indices(Medium).md)|Medium|[Link](https://leetcode.com/problems/split-array-by-prime-indices)|Biweekly Contest 161||
 
 
 <!--
@@ -535,6 +536,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[1298. Maximum Candies You Can Get from Boxes](./questions/1298.Maximum_Candies_You_Can_Get_from_Boxes(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|||
 |[733. Flood Fill](./questions/733.Flood_Fill(Easy).md)|Easy|[Link](https://leetcode.com/problems/flood-fill)|Amazon Tag|Run BFS|
 |[261. Graph Valid Tree](./questions/261.Graph_Valid_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/graph-valid-tree)|||
+|[3619. Count Islands With Total Value Divisible by K](./questions/3619.Count_Islands_With_Total_Value_Divisible_by_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k)|Biweekly Contest 161|Run BFS and nonlocal `values` to check|
 
 
 <!--
