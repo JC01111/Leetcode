@@ -163,7 +163,7 @@ Two pointers can save space complexity, because it only uses constant space comp
 
 ### Sliding Window
 
-Sliding Window technique is similar to Two Pointers, usually use a left pointer as a "Pivot" to know where we start recently and then update `left += 1`. Sometimes we may need to use **hashmaps** to find substring.
+Sliding Window technique is similar to Two Pointers, we use two ptrs `l, r` for `[start, end]` of the substring/sliding window. Sometimes we may need to use **hashmaps** to find substring.
 
 |Sliding Window|||||
 |---|---|---|---|---|
@@ -228,7 +228,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 ---
 
 ### Binary Search
-Use this method when we see sorted in **non-decreasing** order or when we need to write an algorithm in $O(log\ n)$ runtime. Use left & right pointer, then we iteratively find the mid point by `(left + right) // 2`, and compare the mid point with `target`, if `target < m`, we update the `right` by `m - 1`, if `target > m`, we update `left` by `m + 1`. 
+Use this method when we see sorted in **non-decreasing** order or when we need to write an algorithm in $O(log\ n)$ runtime. Use left & right pointer, then we iteratively find the mid point by `(left + right) // 2`, and compare the mid point with `target`, if `target < m`, we update the `right` by `m - 1`, if `target > m`, we update `left` by `m + 1`.
 
 |Binary Search|||||
 |---|---|---|---|---|
@@ -638,7 +638,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 <br>
 
 ---
-  
+
 ### Hashmap
 
 In general, create a hashmap {} and store elements and their indices into the hashmap as the for-loop goes, then in the for loop we check if an element has already in the hashmap or not, or in the case we want to decrement the number of times we have seen an element in the hashmap.
