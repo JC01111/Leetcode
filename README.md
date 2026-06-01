@@ -38,8 +38,9 @@ Template
 
 ### Tag Questions
 - [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
+- [TikTok](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#tiktok-tag)
 
-<br>
+### [Questions to Revisit](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#questions-to-revisit)
 
 ### [Concurrency](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#concurrency-1)
 
@@ -519,7 +520,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[841. Keys and Rooms](./questions/841.Keys_and_Rooms(Medium).md)|Medium|[Link](https://leetcode.com/problems/keys-and-rooms/)|Graph DFS|
 |[547. Number of Provinces](./questions/547.Number_of_Provinces(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-provinces/)|Graph DFS|For each unvisited city, run DFS to add all connected cities into visited(), increment res|
 |[1466. Reorder Routes to Make All Paths Lead to the City Zero](./questions/1466.Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)|Graph DFS|
-|[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|Amazon|
+|[994. Rotting Oranges](./questions/994.Rotting_Oranges(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotting-oranges/)|Graph BFS|Find # of fresh oranges, save rotten oranges into deque, each min, add rotten oranges' neighbors|
 |[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
 |Miscellaneous|||||
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
@@ -622,7 +623,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |[1851. Minimum Interval to Include Each Query](./questions/1851.Minimum_Interval_to_Include_Each_Query(Hard).md)|Hard|[Link](https://leetcode.com/problems/minimum-interval-to-include-each-query/)|
 |Miscellaneous|||||
 |[252. Meeting Rooms](./questions/252.Meeting_Rooms(Easy).md)|Easy|[Link](https://leetcode.com/problems/meeting-rooms)||First sort intervals, then use `prev` to save the previous interval's end time, then compare with new interval's start time, if `prev > start`, return False|
-|[253. Meeting Rooms II](./questions/253.Meeting_Rooms_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/meeting-rooms-ii)||Use minHeap to save all the current meeting with their end time. For each new interval, we compare their start_i with minHeap[0], if the start_i > minHeap[0], we replace the the room, otherwise, we append new end_i time into minHeap|
+|[253. Meeting Rooms II](./questions/253.Meeting_Rooms_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/meeting-rooms-ii)||Q: Find min rooms for all meetings [start, end]. <br> S: save all the end time in minHeap, compare start with end time, if start < smallest end time, we need extra room|
 |[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Meta|Use two ptrs to find the intersection, keep the interval with greater end|
 |[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`|
 |[3169. Count Days Without Meetings](./questions/3169.Count_Days_Without_Meetings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-days-without-meetings)|Daily Question|Sort intervals, then count the gap between intervals|
@@ -771,7 +772,7 @@ ___
 |LeetCode 75|||||
 |[1137. N-th Tribonacci Number](./questions/1137.N-th_Tribonacci_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/n-th-tribonacci-number/)|
 |[746. Min Cost Climbing Stairs](./questions/746.Min_Cost_Climbing_Stairs(Easy).md)|Easy|[Link](https://leetcode.com/problems/min-cost-climbing-stairs/)|
-|[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)|
+|[198. House Robber](./questions/198.House_Robber_(Medium).md)|Medium|[Link](https://leetcode.com/problems/house-robber/)||Q: Cannot rob adjacent houses, find the max amount we can rob <br> S: Each dp[i] = max(rob + dp[i-2], dp[i-1]), base case until i > 1|
 |[790. Domino and Tromino Tiling](./questions/790.Domino_and_Tromino_Tiling(Medium).md)|Medium|[Link](https://leetcode.com/problems/domino-and-tromino-tiling/)|
 |LeetCode 150|||||
 |[70. Climbing Stairs](./questions/70.Climbing_Stairs_(Easy).md)|Easy|[Link](https://leetcode.com/problems/climbing-stairs/)|
@@ -939,7 +940,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 ---
 
-### Meta Tag
+<!-- ### Meta Tag
 
 |Meta Tag|||||
 |---|---|---|---|---|
@@ -1010,13 +1011,41 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[698. Partition to K Equal Sum Subsets](./questions/698.Partition_to_K_Equal_Sum_Subsets(Medium).md)|Medium|[Link](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|Array, Backtrack|Use Backtrack to try each element with other elements subarray, if the subarray equals to k, we mark all elements to be visited, run backtrack from the beginning again. For every subarray, we decrement k -= 1, return True when k == 0|
 |[36. Valid Sudoku](./questions/36.Valid_Sudoku_(Medium).md)|Medium|[Link](https://leetcode.com/problems/valid-sudoku/)|Matrix|Use three dicts to check repetition|
 |[37. Sudoku Solver](./questions/37.Sudoku_Solver(Hard).md)|Medium|[Link](https://leetcode.com/problems/sudoku-solver)|Matrix, Backtrack|Use 3 sets to save existed vals, backtrack number `i` from `[1, 9]` for `'.'`|
-|[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`|
+|[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`| -->
 
 
 <!--
 |[]()|Easy|[Link]()|||
 -->
 
+<br>
+
+---
+
+### TikTok Tag
+
+|TikTok Tag|||||
+|---|---|---|---|---|
+|[1100. Find K-Length Substrings With No Repeated Characters](./questions/1100.Find_K-Length_Substrings_With_No_Repeated_Characters(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/)|Sliding Window|Use sliding window and hashmap to track char counts; shrink from left when repeated char found, increment res when window size equals k|
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+<br>
+
+---
+
+### Questions to Revisit
+
+|Questions to Revisit|||||
+|---|---|---|---|---|
+|[207. Course Schedule](./questions/207.Course_Schedule_(Medium).md)|Medium|[Link](https://leetcode.com/problems/course-schedule/)|DFS|Run DFS to check all the prerequisites of a course, if can be completed, remove it and set preMap[crs] = []|
+|[450. Delete Node in a BST](./questions/450.Delete_Node_in_a_BST(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-node-in-a-bst/)||Run Binary Search to find the key, then replace the key with the second smallest element from its right branch deep left node to maintain the BST property|
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
 <br>
 
 ---
