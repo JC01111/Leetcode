@@ -129,6 +129,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|ByteDance|Use l, r pointers to update maxLeft, maxRight, update res += maxLeft - height[l] or by maxRight, then we update maxLeft, maxRight to a greater value from height[l], height[r]|
 |[41. First Missing Positive](./questions/41.First_Missing_Positive(Hard).md)|Hard|[Link](https://leetcode.com/problems/first-missing-positive/)|serviceNow|Clean up out-of-range values, mark presence by negating nums[n-1], then first index with positive value gives the missing integer|
 |[43. Multiply Strings](./questions/43.Multiply_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/multiply-strings/)||Simulate digit-by-digit multiplication into a result array of length m+n; digit at positions i,j lands at i+j+1 with carry to i+j|
+|[3076. Shortest Uncommon Substring in an Array](./questions/3076.Shortest_Uncommon_Substring_in_an_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)|Moveworks|Generate all substrings with a count hashmap; for each string pick the unique (count == 1) substring with min length, breaking ties lexicographically|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -295,6 +296,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[47. Permutations II](./questions/47.Permutations_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/permutations-ii)|ByteDance|Similar to 46.Permutation, we maintain subset with hashmap of all integers we can use for each backtrack()|
 |[140. Word Break II](./questions/140.Word_Break_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-break-ii)|Amazon Tag|Start from each index of s to form word, if one word matches s[i:j+1], run backtrack on index j+1|
 |[301. Remove Invalid Parentheses](./questions/301.Remove_Invalid_Parentheses(Hard).md)|Hard|[Link](https://leetcode.com/problems/remove-invalid-parentheses)||Generate substrings of cases to take parenthese or not, finally compare number of opening and closing parentheses to decide what to add into set()|
+|[1258. Synonymous Sentences](./questions/1258.Synonymous_Sentences(Medium).md)|Medium|[Link](https://leetcode.com/problems/synonymous-sentences/)|Moveworks|Build synonym graph; BFS to find each word's connected component; backtrack over text words trying every synonym at each position|
 
 
 <!--
