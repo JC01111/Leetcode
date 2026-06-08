@@ -15,6 +15,7 @@ Template
 - [Stack](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#stack)
 - [Monotonic Stack](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#monotonic-stack)
 - [Linked List](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#linked-list)
+- [Fast-slow Pointer](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#fast-slow-pointer)
 - [Binary Tree General](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-general)
 - [Binary Tree BFS](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-bfs)
 - [Binary Tree DFS](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#binary-tree-dfs)
@@ -35,6 +36,7 @@ Template
 - [Prefix Sum](https://github.com/JC01111/Leetcode?tab=readme-ov-file#prefix-sum)
 - [Bit Manupulation](https://github.com/JC01111/Leetcode_I_Solved/tree/main?tab=readme-ov-file#bit-manipulation)
 - [Math](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#math)
+- [Design Questions](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#design-questions)
 
 ### Tag Questions
 - [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
@@ -51,7 +53,7 @@ Template
 ___
 
 ### Array / String
-
+For array, sometimes we can setup left and right array to represent value before or at index i, then calculate results at the same time in the second pass.
 General cases we want to replace element with non-repeating element in `nums`, so we set an index to keep track of repeating position.
 
 |Array / String|||||
@@ -123,7 +125,10 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[3423. Maximum Difference Between Adjacent Elements in a Circular Array](./questions/3423.Maximum_Difference_Between_Adjacent_Elements_in_a_Circular_Array(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array)|Daily Question||
 |[2566. Maximum Difference by Remapping a Digit](./questions/2566.Maximum_Difference_by_Remapping_a_Digit(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit?envType=daily-question&envId=2025-06-14)|Daily Question|Use hashmaps to change the specific digit|
 |[3618. Split Array by Prime Indices](./questions/3618.Split_Array_by_Prime_Indices(Medium).md)|Medium|[Link](https://leetcode.com/problems/split-array-by-prime-indices)|Biweekly Contest 161||
-
+|[845. Longest Mountain in Array](./questions/845.Longest_Mountain_in_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-mountain-in-array/)|TikTok Tag|Two passes to record subarray for ascending and descending before this index i. Or we can simulate the climbing and descending in one pass|
+|[42. Trapping Rain Water](./questions/42.Trapping_Rain_Water(Hard).md)|Hard|[Link](https://leetcode.com/problems/trapping-rain-water/)|ByteDance|Use l, r pointers to update maxLeft, maxRight, update res += maxLeft - height[l] or by maxRight, then we update maxLeft, maxRight to a greater value from height[l], height[r]|
+|[41. First Missing Positive](./questions/41.First_Missing_Positive(Hard).md)|Hard|[Link](https://leetcode.com/problems/first-missing-positive/)|serviceNow|Clean up out-of-range values, mark presence by negating nums[n-1], then first index with positive value gives the missing integer|
+|[43. Multiply Strings](./questions/43.Multiply_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/multiply-strings/)||Simulate digit-by-digit multiplication into a result array of length m+n; digit at positions i,j lands at i+j+1 with carry to i+j|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -238,7 +243,7 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |[35. Search Insert Position](./questions/35.Search_Insert_Position_(Easy).md)|Easy|[Link](https://leetcode.com/problems/search-insert-position/)|
 |[74. Search a 2D Matrix](./questions/74.Search_a_2D_Matrix_(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-a-2d-matrix/)|
 |[153. Find Minimum in Rotated Sorted Array](./questions/153.Find_Minimum_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|
-|[33. Search in Rotated Sorted Array](./questions/33.Search_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)|
+|[33. Search in Rotated Sorted Array](./questions/33.Search_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)|TikTok Tag|1. Check if mid point's left side `[l, m]` is sorted or the right side `[m, r]`. 2. If left-side is sorted, check if `target` in `[l, m]` or on the right of `m`|
 |[162. Find Peak Element](./questions/162.Find_Peak_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-peak-element/)|Meta Tag|Run Binary Search to check if a peak element exists, if not, update l or r pointer to the greater value neighbor|
 |[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Meta|Find the left end and right end of `nums` by running Binary Search twice, update different ptr each time|
 |[4. Median of Two Sorted Arrays](./questions/4.Median_of_Two_Sorted_Arrays(Hard).md)|Hard|[Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)|
@@ -306,6 +311,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |---|---|---|---|---|
 |LeetCode 150|||||
 |[20. Valid Parentheses](./questions/20.Valid_Parentheses_(Easy).md)|Easy|[Link](https://leetcode.com/problems/valid-parentheses/)|AutoX Tag||
+|[32. Longest Valid Parentheses](./questions/32.Longest_Valid_Parentheses(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-valid-parentheses/)|TikTok|Initialize stack with [-1] sentinel; push '(' indices, pop on ')' — if stack non-empty update res with idx - stack[-1], else push idx as new boundary|
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Meta Tag|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
@@ -376,6 +382,28 @@ Usually needs to check `if not node`: `return None`
 |[708. Insert into a Sorted Circular Linked List](./questions/708.Insert_into_a_Sorted_Circular_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)|Meta|Use `prev`, `curr` to keep track of two nodes and compare their values with `insertVal` and add new Node between `prev` and `curr`|
 |[460. LFU Cache](./questions/460.LFU_Cache(Hard).md)|Hard|[Link](https://leetcode.com/problems/lfu-cache)|Amazon||
 |[1171. Remove Zero Sum Consecutive Nodes from Linked List](./questions/1171.Remove_Zero_Sum_Consecutive_Nodes_from_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)|ByteDance Interview|Calculate prefixSum from each node, if a path leads to 0, we cut the current nodes|
+|[234. Palindrome Linked List](./questions/234.Palindrome_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-linked-list/)|ServiceNow|Fast/slow ptrs to find midpoint, reverse second half in-place, then compare both halves node by node|
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+<br>
+
+---
+
+### Fast-slow Pointer
+
+|Fast-slow Pointer|||||
+|---|---|---|---|---|
+|[141. Linked List Cycle](./questions/141.Linked_List_Cycle_(Easy).md)|Easy|[Link](https://leetcode.com/problems/linked-list-cycle/)||Floyd's Tortoise and Hare: advance fast two steps and slow one step; if they ever point to the same node, a cycle exists|
+|[202. Happy Number](./questions/202.Happy_Number(Easy).md)|Easy|[Link](https://leetcode.com/problems/happy-number/)||Apply Floyd's cycle detection on the digit-square sequence; if fast == slow and not 1, it's not a happy number|
+|[287. Find the Duplicate Number](./questions/287.Find_the_Duplicate_Number(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-duplicate-number/)||Treat array values as next pointers; use Floyd's cycle detection to find the entrance of the cycle, which is the duplicate|
+|[2095. Delete the Middle Node of a Linked List](./questions/2095.Delete_the_Middle_Node_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)||Fast/slow ptrs to find the node before the midpoint, then unlink it with `prev.next = prev.next.next`|
+|[143. Reorder List](./questions/143.Reorder_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/reorder-list/)||Fast/slow ptrs to find midpoint, reverse second half, then interleave the two halves|
+|[2130. Maximum Twin Sum of a Linked List](./questions/2130.Maximum_Twin_Sum_of_a_Linked_List(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/)||Fast/slow ptrs to find midpoint, reverse first half, then walk both halves together to compute max twin sum|
+|[148. Sort List](./questions/148.Sort_List_(Medium).md)|Medium|[Link](https://leetcode.com/problems/sort-list/)||Fast/slow ptrs to find midpoint and split into two halves, recursively sort each half, then merge|
+|[234. Palindrome Linked List](./questions/234.Palindrome_Linked_List(Easy).md)|Easy|[Link](https://leetcode.com/problems/palindrome-linked-list/)|ServiceNow|Fast/slow ptrs to find midpoint, reverse second half in-place, then compare both halves node by node|
 
 
 <!--
@@ -498,6 +526,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 ---
 
 ### Graph General
+Reminder: to add/check neighbor entries, remember to check boundary for [new_r, new_c], new_r in range(len(grid)), new_c in range(len(grid[0])).
 
 [286, 130, 417] require reverse-thinking to start running DFS on edges and add grids for some specific requirements. For other types of questions, we can run **DFS** or **BFS** iteratively to solve.
 
@@ -538,6 +567,7 @@ Binary Search Tree (BST) has property that the nodes on the left of the root are
 |[733. Flood Fill](./questions/733.Flood_Fill(Easy).md)|Easy|[Link](https://leetcode.com/problems/flood-fill)|Amazon Tag|Run BFS|
 |[261. Graph Valid Tree](./questions/261.Graph_Valid_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/graph-valid-tree)|||
 |[3619. Count Islands With Total Value Divisible by K](./questions/3619.Count_Islands_With_Total_Value_Divisible_by_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k)|Biweekly Contest 161|Run BFS and nonlocal `values` to check|
+|[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|TikTok Tag|Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
 
 
 <!--
@@ -590,7 +620,7 @@ More to pratice: <br>
 ___
 
 ### Trie
-Use {} to save this current node's next characters, "*" to indicate the end of a word.
+Use Node() to save a node's children info from hashmap{}, and if this node is the end of a word.
 
 |Trie|||||
 |---|---|---|---|---|
@@ -743,15 +773,17 @@ Greedy problems are hard to identify pattern, but one type of them can be solved
 ---
 
 ### Kadane's Algorithm
+Kadane's algorithm to solve maximum subarray question. Maintain curSum and maxSum, if curr value > curSum + curr, we just update curSum = curr. Each time we decide if we should extend or start fresh.
+
 Kadane's Algorithm maintains a `curSum` which keep tracks of contiguous summation, it is always `0` if the `curSum + nums[i] < 0`, which means we will not take this element at index `i`. If `curSum > 0` we will keep unpdating `curSum += nums[i]` and update `maxSum = max(maxSum, curSum)`. This is the standard approach of Kadane's algorithm.
 
 |Kadane's Algorithm|||||
 |---|---|---|---|---|
 |LeetCode 150|||||
-|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)|
+|[53. Maximum Subarray](./questions/53.Maximum_Subarray_(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-subarray/)||Kadane's algorithm|
 |[918. Maximum Sum Circular Subarray](./questions/918.Maximum_Sum_Circular_Subarray(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-sum-circular-subarray)||Use Kadane's alg to find globalMin and globalMax, return max(globalMax, sum(nums)-globalMin)|
 |[134. Gas Station](./questions/134.Gas_Station(Medium).md)|Medium|[Link](https://leetcode.com/problems/gas-station/)|
-|Miscellaneous|||||
+|Miscellaneous||||First check if possible to run cycle. Then, find max subarray for each index i, if < 0, restart instead of expanding, hope the next index can cover|
 |[1800. Maximum Ascending Subarray Sum](./questions/1800.Maximum_Ascending_Subarray_Sum(Easy).md)|Easy|[Link](https://leetcode.com/problems/maximum-ascending-subarray-sum)||Kadane's Algorithm, when a non-ascending element exists, reset `curSum = 0`|
 |[3434. Maximum Frequency After Subarray Operation](./questions/3434.Maximum_Frequency_After_Subarray_Operation(Medium).md)|Medium|[Link](https://leetcode.com/problems/maximum-frequency-after-subarray-operation)|Amazon Tag||
 
@@ -931,6 +963,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1780. Check if Number is a Sum of Powers of Three](./questions/1780.Check_if_Number_is_a_Sum_of_Powers_of_Three(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three)||Iteratively minus $3^x$ from `n` if $3^x$ `<= n`|
 |[2579. Count Total Number of Colored Cells](./questions/2579.Count_Total_Number_of_Colored_Cells(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-total-number-of-colored-cells)||Each time we update number of cells by multiple of `4`|
 |[2790. Maximum Number of Groups With Increasing Length](./questions/2790.Maximum_Number_of_Groups_With_Increasing_Length(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length)|Amazon Tag|Sort it and find the pattern to satisfy each `k` group|
+|[365. Water and Jug Problem](./questions/365.Water_and_Jug_Problem(Medium).md)|Medium|[Link](https://leetcode.com/problems/water-and-jug-problem/)|GCD|By Bézout's identity, any reachable amount is a multiple of gcd(x, y); return target % gcd(x, y) == 0 if x + y >= target|
+|[43. Multiply Strings](./questions/43.Multiply_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/multiply-strings/)||Simulate digit-by-digit multiplication into a result array of length m+n; digit at positions i,j lands at i+j+1 with carry to i+j|
 
 
 <!--
@@ -1022,11 +1056,30 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 
 ---
 
+### Design Questions
+
+|Design Questions|||||
+|---|---|---|---|---|
+|[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Linked List, Hashmap|Use two dummy nodes (left=LRU, right=MRU); on get/put remove node and re-insert at MRU end; evict from LRU end when over capacity|
+|[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree/)|Trie|Each TrieNode stores children dict and isEnd flag; insert/search/startsWith all walk character by character|
+|[706. Design HashMap](./questions/706.Design_HashMap(Easy).md)|Easy|[Link](https://leetcode.com/problems/design-hashmap/)|TikTok, serviceNow|Use prime-sized array of bucket lists for chaining; hash key % 2069 to find bucket, then scan linearly for put/get/remove|
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+<br>
+
+---
+
 ### TikTok Tag
 
 |TikTok Tag|||||
 |---|---|---|---|---|
 |[1100. Find K-Length Substrings With No Repeated Characters](./questions/1100.Find_K-Length_Substrings_With_No_Repeated_Characters(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters/)|Sliding Window|Use sliding window and hashmap to track char counts; shrink from left when repeated char found, increment res when window size equals k|
+|[32. Longest Valid Parentheses](./questions/32.Longest_Valid_Parentheses(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-valid-parentheses/)|Stack|Initialize stack with [-1] sentinel; push '(' indices, pop on ')' — if stack non-empty update res with idx - stack[-1], else push idx as new boundary|
+|[845. Longest Mountain in Array](./questions/845.Longest_Mountain_in_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-mountain-in-array/)|Array|Single pass: for each base climb while ascending, record peak, descend while descending; if both phases exist update res = i - base + 1|
+|[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|Graph|Bi-partite question, separate into two sets <br> Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
 
 
 <!--
