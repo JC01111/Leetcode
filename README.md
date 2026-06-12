@@ -130,6 +130,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[41. First Missing Positive](./questions/41.First_Missing_Positive(Hard).md)|Hard|[Link](https://leetcode.com/problems/first-missing-positive/)|serviceNow|Clean up out-of-range values, mark presence by negating nums[n-1], then first index with positive value gives the missing integer|
 |[43. Multiply Strings](./questions/43.Multiply_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/multiply-strings/)||Simulate digit-by-digit multiplication into a result array of length m+n; digit at positions i,j lands at i+j+1 with carry to i+j|
 |[3076. Shortest Uncommon Substring in an Array](./questions/3076.Shortest_Uncommon_Substring_in_an_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)|Moveworks|Generate all substrings with a count hashmap; for each string pick the unique (count == 1) substring with min length, breaking ties lexicographically|
+|[527. Word Abbreviation](./questions/527.Word_Abbreviation(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-abbreviation/)|Applied Intuition|Init each abbreviation with prefix=1; repeatedly find duplicate abbreviations in a hashmap and increment their prefix until all are unique|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -217,7 +218,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |[54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix/)||Use four variables `l, r, t, b` to process in four directions `l->r, t->b, r->l, b->t`|
 |[48. Rotate Image](./questions/48.Rotate_Image(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotate-image/)|
 |[73. Set Matrix Zeroes](./questions/73.Set_Matrix_Zeroes(Medium).md)|Medium|[Link](https://leetcode.com/problems/set-matrix-zeroes/)|
-|[289. Game of Life](./questions/289.Game_of_Life(Medium).md)|Medium|[Link](https://leetcode.com/problems/game-of-life/)||Traverse the grid to find which entries need to be changed later, and we mark it as other number. Later, we change the marked number back to either live or dead|
+|[289. Game of Life](./questions/289.Game_of_Life(Medium).md)|Medium|[Link](https://leetcode.com/problems/game-of-life/)|Applied Intuition|Traverse the grid to find which entries need to be changed later, and we mark it as other number. Later, we change the marked number back to either live or dead|
 |Miscellaneous|||||
 |[1861. Rotating the Box](./questions/1861.Rotating_the_Box(Medium).md)|Medium|[Link](https://leetcode.com/problems/rotating-the-box)||First move all the stones to the valid spaces, then convert each column into each row of the new matrix|
 |[498. Diagonal Traverse](./questions/498.Diagonal_Traverse(Medium).md)|Medium|[Link](https://leetcode.com/problems/diagonal-traverse)|Meta|Save the diagonal index by (r+c) with values `{diagonal_idx: [val]}`, then check `idx % 2` to decide whether reverse the saved values' list or not|
@@ -246,7 +247,7 @@ Use this method when we see sorted in **non-decreasing** order or when we need t
 |[153. Find Minimum in Rotated Sorted Array](./questions/153.Find_Minimum_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|
 |[33. Search in Rotated Sorted Array](./questions/33.Search_in_Rotated_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)|TikTok Tag|1. Check if mid point's left side `[l, m]` is sorted or the right side `[m, r]`. 2. If left-side is sorted, check if `target` in `[l, m]` or on the right of `m`|
 |[162. Find Peak Element](./questions/162.Find_Peak_Element(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-peak-element/)|Meta Tag|Run Binary Search to check if a peak element exists, if not, update l or r pointer to the greater value neighbor|
-|[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Meta|Find the left end and right end of `nums` by running Binary Search twice, update different ptr each time|
+|[34. Find First and Last Position of Element in Sorted Array](./questions/34.Find_First_and_Last_Position_of_Element_in_Sorted_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Meta, Applied Intuition|Run binary search twice to find the deep left and deep right indices equal to target|
 |[4. Median of Two Sorted Arrays](./questions/4.Median_of_Two_Sorted_Arrays(Hard).md)|Hard|[Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)|
 |LeetCode 75|||||
 |[374. Guess Number Higher or Lower](./questions/374.Guess_Number_Higher_or_Lower(Easy).md)|Easy|[Link](https://leetcode.com/problems/guess-number-higher-or-lower/)|
@@ -324,7 +325,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
 |NeetCode 150|||||
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
-|[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google Tag|
+|[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google, TikTok|Save increasing heights, pop previous heights to update area when a shorter height appears|
 |Miscellaneous|||||
 |[1249. Minimum Remove to Make Valid Parentheses](./questions/1249.Minimum_Remove_to_Make_Valid_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|Meta Tag|Use stack to save "(" index, when we encounter ")", we pop the last index from stack to close a parenthese. If we encounter ")" with no "(", change it to ""|
 |[227. Basic Calculator II](./questions/227.Basic_Calculator_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/basic-calculator-ii)|Meta Tag|Use stack to save previous result, we only append new element with sign into stack when we encounter a new sign|
@@ -490,6 +491,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 |[1650. Lowest Common Ancestor of a Binary Tree III](./questions/1650.Lowest_Common_Ancestor_of_a_Binary_Tree_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)|Meta Tag|First save the path from `p` to `root`, traverse from `q` to `root`, the first common node is the LCA|
 |[543. Diameter of Binary Tree](./questions/543.Diameter_of_Binary_Tree(Easy).md)|Easy|[Link](https://leetcode.com/problems/diameter-of-binary-tree)|Meta Tag|Run DFS on each node to get its left, right subtree height and update res with left + right, for each node, return max(left, right) + 1|
 |[129. Sum Root to Leaf Numbers](./questions/129.Sum_Root_to_Leaf_Numbers(Medium).md)|Medium|[Link](https://leetcode.com/problems/sum-root-to-leaf-numbers)|Meta|Run DFS to add every number in the path, when reaches the leaf node, return `curSum`, return `node.left` + `node.right`|
+|[298. Binary Tree Longest Consecutive Sequence](./questions/298.Binary_Tree_Longest_Consecutive_Sequence(Medium).md)|Medium|[Link](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|TikTok|DFS top-down with `currCnt` and `prevVal`; increment count if `node.val - prevVal == 1`, else reset to 1; update global `res` at each node|
 
 
 <!--
@@ -501,7 +503,7 @@ BFS uses `collections.queue()` and follows **FIFO**, DFS uses `stack()` and foll
 
 ### Binary Search Tree
 
-Binary Search Tree (BST) has property that the nodes on the left of the root are smaller than the root, the nodes on the right of the root are greater than the root. So, in many cases we can implement the **DFS** to perform **In-order traversal**: left -> root -> right.
+Binary Search Tree (BST) has property that the nodes on the left of the root are smaller than the root, the nodes on the right of the root are greater than the root. So, in many cases we can implement the **DFS** to perform **In-order traversal**: left -> root -> right. Pre-order: root -> left -> right. Post-order: left -> right -> root.
 
 |Binary Search Tree|||||
 |---|---|---|---|---|
@@ -555,7 +557,7 @@ Reminder: to add/check neighbor entries, remember to check boundary for [new_r, 
 |[1926. Nearest Exit from Entrance in Maze](./questions/1926.Nearest_Exit_from_Entrance_in_Maze(Medium).md)|Medium|[Link](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)|Graph BFS|
 |Miscellaneous|||||
 |[339. Nested List Weight Sum](./questions/339.Nested_List_Weight_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/nested-list-weight-sum)|Meta Tag|Run DFS/BFS on each element in list, if this is element, update total with current depth and element's val. Otherwise, dfs on the list to update total with each element in that list with depth+1|
-|[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Meta|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
+|[1091. Shortest Path in Binary Matrix](./questions/1091.Shortest_Path_in_Binary_Matrix(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-path-in-binary-matrix)|Applied Intuition|Run BFS to find the shortest path, add all the same level neighbors into visited and deque, update res += 1|
 |[827. Making A Large Island](./questions/827.Making_A_Large_Island(Hard).md)|Medium|[Link](https://leetcode.com/problems/making-a-large-island)|Meta, ByteDance|Run DFS/BFS start from an entry with 1 to change this island's every entry to be `index`. Traverse `grid` again to run BFS on `0` to calculate the area of its neighbors + 1|
 |[721. Accounts Merge](./questions/721.Accounts_Merge(Medium).md)|Medium|[Link](https://leetcode.com/problems/accounts-merge)|Meta|Use hashmap to map `{email: id}` use `uf.union()` for existed email's id, then use `uf.find()` to find root_id and group `{id: [email]}`, lastly, follow the format to return|
 |[329. Longest Increasing Path in a Matrix](./questions/329.Longest_Increasing_Path_in_a_Matrix(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|Meta|2D DP + DFS on entry's neighbors|
@@ -564,12 +566,15 @@ Reminder: to add/check neighbor entries, remember to check boundary for [new_r, 
 |[2467. Most Profitable Path in a Tree](./questions/2467.Most_Profitable_Path_in_a_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/most-profitable-path-in-a-tree)||Run DFS to find path from `bob` to `0`, then run BFS from `0` to all leaf nodes to find the maximum `income` for alice|
 |[934. Shortest Bridge](./questions/934.Shortest_Bridge(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-bridge)|Tik Tok|Combination of DFS and BFS|
 |[3528. Unit Conversion I](./questions/3528.Unit_Conversion_I(Medium).md)|Medium|[Link](https://leetcode.com/problems/unit-conversion-i)|Biweekly Contest 155|First build graph to add each source's destinations to be their neighbor with conversionFactor. Then run BFS to update each conversion's factor.|
-|[317. Shortest Distance from All Buildings](./questions/317.Shortest_Distance_from_All_Buildings(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-distance-from-all-buildings)|ByteDance|Run BFS from each building to empty land, keep track of steps and number of buildings for each grid|
+|[317. Shortest Distance from All Buildings](./questions/317.Shortest_Distance_from_All_Buildings(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-distance-from-all-buildings)|Applied Intuition, ByteDance|Run BFS from each building to empty land, keep track of steps and number of buildings for each grid|
+|[296. Best Meeting Point](./questions/296.Best_Meeting_Point(Hard).md)|Hard|[Link](https://leetcode.com/problems/best-meeting-point/)|Applied Intuition|Calculate mid pt from all 1s, then calculate its distance to all 1s|
+|[529. Minesweeper](./questions/529.Minesweeper(Medium).md)|Medium|[Link](https://leetcode.com/problems/minesweeper/)|Applied Intuition|BFS from click; if click hits 'M' return 'X'; for each 'E' cell count adjacent mines — if >0 mark with digit, if 0 mark 'B' and enqueue unrevealed neighbors|
 |[1298. Maximum Candies You Can Get from Boxes](./questions/1298.Maximum_Candies_You_Can_Get_from_Boxes(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|||
 |[733. Flood Fill](./questions/733.Flood_Fill(Easy).md)|Easy|[Link](https://leetcode.com/problems/flood-fill)|Amazon Tag|Run BFS|
 |[261. Graph Valid Tree](./questions/261.Graph_Valid_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/graph-valid-tree)|||
 |[3619. Count Islands With Total Value Divisible by K](./questions/3619.Count_Islands_With_Total_Value_Divisible_by_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k)|Biweekly Contest 161|Run BFS and nonlocal `values` to check|
 |[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|TikTok Tag|Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
+|[1041. Robot Bounded In Circle](./questions/1041.Robot_Bounded_In_Circle(Medium).md)|Medium|[Link](https://leetcode.com/problems/robot-bounded-in-circle/)|TikTok Tag|Simulate one pass; robot is bounded if it returns to (0,0) or doesn't face north after the pass|
 
 
 <!--
@@ -701,6 +706,7 @@ In general, create a hashmap {} and store elements and their indices into the ha
 |[1399. Count Largest Group](./questions/1399.Count_Largest_Group(Easy).md)|Easy|[Link](https://leetcode.com/problems/count-largest-group)|Daily Question|Use hashmap to map digit_sum with a list of digits with the same digit_sum, use two variables to keep track|
 |[3527. Find the Most Common Response](./questions/3527.Find_the_Most_Common_Response(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-the-most-common-response)|Biweekly Contest|Use set() to remove duplicate and hashmap to count|
 |[3541. Find Most Frequent Vowel and Consonant](./questions/3541.Find_Most_Frequent_Vowel_and_Consonant(Easy).md)|Easy|[Link](https://leetcode.com/problems/find-most-frequent-vowel-and-consonant)|Biweekly Contest 156|Use two hashmaps and two counts for vowel and consonant|
+|[609. Find Duplicate File in System](./questions/609.Find_Duplicate_File_in_System(Medium).md)|Medium|[Link](https://leetcode.com/problems/find-duplicate-file-in-system/)||Split each path string by space; parse filename and content from each file token; group full paths by content in hashmap; return groups with more than one entry|
 
 
 <!--
@@ -733,11 +739,12 @@ ___
 In most cases, we need to first find the mid point by `len(nums) // 2`, then recursively pass in mid point's left and right.
 <br> **Divide & Conquer** means we first divide the problem into several subproblems, we solve them and them merge teh results together.
 
-|Divide & Conquer|||
-|---|---|---|
+|Divide & Conquer|||||
+|---|---|---|---|---|
 |[108. Convert Sorted Array to Binary Search Tree](./questions/108.Convert_Sorted_Array_to_Binary_Search_Tree_(Easy).md)|Easy|[Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)|
 |[148. Sort List](./questions/148.Sort_List_(Medium).md)|Medium|[Link](https://leetcode.com/problems/sort-list/)|
 |[427. Construct Quad Tree](./questions/427.Construct_Quad_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-quad-tree/)|
+|[1274. Number of Ships in a Rectangle](./questions/1274.Number_of_Ships_in_a_Rectangle(Hard).md)|Hard|[Link](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)|Applied Intuition|Split rectangle into 4 quadrants at midpoint; prune with `hasShips`; base case returns 1 when topRight == bottomLeft and hasShips is True|
 
 
 <!--
@@ -1065,6 +1072,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[146. LRU Cache](./questions/146.LRU_Cache(Medium).md)|Medium|[Link](https://leetcode.com/problems/lru-cache/)|Linked List, Hashmap|Use two dummy nodes (left=LRU, right=MRU); on get/put remove node and re-insert at MRU end; evict from LRU end when over capacity|
 |[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree/)|Trie|Each TrieNode stores children dict and isEnd flag; insert/search/startsWith all walk character by character|
 |[706. Design HashMap](./questions/706.Design_HashMap(Easy).md)|Easy|[Link](https://leetcode.com/problems/design-hashmap/)|TikTok, serviceNow|Use prime-sized array of bucket lists for chaining; hash key % 2069 to find bucket, then scan linearly for put/get/remove|
+|[622. Design Circular Queue](./questions/622.Design_Circular_Queue(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-circular-queue/)|Applied Intuition|Fixed-size array with `head`, `tail`, `cnt`; enQueue writes to `list[tail]` then `tail = (tail+1) % k`; deQueue advances `head = (head+1) % k`; Rear reads `list[(tail-1) % k]`|
 
 
 <!--
@@ -1082,6 +1090,8 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[32. Longest Valid Parentheses](./questions/32.Longest_Valid_Parentheses(Hard).md)|Hard|[Link](https://leetcode.com/problems/longest-valid-parentheses/)|Stack|Initialize stack with [-1] sentinel; push '(' indices, pop on ')' — if stack non-empty update res with idx - stack[-1], else push idx as new boundary|
 |[845. Longest Mountain in Array](./questions/845.Longest_Mountain_in_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/longest-mountain-in-array/)|Array|Single pass: for each base climb while ascending, record peak, descend while descending; if both phases exist update res = i - base + 1|
 |[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|Graph|Bi-partite question, separate into two sets <br> Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
+|[365. Water and Jug Problem](./questions/365.Water_and_Jug_Problem(Medium).md)|Medium|[Link](https://leetcode.com/problems/water-and-jug-problem/)|GCD / BFS|By Bézout's identity return target % gcd(x,y) == 0; or BFS over all (jug1, jug2) states with fill/empty/transfer operations|
+|[1041. Robot Bounded In Circle](./questions/1041.Robot_Bounded_In_Circle(Medium).md)|Medium|[Link](https://leetcode.com/problems/robot-bounded-in-circle/)|Simulation|Simulate one pass; robot is bounded if it returns to (0,0) or doesn't face north — facing non-north guarantees a cycle in ≤4 passes|
 
 
 <!--
