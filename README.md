@@ -41,6 +41,7 @@ Template
 ### Tag Questions
 - [Meta](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#meta-tag)
 - [TikTok](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#tiktok-tag)
+- [Nuro](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#nuro-tag)
 
 ### [Questions to Revisit](https://github.com/JC01111/Leetcode_I_Solved?tab=readme-ov-file#questions-to-revisit)
 
@@ -199,6 +200,7 @@ Sliding Window technique is similar to Two Pointers, we use two ptrs `l, r` for 
 |[1358. Number of Substrings Containing All Three Characters](./questions/1358.Number_of_Substrings_Containing_All_Three_Characters(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)|Daily Question|Maintain a valid sliding window, then count how many extra char we can add. Then shrink the sliding window to be invalid, repeat|
 |[2799. Count Complete Subarrays in an Array](./questions/2799.Count_Complete_Subarrays_in_an_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-complete-subarrays-in-an-array)|Daily Question|Use Sliding Window and count to solve|
 |[2747. Count Zero Request Servers](./questions/2747.Count_Zero_Request_Servers(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-zero-request-servers)|Amazon Tag|Sort queries and log by its receiving time, then use sliding window to find # of servers have received requests during that time|
+|[1610. Maximum Number of Visible Points](./questions/1610.Maximum_Number_of_Visible_Points(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-visible-points/)|Nuro|Convert points to angles with atan2; duplicate negatives by +360 for wrap-around; sliding window on sorted angles to find max within `angle` range|
 
 
 <!--
@@ -1092,6 +1094,22 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|Graph|Bi-partite question, separate into two sets <br> Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
 |[365. Water and Jug Problem](./questions/365.Water_and_Jug_Problem(Medium).md)|Medium|[Link](https://leetcode.com/problems/water-and-jug-problem/)|GCD / BFS|By Bézout's identity return target % gcd(x,y) == 0; or BFS over all (jug1, jug2) states with fill/empty/transfer operations|
 |[1041. Robot Bounded In Circle](./questions/1041.Robot_Bounded_In_Circle(Medium).md)|Medium|[Link](https://leetcode.com/problems/robot-bounded-in-circle/)|Simulation|Simulate one pass; robot is bounded if it returns to (0,0) or doesn't face north — facing non-north guarantees a cycle in ≤4 passes|
+
+
+<!--
+|[]()|Medium|[Link]()|||
+-->
+<br>
+
+---
+
+### Nuro Tag
+
+|Nuro Tag|||||
+|---|---|---|---|---|
+|[1610. Maximum Number of Visible Points](./questions/1610.Maximum_Number_of_Visible_Points(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-visible-points/)|Sliding Window|Convert points to angles with atan2; duplicate negatives by +360 for wrap-around; sliding window on sorted angles to find max within `angle` range|
+|[1274. Number of Ships in a Rectangle](./questions/1274.Number_of_Ships_in_a_Rectangle(Hard).md)|Hard|[Link](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)|Divide & Conquer|Split rectangle into 4 quadrants at midpoint; prune with `hasShips`; base case returns 1 when topRight == bottomLeft and hasShips is True|
+|[527. Word Abbreviation](./questions/527.Word_Abbreviation(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-abbreviation/)|Array/String|Init each abbreviation with prefix=1; repeatedly find duplicate abbreviations in a hashmap and increment their prefix until all are unique|
 
 
 <!--
