@@ -546,7 +546,7 @@ Reminder: to add/check neighbor entries, remember to check boundary for [new_r, 
 |[286. Walls and Gates](./questions/286.Walls_and_Gates(Medium).md)|Medium|[Link](https://leetcode.com/problems/walls-and-gates/)|Graph BFS|
 |[417. Pacific Atlantic Water Flow](./questions/417.Pacific_Atlantic_Water_Flow(Medium).md)|Medium|[Link](https://leetcode.com/problems/pacific-atlantic-water-flow/)||
 |[133. Clone Graph](./questions/133.Clone_Graph(Medium).md)|Medium|[Link](https://leetcode.com/problems/clone-graph/)|Meta|Create each node's copy into `hashmap{node: new_node}`, run DFS to append each node's neighbors|
-|[399. Evaluate Division](./questions/399.Evaluate_Division(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-division/)||
+|[399. Evaluate Division](./questions/399.Evaluate_Division(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-division/)|Nuro|
 |LeetCode 150||||
 |[909. Snakes and Ladders](./questions/909.Snakes_and_Ladders(Medium).md)|Medium|[Link](https://leetcode.com/problems/snakes-and-ladders/)|Graph BFS|
 |[127. Word Ladder](./questions/127.Word_Ladder(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-ladder/)|Graph BFS|
@@ -921,7 +921,7 @@ Given an array arr[] of size N, find the prefix sum of the array. A prefix sum a
 |Miscellaneous|||||
 |[437. Path Sum III](./questions/437.Path_Sum_III(Medium).md)|Medium|[Link](https://leetcode.com/problems/path-sum-iii/)||Use hashmap to keep track of current subtree's prefixSum, and update res with counts of diff = curSum - targetSum in current subtree's hashmap|
 |Miscellaneous|||||
-|[528. Random Pick with Weight](./questions/528.Random_Pick_with_Weight(Medium).md)|Medium|[Link](https://leetcode.com/problems/random-pick-with-weight)|Meta Tag|First initialize each index from [0, len(w)-1] a probability by w[i] / sum(w), then we calculate the prefixSum of each index. Next, randomly generate a prob within [0, 1], then we use Binary Search to find the index with the closest probability|
+|[528. Random Pick with Weight](./questions/528.Random_Pick_with_Weight(Medium).md)|Medium|[Link](https://leetcode.com/problems/random-pick-with-weight)|Nuro, Meta|First initialize each index from [0, len(w)-1] a probability by w[i] / sum(w), then we calculate the prefixSum of each index. Next, randomly generate a prob within [0, 1], then we use Binary Search to find the index with the closest probability|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -1075,6 +1075,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree/)|Trie|Each TrieNode stores children dict and isEnd flag; insert/search/startsWith all walk character by character|
 |[706. Design HashMap](./questions/706.Design_HashMap(Easy).md)|Easy|[Link](https://leetcode.com/problems/design-hashmap/)|TikTok, serviceNow|Use prime-sized array of bucket lists for chaining; hash key % 2069 to find bucket, then scan linearly for put/get/remove|
 |[622. Design Circular Queue](./questions/622.Design_Circular_Queue(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-circular-queue/)|Applied Intuition|Fixed-size array with `head`, `tail`, `cnt`; enQueue writes to `list[tail]` then `tail = (tail+1) % k`; deQueue advances `head = (head+1) % k`; Rear reads `list[(tail-1) % k]`|
+|[1476. Subrectangle Queries](./questions/1476.Subrectangle_Queries(Medium).md)|Medium|[Link](https://leetcode.com/problems/subrectangle-queries/)|Nuro|Store rectangle in-place; updateSubrectangle iterates the sub-region and sets each cell; getValue is a direct index lookup in O(1)|
 
 
 <!--
@@ -1110,6 +1111,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1610. Maximum Number of Visible Points](./questions/1610.Maximum_Number_of_Visible_Points(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-visible-points/)|Sliding Window|Convert points to angles with atan2; duplicate negatives by +360 for wrap-around; sliding window on sorted angles to find max within `angle` range|
 |[1274. Number of Ships in a Rectangle](./questions/1274.Number_of_Ships_in_a_Rectangle(Hard).md)|Hard|[Link](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)|Divide & Conquer|Split rectangle into 4 quadrants at midpoint; prune with `hasShips`; base case returns 1 when topRight == bottomLeft and hasShips is True|
 |[527. Word Abbreviation](./questions/527.Word_Abbreviation(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-abbreviation/)|Array/String|Init each abbreviation with prefix=1; repeatedly find duplicate abbreviations in a hashmap and increment their prefix until all are unique|
+|[1476. Subrectangle Queries](./questions/1476.Subrectangle_Queries(Medium).md)|Medium|[Link](https://leetcode.com/problems/subrectangle-queries/)|Design|Store rectangle in-place; updateSubrectangle iterates the sub-region and sets each cell; getValue is a direct index lookup in O(1)|
 
 
 <!--
