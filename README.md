@@ -132,6 +132,7 @@ General cases we want to replace element with non-repeating element in `nums`, s
 |[43. Multiply Strings](./questions/43.Multiply_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/multiply-strings/)||Simulate digit-by-digit multiplication into a result array of length m+n; digit at positions i,j lands at i+j+1 with carry to i+j|
 |[3076. Shortest Uncommon Substring in an Array](./questions/3076.Shortest_Uncommon_Substring_in_an_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/)|Moveworks|Generate all substrings with a count hashmap; for each string pick the unique (count == 1) substring with min length, breaking ties lexicographically|
 |[527. Word Abbreviation](./questions/527.Word_Abbreviation(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-abbreviation/)|Applied Intuition|Init each abbreviation with prefix=1; repeatedly find duplicate abbreviations in a hashmap and increment their prefix until all are unique|
+|[1233. Remove Sub-Folders from the Filesystem](./questions/1233.Remove_Sub-Folders_from_the_Filesystem(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/)|Nuro|Sort folders; for each path split by "/" and check incrementally if any prefix is already in the seen set; skip if sub-folder|
 
 <!--
 |[]()|Medium|[Link]()|||
@@ -227,7 +228,7 @@ The trick is to use pointers to keep in track of the boundaries. Then we shrink 
 |[766. Toeplitz Matrix](./questions/766.Toeplitz_Matrix(Easy).md)|Easy|[Link](https://leetcode.com/problems/toeplitz-matrix)|Meta|Compare each entry with their bottom-right neighbor (if exists)|
 |[37. Sudoku Solver](./questions/37.Sudoku_Solver(Hard).md)|Medium|[Link](https://leetcode.com/problems/sudoku-solver)|Meta|Use 3 sets to save existed vals, backtrack number `i` from `[1, 9]` for `'.'`|
 |[59. Spiral Matrix II](./questions/59.Spiral_Matrix_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/spiral-matrix-ii)|AutoX Tag|Similar to [54. Spiral Matrix](./questions/54.Spiral_Matrix(Medium).md), use four variables `l, r, t, b` to proceed four directions fill in|
-|[311. Sparse Matrix Multiplication](./questions/311.Sparse_Matrix_Multiplication(Medium).md)|Medium|[Link](https://leetcode.com/problems/sparse-matrix-multiplication)|AutoX Tag|Optimize space by saving each row's nonzero elements' cols into a dictionary, then use each row's nonzero's col from `mat1` to access `mat2`'s row's nonzero cols and multiply to update the result matrix|
+|[311. Sparse Matrix Multiplication](./questions/311.Sparse_Matrix_Multiplication(Medium).md)|Medium|[Link](https://leetcode.com/problems/sparse-matrix-multiplication)|AutoX, Nuro|Optimize space by saving each row's nonzero elements' cols into a dictionary, then use each row's nonzero's col from `mat1` to access `mat2`'s row's nonzero cols and multiply to update the result matrix|
 
 
 <!--
@@ -300,6 +301,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[140. Word Break II](./questions/140.Word_Break_II(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-break-ii)|Amazon Tag|Start from each index of s to form word, if one word matches s[i:j+1], run backtrack on index j+1|
 |[301. Remove Invalid Parentheses](./questions/301.Remove_Invalid_Parentheses(Hard).md)|Hard|[Link](https://leetcode.com/problems/remove-invalid-parentheses)||Generate substrings of cases to take parenthese or not, finally compare number of opening and closing parentheses to decide what to add into set()|
 |[1258. Synonymous Sentences](./questions/1258.Synonymous_Sentences(Medium).md)|Medium|[Link](https://leetcode.com/problems/synonymous-sentences/)|Moveworks|Build synonym graph; BFS to find each word's connected component; backtrack over text words trying every synonym at each position|
+|[494. Target Sum](./questions/494.Target_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/target-sum/)|Nuro|Backtrack with memoization on `(total, i)`; at each index try `+nums[i]` and `-nums[i]`; return 1 when total == target at the leaf|
 
 
 <!--
@@ -323,7 +325,7 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google Tag, Meta Tag|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |LeetCode 75|||||
 |[2390. Removing Stars From a String](./questions/2390.Removing_Stars_From_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/removing-stars-from-a-string/)||Use stack to store each element until a "\*", we then pop the top of stack to remove "\*"s left non-star character|
-|[735. Asteroid Collision](./questions/735.Asteroid_Collision(Medium).md)|Medium|[Link](https://leetcode.com/problems/asteroid-collision/)|
+|[735. Asteroid Collision](./questions/735.Asteroid_Collision(Medium).md)|Medium|[Link](https://leetcode.com/problems/asteroid-collision/)|Nuro|Use stack to save asteroids, then if last asteroid going right and new asteroid going left, then will collide, we compare the size|
 |[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
 |NeetCode 150|||||
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
@@ -570,13 +572,14 @@ Reminder: to add/check neighbor entries, remember to check boundary for [new_r, 
 |[3528. Unit Conversion I](./questions/3528.Unit_Conversion_I(Medium).md)|Medium|[Link](https://leetcode.com/problems/unit-conversion-i)|Biweekly Contest 155|First build graph to add each source's destinations to be their neighbor with conversionFactor. Then run BFS to update each conversion's factor.|
 |[317. Shortest Distance from All Buildings](./questions/317.Shortest_Distance_from_All_Buildings(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-distance-from-all-buildings)|Applied Intuition, ByteDance|Run BFS from each building to empty land, keep track of steps and number of buildings for each grid|
 |[296. Best Meeting Point](./questions/296.Best_Meeting_Point(Hard).md)|Hard|[Link](https://leetcode.com/problems/best-meeting-point/)|Applied Intuition|Calculate mid pt from all 1s, then calculate its distance to all 1s|
-|[529. Minesweeper](./questions/529.Minesweeper(Medium).md)|Medium|[Link](https://leetcode.com/problems/minesweeper/)|Applied Intuition|BFS from click; if click hits 'M' return 'X'; for each 'E' cell count adjacent mines — if >0 mark with digit, if 0 mark 'B' and enqueue unrevealed neighbors|
+|[529. Minesweeper](./questions/529.Minesweeper(Medium).md)|Medium|[Link](https://leetcode.com/problems/minesweeper/)|Applied Intuition, Nuro|BFS from click; if click hits 'M' return 'X'; for each 'E' cell count adjacent mines — if >0 mark with digit, if 0 mark 'B' and enqueue unrevealed neighbors|
 |[1298. Maximum Candies You Can Get from Boxes](./questions/1298.Maximum_Candies_You_Can_Get_from_Boxes(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes)|||
 |[733. Flood Fill](./questions/733.Flood_Fill(Easy).md)|Easy|[Link](https://leetcode.com/problems/flood-fill)|Amazon Tag|Run BFS|
 |[261. Graph Valid Tree](./questions/261.Graph_Valid_Tree(Medium).md)|Medium|[Link](https://leetcode.com/problems/graph-valid-tree)|||
 |[3619. Count Islands With Total Value Divisible by K](./questions/3619.Count_Islands_With_Total_Value_Divisible_by_K(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-islands-with-total-value-divisible-by-k)|Biweekly Contest 161|Run BFS and nonlocal `values` to check|
 |[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|TikTok Tag|Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
 |[1041. Robot Bounded In Circle](./questions/1041.Robot_Bounded_In_Circle(Medium).md)|Medium|[Link](https://leetcode.com/problems/robot-bounded-in-circle/)|TikTok Tag|Simulate one pass; robot is bounded if it returns to (0,0) or doesn't face north after the pass|
+|[1293. Shortest Path in a Grid with Obstacles Elimination](./questions/1293.Shortest_Path_in_a_Grid_with_Obstacles_Elimination(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/)|Nuro|BFS with state `(r, c, remaining_k)`; visit each state once; decrement k when stepping through an obstacle|
 
 
 <!--
@@ -591,7 +594,7 @@ Reminder: to add/check neighbor entries, remember to check boundary for [new_r, 
 |---|---|---|---|---|
 |[743. Network Delay Time](./questions/743.Network_Delay_Time(Medium).md)|Medium|[Link](https://leetcode.com/problems/network-delay-time/)| Dijkstra's|
 |[787. Cheapest Flights Within K Stops](./questions/787.Cheapest_Flights_Within_K_Stops(Medium).md)|Medium|[Link](https://leetcode.com/problems/cheapest-flights-within-k-stops/)|Bellman Ford|
-|[269. Alien Dictionary](./questions/269.Alien_Dictionary(Hard).md)|Hard|[Link](https://leetcode.com/problems/alien-dictionary/)|Topological Sort/Post-order DFS|
+|[269. Alien Dictionary](./questions/269.Alien_Dictionary(Hard).md)|Hard|[Link](https://leetcode.com/problems/alien-dictionary/)|Nuro|Topological Sort/Post-order DFS|
 |[1976. Number of Ways to Arrive at Destination](./questions/1976.Number_of_Ways_to_Arrive_at_Destination(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination)|Daily Question|Run Dijkstra with list to record path and distance (time)|Run Dijkstra to find the shortest path and use `path_cnt[]` to keep track of number of ways to reach at certain node|
 
 
@@ -653,7 +656,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 
 |Intervals|||||
 |---|---|---|---|---|
-|[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|Meta|Compare new interval with previous interval, if there is overlap, we update the previous interval with [min(x1, x2), max(y1, y2)]. Otherwise, append the new interval to `res[]`|
+|[56. Merge Intervals](./questions/56.Merge_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/merge-intervals/)|Nuro, Meta|Compare new interval with previous interval, if there is overlap, we update the previous interval with [min(x1, x2), max(y1, y2)]. Otherwise, append the new interval to `res[]`|
 |[57. Insert Interval](./questions/57.Insert_Interval_(Medium).md)|Medium|[Link](https://leetcode.com/problems/insert-interval/)|
 |LeetCode 75|||||
 |[435. Non-overlapping Intervals](./questions/435.Non-overlapping_Intervals(Medium).md)|Medium|[Link](https://leetcode.com/problems/non-overlapping-intervals/)|
@@ -663,7 +666,7 @@ Usually, we need to **sort** the array first to better find the overlapping inte
 |Miscellaneous|||||
 |[252. Meeting Rooms](./questions/252.Meeting_Rooms(Easy).md)|Easy|[Link](https://leetcode.com/problems/meeting-rooms)||First sort intervals, then use `prev` to save the previous interval's end time, then compare with new interval's start time, if `prev > start`, return False|
 |[253. Meeting Rooms II](./questions/253.Meeting_Rooms_II(Medium).md)|Medium|[Link](https://leetcode.com/problems/meeting-rooms-ii)||Q: Find min rooms for all meetings [start, end]. <br> S: save all the end time in minHeap, compare start with end time, if start < smallest end time, we need extra room|
-|[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Meta|Use two ptrs to find the intersection, keep the interval with greater end|
+|[986. Interval List Intersections](./questions/986.Interval_List_Intersections(Medium).md)|Medium|[Link](https://leetcode.com/problems/interval-list-intersections)|Nuro, Meta|Use two ptrs to find the intersection, keep the interval with greater end|
 |[636. Exclusive Time of Functions](./questions/636.Exclusive_Time_of_Functions(Medium).md)|Medium|[Link](https://leetcode.com/problems/exclusive-time-of-functions)|Meta|Use stack to store ids, identify `start` or `end`, and add the difference to `res[i]`|
 |[3169. Count Days Without Meetings](./questions/3169.Count_Days_Without_Meetings(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-days-without-meetings)|Daily Question|Sort intervals, then count the gap between intervals|
 |[3394. Check if Grid can be Cut into Sections](./questions/3394.Check_if_Grid_can_be_Cut_into_Sections(Medium).md)|Medium|[Link](https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections)|Daily Question|Sort intervals base on x, y coordiates. Then find if we can have at least 2 gaps for either x or y coordinate|
@@ -1112,6 +1115,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1274. Number of Ships in a Rectangle](./questions/1274.Number_of_Ships_in_a_Rectangle(Hard).md)|Hard|[Link](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)|Divide & Conquer|Split rectangle into 4 quadrants at midpoint; prune with `hasShips`; base case returns 1 when topRight == bottomLeft and hasShips is True|
 |[527. Word Abbreviation](./questions/527.Word_Abbreviation(Hard).md)|Hard|[Link](https://leetcode.com/problems/word-abbreviation/)|Array/String|Init each abbreviation with prefix=1; repeatedly find duplicate abbreviations in a hashmap and increment their prefix until all are unique|
 |[1476. Subrectangle Queries](./questions/1476.Subrectangle_Queries(Medium).md)|Medium|[Link](https://leetcode.com/problems/subrectangle-queries/)|Design|Store rectangle in-place; updateSubrectangle iterates the sub-region and sets each cell; getValue is a direct index lookup in O(1)|
+|[494. Target Sum](./questions/494.Target_Sum(Medium).md)|Medium|[Link](https://leetcode.com/problems/target-sum/)|Backtracking|Backtrack with memoization on `(total, i)`; at each index try `+nums[i]` and `-nums[i]`; return 1 when total == target at the leaf|
+|[1233. Remove Sub-Folders from the Filesystem](./questions/1233.Remove_Sub-Folders_from_the_Filesystem(Medium).md)|Medium|[Link](https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/)|Array/String|Sort folders; for each path split by "/" and check incrementally if any prefix is already in the seen set; skip if sub-folder|
+|[1293. Shortest Path in a Grid with Obstacles Elimination](./questions/1293.Shortest_Path_in_a_Grid_with_Obstacles_Elimination(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/)|Graph BFS|BFS with state `(r, c, remaining_k)`; visit each state once; decrement k when stepping through an obstacle|
 
 
 <!--
@@ -1142,8 +1148,9 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[1114. Print in Order](./questions/1114.Print_in_Order(Easy).md)|Easy|[Link](https://leetcode.com/problems/print-in-order)||Semophores to lock resource and wait to release|
 |[1116. Print Zero Even Odd](./questions/1116.Print_Zero_Even_Odd(Medium).md)|Medium|[Link](https://leetcode.com/problems/print-zero-even-odd)||From `zero()` we identify and unlock the semophores for `even()` or `odd()` base on the `i`, then we `printNumber(i)` and unlock `sem_zero` to back continue|
 |[1115. Print FooBar Alternately](./questions/1115.Print_FooBar_Alternately(Medium).md)|Medium|[Link](https://leetcode.com/problems/print-foobar-alternately)||Set `sem_foo` with higher priority, so we can always start with `foo`, then release `sem_bar`|
-|[1117. Building H2O](./questions/1117.Building_H20(Medium).md)|Medium|[Link](https://leetcode.com/problems/building-h2o)||Use two semaphores for `hydrogen` and `oxygen`, allow 2 `hydrogen` can be accessed at the same time, use `count` to unlock `sem_oxy`|
+|[1117. Building H2O](./questions/1117.Building_H20(Medium).md)|Medium|[Link](https://leetcode.com/problems/building-h2o)||Semaphores + Barrier|
 |[1188. Design Bounded Blocking Queue](./questions/1188.Design_Bounded_Blocking_Queue(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-bounded-blocking-queue)||Using two semaphores with one mutex, define one semaphore with `capacity`|
+|[1195. Fizz Buzz Multithreaded](./questions/1195.Fizz_Buzz_Multithreaded(Medium).md)|Medium|[Link](https://leetcode.com/problems/fizz-buzz-multithreaded/)||Shared `Condition` with counter `cur`; each thread waits until its divisibility rule is satisfied, prints, increments `cur`, and calls `notify_all()`|
 
 
 <!--
