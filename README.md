@@ -202,6 +202,7 @@ Sliding Window technique is similar to Two Pointers, we use two ptrs `l, r` for 
 |[2799. Count Complete Subarrays in an Array](./questions/2799.Count_Complete_Subarrays_in_an_Array(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-complete-subarrays-in-an-array)|Daily Question|Use Sliding Window and count to solve|
 |[2747. Count Zero Request Servers](./questions/2747.Count_Zero_Request_Servers(Medium).md)|Medium|[Link](https://leetcode.com/problems/count-zero-request-servers)|Amazon Tag|Sort queries and log by its receiving time, then use sliding window to find # of servers have received requests during that time|
 |[1610. Maximum Number of Visible Points](./questions/1610.Maximum_Number_of_Visible_Points(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-visible-points/)|Nuro|Convert points to angles with atan2; duplicate negatives by +360 for wrap-around; sliding window on sorted angles to find max within `angle` range|
+|[904. Fruit Into Baskets](./questions/904.Fruit_Into_Baskets(Medium).md)|Medium|[Link](https://leetcode.com/problems/fruit-into-baskets/)|TikTok|Sliding window with `basket {type: count}`; when `fruits[r]` not in basket and basket is full, shrink from left removing counts until one type is evicted|
 
 
 <!--
@@ -322,11 +323,11 @@ Backtracing is recursion with base case(s), we have to first find the base case(
 |[71. Simplify Path](./questions/71.Simplify_Path(Medium).md)|Medium|[Link](https://leetcode.com/problems/simplify-path/)|Meta Tag|Detect each char to know if it equals to '/' or not, and use stack to add new file name or pop previous file name|
 |[155. Min Stack](./questions/155.Min_Stack_(Medium).md)|Medium|[Link](https://leetcode.com/problems/min-stack/)|
 |[150. Evaluate Reverse Polish Notation](./questions/150.Evaluate_Reverse_Polish_Notation(Medium).md)|Medium|[Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)|
-|[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google Tag, Meta Tag|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
+|[224. Basic Calculator](./questions/224.Basic_Calculator(Hard).md)|Hard|[Link](https://leetcode.com/problems/basic-calculator/)|Google, Meta, TikTok|Use `res, sign ,curr` to keep track of previous operation result, update `res` when we have new sign, append `res, sign` into stack[] when we have "(". Calculate result within `()`, and pop everything back from stack[], reset variables|
 |LeetCode 75|||||
 |[2390. Removing Stars From a String](./questions/2390.Removing_Stars_From_a_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/removing-stars-from-a-string/)||Use stack to store each element until a "\*", we then pop the top of stack to remove "\*"s left non-star character|
 |[735. Asteroid Collision](./questions/735.Asteroid_Collision(Medium).md)|Medium|[Link](https://leetcode.com/problems/asteroid-collision/)|Nuro|Use stack to save asteroids, then if last asteroid going right and new asteroid going left, then will collide, we compare the size|
-|[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google Tag|
+|[394. Decode String](./questions/394.Decode_String(Medium).md)|Medium|[Link](https://leetcode.com/problems/decode-string/)|Google, TikTok|Save everything into stack until `]`, then we pop string and digit from stack to unfold, and append the new result into stack|
 |NeetCode 150|||||
 |[22. Generate Parentheses](./questions/22.Generate_Parentheses(Medium).md)|Medium|[Link](https://leetcode.com/problems/generate-parentheses/)|
 |[84. Largest Rectangle in Histogram](./questions/84.Largest_Rectangle_in_Histogram(Hard).md)|Hard|[Link](https://leetcode.com/problems/largest-rectangle-in-histogram/)|Google, TikTok|Save increasing heights, pop previous heights to update area when a shorter height appears|
@@ -444,6 +445,7 @@ It is also convention to use **BFS** (queue), **DFS** (stack) to check each node
 |[987. Vertical Order Traversal of a Binary Tree](./questions/987.Vertical_Order_Traversal_of_a_Binary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)|Meta|Save `(node, row, col)` into `deque[]`, and run BFS to append `node.left` with `(row+1, col-1)` and `node.right` with `(row+1, col+1)`. Add all nodes with the same col into `hashmap{col: [node.val]}`. Sort `col` and `row` in the end|
 |Miscellaneous|||||
 |[889. Construct Binary Tree from Preorder and Postorder Traversal](./questions/889.Construct_Binary_Tree_from_Preorder_and_Postorder_Traversal(Medium).md)|Medium|[Link](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal)||Find the left-root accordingly from `preorder` and find offset of how many nodes to be included in the left-subtree, then recursively build tree|
+|[428. Serialize and Deserialize N-ary Tree](./questions/428.Serialize_and_Deserialize_N-ary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/)|TikTok|Pre-order DFS serialize: append `val` and `len(children)` per node; deserialize: read `val` and `numChildren` from global index `i`, recurse `numChildren` times to build children|
 
 
 <!--
@@ -580,6 +582,7 @@ Reminder: to add/check neighbor entries, remember to check boundary for [new_r, 
 |[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|TikTok Tag|Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
 |[1041. Robot Bounded In Circle](./questions/1041.Robot_Bounded_In_Circle(Medium).md)|Medium|[Link](https://leetcode.com/problems/robot-bounded-in-circle/)|TikTok Tag|Simulate one pass; robot is bounded if it returns to (0,0) or doesn't face north after the pass|
 |[1293. Shortest Path in a Grid with Obstacles Elimination](./questions/1293.Shortest_Path_in_a_Grid_with_Obstacles_Elimination(Hard).md)|Hard|[Link](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/)|Nuro|BFS with state `(r, c, remaining_k)`; visit each state once; decrement k when stepping through an obstacle|
+|[694. Number of Distinct Islands](./questions/694.Number_of_Distinct_Islands(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-distinct-islands/)|TikTok|BFS from each unvisited `1`; record relative positions `(orgR-r, orgC-c)` as a string key; add to keySet and increment res if new|
 
 
 <!--
@@ -979,7 +982,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[2790. Maximum Number of Groups With Increasing Length](./questions/2790.Maximum_Number_of_Groups_With_Increasing_Length(Hard).md)|Hard|[Link](https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length)|Amazon Tag|Sort it and find the pattern to satisfy each `k` group|
 |[365. Water and Jug Problem](./questions/365.Water_and_Jug_Problem(Medium).md)|Medium|[Link](https://leetcode.com/problems/water-and-jug-problem/)|GCD|By Bézout's identity, any reachable amount is a multiple of gcd(x, y); return target % gcd(x, y) == 0 if x + y >= target|
 |[43. Multiply Strings](./questions/43.Multiply_Strings(Medium).md)|Medium|[Link](https://leetcode.com/problems/multiply-strings/)||Simulate digit-by-digit multiplication into a result array of length m+n; digit at positions i,j lands at i+j+1 with carry to i+j|
-
+|[1344. Angle Between Hands of a Clock](./questions/1344.Angle_Between_Hands_of_a_Clock_(Medium).md)|Medium|[Link](https://leetcode.com/problems/angle-between-hands-of-a-clock/)||Calculate degree positions of hour and minute hands, find the absolute difference, then take the minimum of this and 360 - difference|
 
 <!--
 |[]()|Easy|[Link]()|||
@@ -1078,6 +1081,7 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[208. Implement Trie (Prefix Tree)](./questions/208.Implement_Trie_(Medium).md)|Medium|[Link](https://leetcode.com/problems/implement-trie-prefix-tree/)|Trie|Each TrieNode stores children dict and isEnd flag; insert/search/startsWith all walk character by character|
 |[706. Design HashMap](./questions/706.Design_HashMap(Easy).md)|Easy|[Link](https://leetcode.com/problems/design-hashmap/)|TikTok, serviceNow|Use prime-sized array of bucket lists for chaining; hash key % 2069 to find bucket, then scan linearly for put/get/remove|
 |[622. Design Circular Queue](./questions/622.Design_Circular_Queue(Medium).md)|Medium|[Link](https://leetcode.com/problems/design-circular-queue/)|Applied Intuition|Fixed-size array with `head`, `tail`, `cnt`; enQueue writes to `list[tail]` then `tail = (tail+1) % k`; deQueue advances `head = (head+1) % k`; Rear reads `list[(tail-1) % k]`|
+|[432. All O`one Data Structure](./questions/432.All_Oone_Data_Structure(Hard).md)|Hard|[Link](https://leetcode.com/problems/all-oone-data-structure/)|TikTok|Doubly linked list where each node holds a frequency and a set of keys; hashmap {key: node}; inc/dec move key to freq±1 node (create if missing, delete if empty); getMax/getMinKey read from right.prev/left.next|
 |[1476. Subrectangle Queries](./questions/1476.Subrectangle_Queries(Medium).md)|Medium|[Link](https://leetcode.com/problems/subrectangle-queries/)|Nuro|Store rectangle in-place; updateSubrectangle iterates the sub-region and sets each cell; getValue is a direct index lookup in O(1)|
 
 
@@ -1098,6 +1102,10 @@ For this type of question, we usually need to perform `&, |` (and, or) operation
 |[886. Possible Bipartition](./questions/886.Possible_Bipartition(Medium).md)|Medium|[Link](https://leetcode.com/problems/possible-bipartition/)|Graph|Bi-partite question, separate into two sets <br> Build undirected graph from dislikes; DFS 2-color each component — if a neighbor shares the same color as the current node, return False|
 |[365. Water and Jug Problem](./questions/365.Water_and_Jug_Problem(Medium).md)|Medium|[Link](https://leetcode.com/problems/water-and-jug-problem/)|GCD / BFS|By Bézout's identity return target % gcd(x,y) == 0; or BFS over all (jug1, jug2) states with fill/empty/transfer operations|
 |[1041. Robot Bounded In Circle](./questions/1041.Robot_Bounded_In_Circle(Medium).md)|Medium|[Link](https://leetcode.com/problems/robot-bounded-in-circle/)|Simulation|Simulate one pass; robot is bounded if it returns to (0,0) or doesn't face north — facing non-north guarantees a cycle in ≤4 passes|
+|[432. All O`one Data Structure](./questions/432.All_Oone_Data_Structure(Hard).md)|Hard|[Link](https://leetcode.com/problems/all-oone-data-structure/)|Design|Doubly linked list where each node holds a frequency and a set of keys; hashmap {key: node}; inc/dec move key to freq±1 node (create if missing, delete if empty); getMax/getMinKey read from right.prev/left.next|
+|[694. Number of Distinct Islands](./questions/694.Number_of_Distinct_Islands(Medium).md)|Medium|[Link](https://leetcode.com/problems/number-of-distinct-islands/)|Graph BFS|BFS from each unvisited `1`; record relative positions `(orgR-r, orgC-c)` as a string key; add to keySet and increment res if new|
+|[904. Fruit Into Baskets](./questions/904.Fruit_Into_Baskets(Medium).md)|Medium|[Link](https://leetcode.com/problems/fruit-into-baskets/)|Sliding Window|Sliding window with `basket {type: count}`; when `fruits[r]` not in basket and basket is full, shrink from left removing counts until one type is evicted|
+|[428. Serialize and Deserialize N-ary Tree](./questions/428.Serialize_and_Deserialize_N-ary_Tree(Hard).md)|Hard|[Link](https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/)|DFS|Pre-order DFS serialize: append `val` and `len(children)` per node; deserialize: read `val` and `numChildren` from global index `i`, recurse `numChildren` times to build children|
 
 
 <!--
